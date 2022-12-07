@@ -35,17 +35,17 @@ jobs:
       - name: Show status
         run: echo Comparison is ${{ steps.git-check.outputs.modified }}, result in boolean X${{steps.git-check.outputs.modified=='true'}}X X${{contains(steps.git-check.outputs.modified,'true')}}X
 
+      - name: Download the file
+        run: |
+          curl -sL https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/master/game/dota/pak01_dir/scripts/items/player_card_template.txt > items_game.txt
+
       - name: Commit latest release version
-        if: ${{ steps.git-check.outputs.modified == 'true' }} 
+#         if: ${{ steps.git-check.outputs.modified == 'true' }} 
         run: |
           git config --global user.name 'Test'
           git config --global user.email 'test-email@users.noreply.github.com'
           git commit -am "New release version"
           git push
-
-      - name: Download the file
-        run: |
-          curl -sL https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/master/game/dota/pak01_dir/scripts/items/player_card_template.txt
 
 
 #       - name: Install Lua/LuaJIT
