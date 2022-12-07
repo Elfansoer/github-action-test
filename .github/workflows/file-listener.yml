@@ -37,7 +37,7 @@ jobs:
 
       - name: Download the file
         run: |
-          curl -sL https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/master/game/dota/pak01_dir/scripts/items/player_card_template.txt > items_game.txt
+          curl -sL https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/master/game/dota/pak01_dir/scripts/items/items_game.txt > items_game.txt
 
       - name: Commit latest release version
 #         if: ${{ steps.git-check.outputs.modified == 'true' }} 
