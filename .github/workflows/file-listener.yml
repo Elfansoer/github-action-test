@@ -36,7 +36,7 @@ jobs:
         run: echo Comparison is ${{ steps.git-check.outputs.modified }}, result in boolean X${{steps.git-check.outputs.modified=='true'}}X X${{contains(steps.git-check.outputs.modified,'true')}}X
 
       - name: Commit latest release version
-        if: ${{ steps.git-check.outputs.modified }} == 'true'
+        if: ${{ steps.git-check.outputs.modified == 'true' }} 
         run: |
           git config --global user.name 'Test'
           git config --global user.email 'test-email@users.noreply.github.com'
