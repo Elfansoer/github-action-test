@@ -77,13 +77,19 @@ jobs:
           ls
 
       - name: Commit latest release version
-        if: ${{ steps.git-check.outputs.modified == 'true' }} 
-        run: |
-          cd repo
-          git config --global user.name 'Test'
-          git config --global user.email 'test-email@users.noreply.github.com'
-          git commit -am "autoupdate at $(date +%Y-%m-%d-%H:%M)"
-          git push
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: 'Add the very useful text file'
+          cwd: 'repo'
+
+#       - name: Commit latest release version
+#         if: ${{ steps.git-check.outputs.modified == 'true' }} 
+#         run: |
+#           cd repo
+#           git config --global user.name 'Test'
+#           git config --global user.email 'test-email@users.noreply.github.com'
+#           git commit -am "autoupdate at $(date +%Y-%m-%d-%H:%M)"
+#           git push
 
 #   my_second_job:
 #     name: My second job
