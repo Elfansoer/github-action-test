@@ -1,4 +1,4 @@
-require( "./kvparser" )
+require( "../kvparser" )
 
 print('hello, world!')
 
