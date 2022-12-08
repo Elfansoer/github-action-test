@@ -6,17 +6,12 @@ end
 print("test1")
 print(script_path())
 
-local folderOfThisFile = arg[0]:match("(.-)[^%.]+$")
-print("test2")
-print(folderOfThisFile)
-
--- require(script_path() .. 'kvparser.lua')
 require('kvparser')
 
 print('hello, world!')
 
 -- load KV data
-local stored_data = KVParser:LoadKeyValueFromFile( folderOfThisFile .. "items_game.txt" )
+local stored_data = KVParser:LoadKeyValueFromFile( script_path() .. "items_game.txt" )
 if not stored_data then
   print('... failed. This might occur if "items_game.lua" is missing from the PATH folder.')
   print('Try run update mode first.')
