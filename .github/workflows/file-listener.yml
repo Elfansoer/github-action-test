@@ -33,7 +33,7 @@ jobs:
           ls
 
       - name: Try lua command
-        run: lua lua/main.lua
+        run: lua test.lua
 
 
 #       - name: Fetch release version
