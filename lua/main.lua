@@ -1,7 +1,18 @@
-local pathOfThisFile = ...
-local folderOfThisFile = (...):match("(.-)[^%.]+$")
-require(folderOfThisFile .. 'kvparser')
--- require( "../kvparser" )
+function script_path()
+   local str = debug.getinfo(2, "S").source:sub(2)
+   return str:match("(.*/)")
+end
+
+print("test1")
+print(script_path())
+
+print("test2")
+print(arg[0])
+
+-- local pathOfThisFile = ...
+-- local folderOfThisFile = (...):match("(.-)[^%.]+$")
+-- require(folderOfThisFile .. 'kvparser')
+require( "kvparser" )
 
 print('hello, world!')
 
