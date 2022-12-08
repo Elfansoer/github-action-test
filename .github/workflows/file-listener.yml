@@ -79,7 +79,9 @@ jobs:
       - name: Commit latest release version
         uses: EndBug/add-and-commit@v9
         with:
-          message: 'Add the very useful text file'
+          author_name: Update Bot
+          author_email: update-bot@users.noreply.github.com
+          message: 'Auto-update at $(date +%Y-%m-%d %H:%M)'
           cwd: 'repo'
 
 #       - name: Commit latest release version
