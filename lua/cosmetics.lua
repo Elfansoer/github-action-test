@@ -61,7 +61,7 @@ function Cosmetics:Update()
   -- writing file
   print('writing to "items_game_compact.txt"...')
   file:write( "-- Elfansoer's Cosmetics Library, Simplified Item References.\n" )
-  file:write( "-- Generated on " .. GetSystemDate() .. ".\n" )
+  file:write( "-- Generated on " .. os.date() .. ".\n" )
   file:write( "\n" )
   KVParser:PrintToFile( newtable, file )
   file:write( "\n" )
