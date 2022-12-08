@@ -33,7 +33,7 @@ jobs:
           ls
 
       - name: Set environment
-        run: echo LUA_PATH=${{ github.workspace }}/repo/lua/? >> $GITHUB_ENV
+        run: echo LUA_PATH=${{ github.workspace }}/repo/lua/?.lua >> $GITHUB_ENV
 
       - name: Check environment
         run: echo $LUA_PATH
