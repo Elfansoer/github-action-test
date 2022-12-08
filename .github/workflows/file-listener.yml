@@ -3,7 +3,6 @@ run-name: A listener by @${{ github.actor }}
 on:
   push:
   schedule:
-    # * is a special character in YAML so you have to quote this string
     - cron:  '0 0 * * *'
 
 jobs:
@@ -24,24 +23,10 @@ jobs:
           # The version of Lua to install, must be available on https://www.lua.org/ftp/ or http://luajit.org/download.html
           luaVersion: 5.1
 
-      - name: See the workspace
-        run: ls
-
-      - name: Try cd the workspace repo
-        run: |
-          cd repo
-          ls
-
       - name: Set environment
         run: | 
           echo LUA_PATH=${{ github.workspace }}/repo/lua/?.lua >> $GITHUB_ENV
           echo LUA_PATH=${{ github.workspace }}/repo/lua/?.lua >> $GITHUB_ENV
-
-      - name: Check environment
-        run: echo $LUA_PATH
-
-      - name: Try lua command
-        run: lua ${{ github.workspace }}/repo/lua/main.lua
 
       - name: Fetch release version
         run: |
@@ -54,12 +39,7 @@ jobs:
         run: |
           cd repo
           echo modified=$([ -z "`git status --porcelain`" ] && echo "false" || echo "true") >> $GITHUB_OUTPUT
-          echo date=$(date +%Y-%m-%d %H:%M) >> $GITHUB_OUTPUT
-
-      - name: Show status
-        run: |
-          cd repo
-          echo Comparison is ${{ steps.git-check.outputs.modified }}, result in boolean X${{steps.git-check.outputs.modified=='true'}}X X${{contains(steps.git-check.outputs.modified,'true')}}X
+          echo DATE=$(date +%Y-%m-%d %H:%M) >> $GITHUB_ENV
 
       - name: Download items_game.txt
         if: ${{ steps.git-check.outputs.modified == 'true' }} 
@@ -73,19 +53,17 @@ jobs:
           cd repo
           curl -sL https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/master/game/dota/pak01_dir/scripts/npc/npc_heroes.txt > npc_heroes.txt
 
-      - name: Check the workspace repo
-        if: ${{ steps.git-check.outputs.modified == 'true' }} 
-        run: |
-          cd repo
-          ls
+      - name: Create compact file through Lua
+#         if: ${{ steps.git-check.outputs.modified == 'true' }} 
+        run: lua ${{ github.workspace }}/repo/lua/main.lua
 
       - name: Commit latest release version
-        if: ${{ steps.git-check.outputs.modified == 'true' }} 
+#         if: ${{ steps.git-check.outputs.modified == 'true' }} 
         uses: EndBug/add-and-commit@v9
         with:
           author_name: Update Bot
           author_email: update-bot@users.noreply.github.com
-          message: 'Auto-update at ${{ steps.git-check.outputs.date }}'
+          message: 'Auto-update at ${{ env.DATE }}'
           cwd: 'repo'
 
 #       - name: Commit latest release version
