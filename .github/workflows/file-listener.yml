@@ -38,8 +38,8 @@ jobs:
         id: git-check
         run: |
           cd repo
-          echo modified=$([ -z "`git status --porcelain`" ] && echo "false" || echo "true") >> $GITHUB_OUTPUT
           echo date=$(date +%Y-%m-%d %H:%M) >> $GITHUB_OUTPUT
+          echo modified=$([ -z "`git status --porcelain`" ] && echo "false" || echo "true") >> $GITHUB_OUTPUT
 
       - name: Download items_game.txt
         if: ${{ steps.git-check.outputs.modified == 'true' }} 
