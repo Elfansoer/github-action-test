@@ -1,7 +1,7 @@
 name: Listener
 run-name: A listener by @${{ github.actor }}
 on:
-#   push:
+  push:
   schedule:
     # * is a special character in YAML so you have to quote this string
     - cron:  '0 0 * * *'
@@ -32,12 +32,8 @@ jobs:
           cd repo
           ls
 
-      - name: Try lua command 2
-        run: lua ${{ github.workspace }}/repo/test
-
-      - name: Try lua command 3
-        if: always()
-        run: lua ${{ github.workspace }}/repo/test.lua
+      - name: Try lua command
+        run: lua ${{ github.workspace }}/repo/lua/main.lua
 
 #       - name: Fetch release version
 #         run: |
