@@ -251,7 +251,9 @@ function Cosmetics:BuildSlots()
 	local npc_heroes = KVParser:LoadKeyValueFromFile( PATH .. "npc_heroes.txt" )
 
 	local heroes_data = {}
+    print("TestBuildSlots")
 	for name,valuetable in pairs(npc_heroes) do
+        print(name,valuetable)
 		-- only those who has item slots
 		if type(valuetable)=='table' and valuetable.ItemSlots then
 
