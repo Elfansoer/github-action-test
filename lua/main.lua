@@ -10,7 +10,7 @@ local folderOfThisFile = arg[0]:match("(.-)[^%.]+$")
 print("test2")
 print(folderOfThisFile)
 
-require(script_path() .. 'kvparser')
+require(script_path() .. 'kvparser.lua')
 
 print('hello, world!')
 
