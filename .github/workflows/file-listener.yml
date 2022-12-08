@@ -33,7 +33,9 @@ jobs:
           ls
 
       - name: Set environment
-        run: echo LUA_PATH=${{ github.workspace }}/repo/lua/?.lua >> $GITHUB_ENV
+        run: | 
+          echo LUA_PATH=${{ github.workspace }}/repo/lua/?.lua >> $GITHUB_ENV
+          echo LUA_PATH=${{ github.workspace }}/repo/lua/?.lua >> $GITHUB_ENV
 
       - name: Check environment
         run: echo $LUA_PATH
@@ -81,7 +83,7 @@ jobs:
         with:
           author_name: Update Bot
           author_email: update-bot@users.noreply.github.com
-          message: 'Auto-update at $(date +%Y-%m-%d %H:%M)'
+          message: 'Auto-update at ${{ $(date +%Y-%m-%d %H:%M) }}'
           cwd: 'repo'
 
 #       - name: Commit latest release version
