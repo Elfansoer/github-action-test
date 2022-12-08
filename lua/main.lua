@@ -6,13 +6,11 @@ end
 print("test1")
 print(script_path())
 
+local folderOfThisFile = arg[0]:match("(.-)[^%.]+$")
 print("test2")
-print(arg[0])
+print(folderOfThisFile)
 
--- local pathOfThisFile = ...
--- local folderOfThisFile = (...):match("(.-)[^%.]+$")
--- require(folderOfThisFile .. 'kvparser')
-require( "kvparser" )
+require(script_path() .. 'kvparser')
 
 print('hello, world!')
 
