@@ -32,6 +32,10 @@ jobs:
           cd repo
           ls
 
+      - name: See lua path
+        run: |
+          echo $LUA_PATH
+
       - name: Try lua command
         run: lua ${{ github.workspace }}/repo/lua/main.lua
 
