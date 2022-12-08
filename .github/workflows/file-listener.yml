@@ -38,7 +38,8 @@ jobs:
         id: git-check
         run: |
           cd repo
-          echo date=$(date +%Y-%m-%d %H:%M) >> $GITHUB_OUTPUT
+          echo date=$(date +%Y-%m-%d-%H:%M) >> $GITHUB_OUTPUT
+          echo test=testtext >> $GITHUB_OUTPUT
           echo modified=$([ -z "`git status --porcelain`" ] && echo "false" || echo "true") >> $GITHUB_OUTPUT
 
       - name: Download items_game.txt
@@ -59,6 +60,7 @@ jobs:
 
       - name: Echo date
         run: |
+          echo ${{ steps.git-check.outputs.test }}
           echo ${{ steps.git-check.outputs.date }}
           echo ${{ steps.git-check.outputs.modified }}
 
