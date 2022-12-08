@@ -70,6 +70,11 @@ jobs:
           cd repo
           curl -sL https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/master/game/dota/pak01_dir/scripts/npc/npc_heroes.txt > npc_heroes.txt
 
+      - name: Check the workspace repo
+        run: |
+          cd repo
+          ls
+
       - name: Commit latest release version
         if: ${{ steps.git-check.outputs.modified == 'true' }} 
         run: |
