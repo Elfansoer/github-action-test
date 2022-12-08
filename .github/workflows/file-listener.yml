@@ -23,9 +23,6 @@ jobs:
         run: ls
 
       - name: See the workspace 3
-        run: ls ${{ github.workspace/repo }}
-
-      - name: See the workspace 4
         run: ls ${{ github.workspace }}/repo
 
       - name: Try cd the workspace repo
