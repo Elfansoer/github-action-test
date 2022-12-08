@@ -32,9 +32,14 @@ jobs:
           cd repo
           ls
 
-      - name: Try lua command
-        run: lua test.lua
+      - name: Try lua command 1
+        run: lua test
 
+      - name: Try lua command 2
+        run: lua ${{ github.workspace }}/repo/test
+
+      - name: Try lua command 3
+        run: lua ${{ github.workspace }}/repo/test.lua
 
 #       - name: Fetch release version
 #         run: |
