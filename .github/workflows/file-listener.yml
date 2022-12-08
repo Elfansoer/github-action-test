@@ -39,7 +39,6 @@ jobs:
         run: |
           cd repo
           echo date=$(date +%Y-%m-%d-%H:%M) >> $GITHUB_OUTPUT
-          echo test=testtext >> $GITHUB_OUTPUT
           echo modified=$([ -z "`git status --porcelain`" ] && echo "false" || echo "true") >> $GITHUB_OUTPUT
 
       - name: Download items_game.txt
@@ -55,14 +54,8 @@ jobs:
           curl -sL https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/master/game/dota/pak01_dir/scripts/npc/npc_heroes.txt > npc_heroes.txt
 
       - name: Create compact file through Lua
-        if: ${{ steps.git-check.outputs.modified == 'true' }} 
+#         if: ${{ steps.git-check.outputs.modified == 'true' }} 
         run: lua ${{ github.workspace }}/repo/lua/main.lua
-
-      - name: Echo date
-        run: |
-          echo ${{ steps.git-check.outputs.test }}
-          echo ${{ steps.git-check.outputs.date }}
-          echo ${{ steps.git-check.outputs.modified }}
 
       - name: Commit latest release version
 #         if: ${{ steps.git-check.outputs.modified == 'true' }} 
