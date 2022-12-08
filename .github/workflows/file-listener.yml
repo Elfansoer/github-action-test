@@ -11,42 +11,53 @@ jobs:
     name: My first job
     runs-on: ubuntu-latest
     steps:
-      - name: Print a greeting
-        env:
-          MY_VAR: Hi there! My name is
-          FIRST_NAME: Mona
-          MIDDLE_NAME: The
-          LAST_NAME: Octocat
-        run: |
-          echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
-
       - name: Check out repository
         uses: actions/checkout@v3
+        with:
+            path: 'repo'
+            
+      - name: See the workspace
+        run: ls ${{ github.workspace }}
 
-      - name: Fetch release version
+      - name: See the workspace 2
+        run: ls
+
+      - name: See the workspace 3
+        run: ls ${{ github.workspace/repo }}
+
+      - name: See the workspace 4
+        run: ls ${{ github.workspace }}/repo
+
+      - name: Try cd the workspace repo
         run: |
-          curl -sL https://api.github.com/repos/SteamDatabase/GameTracking-Dota2/commits?PATH=game/dota/pak01_dir/scripts/items/items_game.txt | \
-          jq -r ".[0] | .sha" > test.txt
+          cd repo
+          ls
 
-      - name: Check for modified files
-        id: git-check
-        run: echo modified=$([ -z "`git status --porcelain`" ] && echo "false" || echo "true") >> $GITHUB_OUTPUT
 
-      - name: Show status
-        run: echo Comparison is ${{ steps.git-check.outputs.modified }}, result in boolean X${{steps.git-check.outputs.modified=='true'}}X X${{contains(steps.git-check.outputs.modified,'true')}}X
+#       - name: Fetch release version
+#         run: |
+#           curl -sL https://api.github.com/repos/SteamDatabase/GameTracking-Dota2/commits?PATH=game/dota/pak01_dir/scripts/items/items_game.txt | \
+#           jq -r ".[0] | .sha" > test.txt
 
-      - name: Download the file
-        if: ${{ steps.git-check.outputs.modified == 'true' }} 
-        run: |
-          curl -sL https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/master/game/dota/pak01_dir/scripts/items/items_game.txt > items_game.txt
+#       - name: Check for modified files
+#         id: git-check
+#         run: echo modified=$([ -z "`git status --porcelain`" ] && echo "false" || echo "true") >> $GITHUB_OUTPUT
 
-      - name: Commit latest release version
-        if: ${{ steps.git-check.outputs.modified == 'true' }} 
-        run: |
-          git config --global user.name 'Test'
-          git config --global user.email 'test-email@users.noreply.github.com'
-          git commit -am "autoupdate at $(date +%Y-%m-%d-%H:%M)"
-          git push
+#       - name: Show status
+#         run: echo Comparison is ${{ steps.git-check.outputs.modified }}, result in boolean X${{steps.git-check.outputs.modified=='true'}}X X${{contains(steps.git-check.outputs.modified,'true')}}X
+
+#       - name: Download the file
+#         if: ${{ steps.git-check.outputs.modified == 'true' }} 
+#         run: |
+#           curl -sL https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/master/game/dota/pak01_dir/scripts/items/items_game.txt > items_game.txt
+
+#       - name: Commit latest release version
+#         if: ${{ steps.git-check.outputs.modified == 'true' }} 
+#         run: |
+#           git config --global user.name 'Test'
+#           git config --global user.email 'test-email@users.noreply.github.com'
+#           git commit -am "autoupdate at $(date +%Y-%m-%d-%H:%M)"
+#           git push
 
 
 #       - name: Install Lua/LuaJIT
