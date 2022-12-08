@@ -249,9 +249,11 @@ end
 function Cosmetics:BuildSlots()
 	-- load 'npc_heroes.txt'
 	local npc_heroes = KVParser:LoadKeyValueFromFile( PATH .. "npc_heroes.txt" )
+	npc_heroes = npc_heroes["DOTAHeroes"]
+	npc_heroes["Version"] = nil
 
 	local heroes_data = {}
-    print("TestBuildSlots")
+    	print("TestBuildSlots")
 	for name,valuetable in pairs(npc_heroes) do
         print(name,valuetable)
 		-- only those who has item slots
