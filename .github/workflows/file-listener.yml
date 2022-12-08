@@ -54,6 +54,7 @@ jobs:
         run: |
           cd repo
           echo modified=$([ -z "`git status --porcelain`" ] && echo "false" || echo "true") >> $GITHUB_OUTPUT
+          echo date=$(date +%Y-%m-%d %H:%M) >> $GITHUB_OUTPUT
 
       - name: Show status
         run: |
@@ -79,11 +80,12 @@ jobs:
           ls
 
       - name: Commit latest release version
+        if: ${{ steps.git-check.outputs.modified == 'true' }} 
         uses: EndBug/add-and-commit@v9
         with:
           author_name: Update Bot
           author_email: update-bot@users.noreply.github.com
-          message: 'Auto-update at ${{ $(date +%Y-%m-%d %H:%M) }}'
+          message: 'Auto-update at ${{ steps.git-check.outputs.date }}'
           cwd: 'repo'
 
 #       - name: Commit latest release version
