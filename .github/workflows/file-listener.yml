@@ -15,20 +15,25 @@ jobs:
         uses: actions/checkout@v3
         with:
             path: 'repo'
-            
+
+      - name: Install Lua/LuaJIT
+        # You may pin to the exact commit or the version.
+        # uses: leafo/gh-actions-lua@d84e7d61946edb679210088bc1378c099fde51fe
+        uses: leafo/gh-actions-lua@v9.1.0
+        with:
+          # The version of Lua to install, must be available on https://www.lua.org/ftp/ or http://luajit.org/download.html
+          luaVersion: 5.1
+
       - name: See the workspace
-        run: ls ${{ github.workspace }}
-
-      - name: See the workspace 2
         run: ls
-
-      - name: See the workspace 3
-        run: ls ${{ github.workspace }}/repo
 
       - name: Try cd the workspace repo
         run: |
           cd repo
           ls
+
+      - name: Try lua command
+        run: lua
 
 
 #       - name: Fetch release version
@@ -57,13 +62,6 @@ jobs:
 #           git push
 
 
-#       - name: Install Lua/LuaJIT
-#         # You may pin to the exact commit or the version.
-#         # uses: leafo/gh-actions-lua@d84e7d61946edb679210088bc1378c099fde51fe
-#         uses: leafo/gh-actions-lua@v9.1.0
-#         with:
-#           # The version of Lua to install, must be available on https://www.lua.org/ftp/ or http://luajit.org/download.html
-#           luaVersion: 5.1
 
 #   my_second_job:
 #     name: My second job
