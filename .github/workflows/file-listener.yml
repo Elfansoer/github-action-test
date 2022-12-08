@@ -27,6 +27,9 @@ jobs:
       - name: See the workspace
         run: ls
 
+      - name: Set env
+        run: echo "LUA_PATH=${{ github.workspace }}/repo/lua" >> $GITHUB_ENV
+
       - name: Try cd the workspace repo
         run: |
           cd repo
