@@ -39,7 +39,7 @@ jobs:
         run: |
           cd repo
           echo modified=$([ -z "`git status --porcelain`" ] && echo "false" || echo "true") >> $GITHUB_OUTPUT
-          echo DATE=$(date +%Y-%m-%d %H:%M) >> $GITHUB_ENV
+          echo date=$(date +%Y-%m-%d %H:%M) >> $GITHUB_OUTPUT
 
       - name: Download items_game.txt
         if: ${{ steps.git-check.outputs.modified == 'true' }} 
@@ -54,8 +54,11 @@ jobs:
           curl -sL https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/master/game/dota/pak01_dir/scripts/npc/npc_heroes.txt > npc_heroes.txt
 
       - name: Create compact file through Lua
-#         if: ${{ steps.git-check.outputs.modified == 'true' }} 
+        if: ${{ steps.git-check.outputs.modified == 'true' }} 
         run: lua ${{ github.workspace }}/repo/lua/main.lua
+
+      - name: Echo date
+        run: echo ${{ steps.git-check.outputs.date }}
 
       - name: Commit latest release version
 #         if: ${{ steps.git-check.outputs.modified == 'true' }} 
@@ -63,7 +66,7 @@ jobs:
         with:
           author_name: Update Bot
           author_email: update-bot@users.noreply.github.com
-          message: 'Auto-update at ${{ env.DATE }}'
+          message: 'Auto-update at ${{ steps.git-check.outputs.date }}'
           cwd: 'repo'
 
 #       - name: Commit latest release version
