@@ -1,7 +1,6 @@
 name: Listener
 run-name: A listener by @${{ github.actor }}
 on:
-  push:
   schedule:
     - cron:  '0 0 * * *'
 
@@ -54,11 +53,11 @@ jobs:
           curl -sL https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/master/game/dota/pak01_dir/scripts/npc/npc_heroes.txt > npc_heroes.txt
 
       - name: Create compact file through Lua
-#         if: ${{ steps.git-check.outputs.modified == 'true' }} 
+        if: ${{ steps.git-check.outputs.modified == 'true' }} 
         run: lua ${{ github.workspace }}/repo/lua/main.lua
 
       - name: Commit latest release version
-#         if: ${{ steps.git-check.outputs.modified == 'true' }} 
+        if: ${{ steps.git-check.outputs.modified == 'true' }} 
         uses: EndBug/add-and-commit@v9
         with:
           author_name: Update Bot
