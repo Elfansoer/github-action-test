@@ -1,4 +1,7 @@
-require( "../kvparser" )
+local pathOfThisFile = ...
+local folderOfThisFile = (...):match("(.-)[^%.]+$")
+require(folderOfThisFile .. 'kvparser')
+-- require( "../kvparser" )
 
 print('hello, world!')
 
