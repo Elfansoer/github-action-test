@@ -253,9 +253,7 @@ function Cosmetics:BuildSlots()
 	npc_heroes["Version"] = nil
 
 	local heroes_data = {}
-    	print("TestBuildSlots")
 	for name,valuetable in pairs(npc_heroes) do
-        print(name,valuetable)
 		-- only those who has item slots
 		if type(valuetable)=='table' and valuetable.ItemSlots then
 
