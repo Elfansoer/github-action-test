@@ -11,7 +11,7 @@ print("test2")
 print(folderOfThisFile)
 
 -- require(script_path() .. 'kvparser.lua')
-require('kvparser.lua')
+require('kvparser')
 
 print('hello, world!')
 
