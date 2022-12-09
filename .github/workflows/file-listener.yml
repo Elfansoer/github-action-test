@@ -1,6 +1,7 @@
 name: Listener
 run-name: A listener by @${{ github.actor }}
 on:
+  push:
   schedule:
     - cron:  '0 0 * * *'
 
@@ -14,31 +15,28 @@ jobs:
         with:
             path: 'repo'
 
-      - name: Install Lua/LuaJIT
-        # You may pin to the exact commit or the version.
-        # uses: leafo/gh-actions-lua@d84e7d61946edb679210088bc1378c099fde51fe
-        uses: leafo/gh-actions-lua@v9.1.0
-        with:
-          # The version of Lua to install, must be available on https://www.lua.org/ftp/ or http://luajit.org/download.html
-          luaVersion: 5.1
-
-      - name: Set environment
-        run: | 
-          echo LUA_PATH=${{ github.workspace }}/repo/lua/?.lua >> $GITHUB_ENV
-          echo LUA_PATH=${{ github.workspace }}/repo/lua/?.lua >> $GITHUB_ENV
-
       - name: Fetch release version
         run: |
           cd repo
           curl -sL https://api.github.com/repos/SteamDatabase/GameTracking-Dota2/commits?PATH=game/dota/pak01_dir/scripts/items/items_game.txt | \
           jq -r ".[0] | .sha" > latest_version.txt
 
-      - name: Check for modified files
+      - name: Check for modified files and set environment
         id: git-check
         run: |
           cd repo
           echo date=$(date +%Y-%m-%d-%H:%M) >> $GITHUB_OUTPUT
           echo modified=$([ -z "`git status --porcelain`" ] && echo "false" || echo "true") >> $GITHUB_OUTPUT
+          echo LUA_PATH=${{ github.workspace }}/repo/lua/?.lua >> $GITHUB_ENV
+
+      - name: Install Lua/LuaJIT
+        if: ${{ steps.git-check.outputs.modified == 'true' }} 
+        # You may pin to the exact commit or the version.
+        # uses: leafo/gh-actions-lua@d84e7d61946edb679210088bc1378c099fde51fe
+        uses: leafo/gh-actions-lua@v9.1.0
+        with:
+          # The version of Lua to install, must be available on https://www.lua.org/ftp/ or http://luajit.org/download.html
+          luaVersion: 5.1
 
       - name: Download items_game.txt
         if: ${{ steps.git-check.outputs.modified == 'true' }} 
