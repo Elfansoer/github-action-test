@@ -1,6 +1,7 @@
 name: Listener
 run-name: A listener by @${{ github.actor }}
 on:
+  workflow_dispatch:
   schedule:
     - cron:  '0 0/6 * * *'
 
@@ -17,8 +18,8 @@ jobs:
       - name: Fetch release version
         run: |
           cd repo
-          curl -sL https://api.github.com/repos/SteamDatabase/GameTracking-Dota2/commits?PATH=game/dota/pak01_dir/scripts/items/items_game.txt | \
-          jq -r ".[0] | .sha" > latest_version.txt
+          curl -sL https://api.github.com/repos/SteamDatabase/GameTracking-Dota2/contents/game/dota/pak01_dir/scripts/items/items_game.txt | \
+          jq -r ".sha" > latest_version.txt
 
       - name: Check for modified files and set environment
         id: git-check
