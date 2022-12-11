@@ -21,7 +21,7 @@ jobs:
 
       - name: Save text
         run:
-          echo ${{ inputs.stored }} > latest_version.txt
+          echo ${{ inputs.stored }} > ${{ inputs.stored }}.txt
 
       - name: Download artifact
         id: download-artifact
@@ -40,13 +40,17 @@ jobs:
         if: always()
         run: |
           ls
-          cat latest_version.txt
+          cat artifact_version.txt
           cat current_version.txt
-          echo ${{ inputs.stored }}
+          echo ${{ inputs.stored }}.txt
+
+      - name: Write to artifact
+        run:
+          echo ${{ inputs.stored }} > artifact_version.txt
 
       - name: Store data
         if: always()
         uses: actions/upload-artifact@v3
         with:
           name: my-artifact
-          path: latest_version.txt
+          path: artifact_version.txt
