@@ -16,7 +16,6 @@ jobs:
     steps:
       - name: Fetch release version
         run: |
-          cd repo
           curl -sL https://api.github.com/repos/SteamDatabase/GameTracking-Dota2/contents/game/dota/pak01_dir/scripts/items/items_game.txt | \
           jq -r ".sha" > current_version.txt
           
