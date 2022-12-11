@@ -33,12 +33,14 @@ jobs:
 #           skip_unpack: false
 
       - name: Echo files
+        if: always()
         run: |
           cat latest_version.txt
           cat current_version.txt
           echo ${{ inputs.stored }}
 
       - name: Store data
+        if: always()
         uses: actions/upload-artifact@v3
         with:
           name: my-artifact
