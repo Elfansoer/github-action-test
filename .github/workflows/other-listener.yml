@@ -35,6 +35,7 @@ jobs:
       - name: Echo files
         if: always()
         run: |
+          ls
           cat latest_version.txt
           cat current_version.txt
           echo ${{ inputs.stored }}
