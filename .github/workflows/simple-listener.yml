@@ -2,8 +2,8 @@ name: Simple Listener
 run-name: Listen items_game.txt file
 on:
   workflow_dispatch:
-  schedule:
-    - cron:  '0 0/3 * * *'
+#   schedule:
+#     - cron:  '0 0/3 * * *'
 
 jobs:
   listen:
@@ -30,9 +30,9 @@ jobs:
         run: |
           echo modified=$([ -z "`diff artifact_version.txt current_version.txt`" ] && echo "false" || echo "true") >> $GITHUB_OUTPUT
 
-      - name: Launch workflow
+#       - name: Launch workflow
 #         if: ${{ steps.compare.outputs.modified == 'true' }} 
-        uses: ./.github/workflows/simple-downloader.yml
+#         uses: ./.github/workflows/simple-downloader.yml
 
       - name: Write to artifact
         if: always()
