@@ -1,0 +1,47 @@
+name: Downloader
+run-name: Download files and compact them
+on:
+  workflow_dispatch:
+  workflow_call:
+
+jobs:
+  download_execute:
+    name: Download files & compact with lua
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+        with:
+            path: 'repo'
+
+      - name: Install Lua/LuaJIT
+        # You may pin to the exact commit or the version.
+        # uses: leafo/gh-actions-lua@d84e7d61946edb679210088bc1378c099fde51fe
+        uses: leafo/gh-actions-lua@v9.1.0
+        with:
+          # The version of Lua to install, must be available on https://www.lua.org/ftp/ or http://luajit.org/download.html
+          luaVersion: 5.1
+
+      - name: Download items_game.txt and npc_heroes.txt
+        run: |
+          cd repo
+          curl -sL https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/master/game/dota/pak01_dir/scripts/items/items_game.txt > items_game.txt
+          curl -sL https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/master/game/dota/pak01_dir/scripts/npc/npc_heroes.txt > npc_heroes.txt
+
+      - name: Create compact file through Lua
+        run: |
+          echo LUA_PATH=${{ github.workspace }}/repo/lua/?.lua >> $GITHUB_ENV
+          lua ${{ github.workspace }}/repo/lua/main.lua
+
+      - name: Commit latest release version
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: Update Bot
+          author_email: update-bot@users.noreply.github.com
+          message: 'Auto-update at ${{ steps.git-check.outputs.date }}'
+          cwd: 'repo'
+
+# TODO: separate checking and commiting logic into 2 jobs
+#   my_second_job:
+#     name: My second job
+#     needs: my_first_job
