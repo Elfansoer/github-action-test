@@ -41,8 +41,8 @@ jobs:
 
       - name: Write to artifact
         if: always()
-        run:
-          cat current_version.txt > artifact_version.txt | \
+        run: |
+          cat current_version.txt > artifact_version.txt
           echo ${{ inputs.stored }} >> artifact_version.txt
 
       - name: Store data
