@@ -39,6 +39,12 @@ jobs:
           cat artifact_version.txt
           cat current_version.txt
 
+      - name: Diff files
+        if: always()
+        run: |
+          diff artifact_version.txt current_version.txt | tee changes.txt
+          cat changes.txt
+
       - name: Write to artifact
         if: always()
         run: |
