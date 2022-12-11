@@ -28,9 +28,12 @@ jobs:
           curl -sL https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/master/game/dota/pak01_dir/scripts/items/items_game.txt > items_game.txt
           curl -sL https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/master/game/dota/pak01_dir/scripts/npc/npc_heroes.txt > npc_heroes.txt
 
-      - name: Create compact file through Lua
+      - name: Set environment
         run: |
           echo LUA_PATH=${{ github.workspace }}/repo/lua/?.lua >> $GITHUB_ENV
+
+      - name: Create compact file through Lua
+        run: |
           lua ${{ github.workspace }}/repo/lua/main.lua
 
       - name: Commit latest release version
