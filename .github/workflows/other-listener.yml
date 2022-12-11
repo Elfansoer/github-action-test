@@ -49,7 +49,7 @@ jobs:
         if: always()
         run: |
           cat current_version.txt > artifact_version.txt
-          echo ${{ inputs.stored }} >> artifact_version.txt
+#          echo ${{ inputs.stored }} >> artifact_version.txt
 
       - name: Store data
         if: always()
