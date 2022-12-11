@@ -2,10 +2,6 @@ name: Simple Listener
 run-name: Listen items_game.txt file
 on:
   workflow_dispatch:
-    inputs:
-      stored:
-        description: 'something to be stored'
-        type: string
 #   schedule:
 #     - cron:  '0 0/6 * * *'
 
@@ -43,20 +39,18 @@ jobs:
         if: always()
         run: |
           diff artifact_version.txt current_version.txt | tee changes.txt
-          echo modified=$([ -z "`git status --porcelain`" ] && echo "false" || echo "true")
           cat changes.txt
 
       - name: Compare files
         if: always()
         run: |
-          echo modified=$([ -z "`diff artifact_version.txt current_version.txt`" ])
           echo modified=$([ -z "`diff artifact_version.txt current_version.txt`" ] && echo "false" || echo "true")
 
       - name: Write to artifact
         if: always()
         run: |
           cat current_version.txt > artifact_version.txt
-#          echo ${{ inputs.stored }} >> artifact_version.txt
+          echo $(date +%Y-%m-%d-%H:%M) >> artifact_version.txt
 
       - name: Store data
         if: always()
