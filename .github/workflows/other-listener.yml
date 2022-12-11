@@ -1,0 +1,46 @@
+name: Listener
+run-name: Listen items_game.txt file
+on:
+  workflow_dispatch:
+    inputs:
+      stored:
+        description: 'something to be stored'
+        type: string
+#   schedule:
+#     - cron:  '0 0/6 * * *'
+
+jobs:
+  listen:
+    name: Listen to file
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch release version
+        run: |
+          cd repo
+          curl -sL https://api.github.com/repos/SteamDatabase/GameTracking-Dota2/contents/game/dota/pak01_dir/scripts/items/items_game.txt | \
+          jq -r ".sha" > current_version.txt
+          
+      - name: Download artifact
+        id: download-artifact
+        uses: dawidd6/action-download-artifact@v2
+        with:
+          #   "failure", "success", "neutral", "cancelled", "skipped", "timed_out", "action_required"
+          #   "completed", "in_progress", "queued"
+          workflow_conclusion: ""
+          name: my-artifact
+          if_no_artifact_found: ignore
+#           event: schedule
+#           workflow: other-listener.yml
+#           skip_unpack: false
+
+      - name: Echo files
+        run: |
+          cat latest_version.txt
+          cat current_version.txt
+          echo ${{ inputs.stored }}
+
+      - name: Store data
+        uses: actions/upload-artifact@v3
+        with:
+          name: my-artifact
+          path: current_version.txt
