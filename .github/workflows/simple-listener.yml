@@ -2,8 +2,8 @@ name: Simple Listener
 run-name: Listen items_game.txt file
 on:
   workflow_dispatch:
-#   schedule:
-#     - cron:  '0 0/6 * * *'
+  schedule:
+    - cron:  '0 0/3 * * *'
 
 jobs:
   listen:
@@ -19,38 +19,21 @@ jobs:
         id: download-artifact
         uses: dawidd6/action-download-artifact@v2
         with:
-          #   "failure", "success", "neutral", "cancelled", "skipped", "timed_out", "action_required"
-          #   "completed", "in_progress", "queued"
           workflow_conclusion: "completed"
           name: my-artifact
           if_no_artifact_found: ignore
-#           event: schedule
           workflow: other-listener.yml
-#           skip_unpack: false
-
-      - name: Echo files
-        if: always()
-        run: |
-          ls
-          cat artifact_version.txt
-          cat current_version.txt
-
-      - name: Diff files
-        if: always()
-        run: |
-          diff artifact_version.txt current_version.txt | tee changes.txt
-          cat changes.txt
 
       - name: Compare files
         if: always()
         run: |
-          echo modified=$([ -z "`diff artifact_version.txt current_version.txt`" ] && echo "false" || echo "true")
+          echo modified=$([ -z "`diff artifact_version.txt current_version.txt`" ] && echo "false" || echo "true") >> $GITHUB_OUTPUT
 
       - name: Write to artifact
         if: always()
         run: |
           cat current_version.txt > artifact_version.txt
-          echo $(date +%Y-%m-%d-%H:%M) >> artifact_version.txt
+#          echo $(date +%Y-%m-%d-%H:%M) >> artifact_version.txt
 
       - name: Store data
         if: always()
