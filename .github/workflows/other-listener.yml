@@ -19,10 +19,6 @@ jobs:
           curl -sL https://api.github.com/repos/SteamDatabase/GameTracking-Dota2/contents/game/dota/pak01_dir/scripts/items/items_game.txt | \
           jq -r ".sha" > current_version.txt
 
-      - name: Save text
-        run:
-          echo ${{ inputs.stored }} > ${{ inputs.stored }}.txt
-
       - name: Download artifact
         id: download-artifact
         uses: dawidd6/action-download-artifact@v2
@@ -42,12 +38,12 @@ jobs:
           ls
           cat artifact_version.txt
           cat current_version.txt
-          echo ${{ inputs.stored }}.txt
 
       - name: Write to artifact
         if: always()
         run:
-          echo ${{ inputs.stored }} > artifact_version.txt
+          cat current_version.txt > artifact_version.txt
+          echo ${{ inputs.stored }} >> artifact_version.txt
 
       - name: Store data
         if: always()
