@@ -25,11 +25,11 @@ jobs:
         with:
           #   "failure", "success", "neutral", "cancelled", "skipped", "timed_out", "action_required"
           #   "completed", "in_progress", "queued"
-          workflow_conclusion: ""
-#           name: my-artifact
+          workflow_conclusion: "completed"
+          name: my-artifact
           if_no_artifact_found: ignore
 #           event: schedule
-#           workflow: other-listener.yml
+          workflow: other-listener.yml
 #           skip_unpack: false
 
       - name: Echo files
