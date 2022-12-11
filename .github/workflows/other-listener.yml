@@ -1,4 +1,4 @@
-name: Listener
+name: Simple Listener
 run-name: Listen items_game.txt file
 on:
   workflow_dispatch:
