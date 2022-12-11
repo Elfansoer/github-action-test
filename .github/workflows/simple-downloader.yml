@@ -38,7 +38,7 @@ jobs:
         with:
           author_name: Update Bot
           author_email: update-bot@users.noreply.github.com
-          message: 'Auto-update at ${{ steps.git-check.outputs.date }}'
+          message: 'Auto-update at $(date +%Y-%m-%d-%H:%M)'
           cwd: 'repo'
 
 # TODO: separate checking and commiting logic into 2 jobs
