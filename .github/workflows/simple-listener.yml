@@ -22,7 +22,7 @@ jobs:
           workflow_conclusion: "completed"
           name: my-artifact
           if_no_artifact_found: ignore
-          workflow: other-listener.yml
+          workflow: simple-listener.yml
 
       - name: Compare files
         id: compare
