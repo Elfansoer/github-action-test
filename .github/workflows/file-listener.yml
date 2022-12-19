@@ -20,7 +20,6 @@ jobs:
           cd repo
           curl -sL https://api.github.com/repos/SteamDatabase/GameTracking-Dota2/contents/game/dota/pak01_dir/scripts/items/items_game.txt | \
           jq -r ".sha" > latest_version.txt
-          echo "null" > latest_version.txt
 
       - name: Check for null SHA
         id: git-check-sha
