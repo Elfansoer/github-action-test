@@ -31,7 +31,7 @@ jobs:
 
       - name: Check for modified files and set environment
         id: git-check
-        if: ${{ steps.git-check-sha.outputs.modified != 'null' }} 
+        if: ${{ steps.git-check-sha.outputs.sha != 'null' }} 
         run: |
           cd repo
           echo date=$(date +%Y-%m-%d-%H:%M) >> $GITHUB_OUTPUT
