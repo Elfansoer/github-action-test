@@ -2,8 +2,6 @@ name: Listener
 run-name: A listener by @${{ github.actor }}
 on:
   workflow_dispatch:
-  schedule:
-    - cron:  '0 0 * * *'
 
 jobs:
   my_first_job:
