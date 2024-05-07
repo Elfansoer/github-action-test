@@ -233,7 +233,7 @@
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
-		"ArmorPhysical"		"0"
+		"ArmorPhysical"		"1"
 
 		// Attack
 		//-------------------------------------------------------------------------------------------------------------
@@ -482,6 +482,12 @@
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_antimage.vpcf"
 		"party_hat_effect_persona"	"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_antimage.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_attack1"	"2"
+			"attach_attack2"	"3"
+		}
 	}
 
 	//=================================================================================================================
@@ -530,7 +536,7 @@
 		"Ability4"		"generic_hidden"
 		"Ability5"		"generic_hidden"
 		"Ability6"		"axe_culling_blade"
-		"Ability10"		"special_bonus_unique_axe_7"
+		"Ability10"		"special_bonus_unique_axe_culling_blade_speed_duration"
 		"Ability11"		"special_bonus_unique_axe_8"
 		"Ability12"		"special_bonus_unique_axe_6"
 		"Ability13"		"special_bonus_unique_axe_4"
@@ -538,7 +544,7 @@
 		"Ability15"		"special_bonus_unique_axe_3"
 		"Ability16"		"special_bonus_unique_axe_2"
 		"Ability17"		"special_bonus_unique_axe"
-		"ArmorPhysical"		"-1"
+		"ArmorPhysical"		"0"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageMin"		"30"
 		"AttackDamageMax"		"34"
@@ -707,14 +713,18 @@
 				"item_recipe_black_king_bar"		"ITEM_LUXURY"
 				"item_black_king_bar"		"ITEM_LUXURY | ITEM_DERIVED"
 
-				//"item_ring_of_tarrasque"		"ITEM_LUXURY"
+				"item_ring_of_tarrasque"		"ITEM_LUXURY"
 				"item_reaver"		"ITEM_LUXURY"
-				"item_vitality_booster"		"ITEM_LUXURY"
+				//"item_vitality_booster"		"ITEM_LUXURY"
 				"item_recipe_heart"		"ITEM_LUXURY"
 				"item_heart"		"ITEM_DERIVED"
 
+				"item_helm_of_iron_will"	"ITEM_EXTENSION"
+				"item_crown"					"ITEM_EXTENSION"
+				"item_recipe_veil_of_discord"	"ITEM_EXTENSION"
+				"item_veil_of_discord"		"ITEM_DERIVED"
 				"item_platemail"		"ITEM_LUXURY"
-				"item_mystic_staff"		"ITEM_LUXURY"
+				//"item_mystic_staff"		"ITEM_LUXURY"
 				"item_recipe_shivas_guard"		"ITEM_LUXURY"
 				"item_shivas_guard"		"ITEM_LUXURY | ITEM_DERIVED"
 			}
@@ -763,6 +773,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_axe.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_axe.vpcf"
+		"showcase_attachments"
+		{
+			"attach_mouth"		"1"
+			"attach_attack1"	"2"
+			"attach_attack2"	"3"
+		}
 	}
 
 	//=================================================================================================================
@@ -825,8 +841,8 @@
 		"AbilityDraftIgnoreCount"		"7"
 		"ArmorPhysical"		"1"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"		"-3"
-		"AttackDamageMax"		"3"
+		"AttackDamageMin"		"-1"
+		"AttackDamageMax"		"5"
 		"AttackRate"		"1.700000"
 		"AttackAnimationPoint"		"0.300000"
 		"AttackAcquisitionRange"		"800"
@@ -948,10 +964,10 @@
 				"item_blades_of_attack"	"ITEM_EXTENSION"
 				"item_phase_boots"		"ITEM_DERIVED"
 
-				"item_void_stone"		"ITEM_LUXURY"
-				"item_mystic_staff"		"ITEM_LUXURY"
-				"item_ultimate_orb"		"ITEM_LUXURY"
-				"item_sheepstick"		"ITEM_DERIVED"
+				"item_tiara_of_selemene"	"ITEM_EXTENSION"
+				"item_mystic_staff"			"ITEM_LUXURY"
+				"item_recipe_sheepstick"	"ITEM_EXTENSION"
+				"item_sheepstick"			"ITEM_DERIVED"
 
 			}
 			"Build"
@@ -999,6 +1015,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_bane.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_bane.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_hand1"	"2"
+			"attach_hand2"	"3"
+		}
 	}
 
 	//=================================================================================================================
@@ -1067,7 +1089,7 @@
 		"AttributeStrengthGain"		"2.700000"
 		"AttributeBaseIntelligence"		"17"
 		"AttributeIntelligenceGain"		"2.0"
-		"AttributeBaseAgility"		"22"
+		"AttributeBaseAgility"		"24"
 		"AttributeAgilityGain"		"3.100000"
 		"MovementSpeed"		"300"
 		"BoundsHullName"		"DOTA_HULL_SIZE_HERO"
@@ -1212,15 +1234,21 @@
 				"item_mithril_hammer"		"ITEM_LUXURY"
 				"item_recipe_black_king_bar"		"ITEM_LUXURY"
 				"item_black_king_bar"		"ITEM_DERIVED"
-				"item_ring_of_health"		"ITEM_LUXURY"
-				"item_vitality_booster"		"ITEM_LUXURY"
-				"item_recipe_vanguard"		"ITEM_LUXURY"
-				"item_vanguard"		"ITEM_DERIVED"
+
+				"item_blitz_knuckles"		"ITEM_EXTENSION"
+				"item_sobi_mask"		"ITEM_EXTENSION"
+				"item_robe"				"ITEM_EXTENSION"
+				"item_oblivion_staff"				"ITEM_EXTENSION | ITEM_DERIVED"
+
+				"item_cloak"				"ITEM_EXTENSION"
+				"item_recipe_mage_slayer"				"ITEM_EXTENSION"
+				"item_mage_slayer"				"ITEM_EXTENSION | ITEM_DERIVED"
+
 				"item_recipe_abyssal_blade"	"ITEM_LUXURY"
 				"item_abyssal_blade"		"ITEM_DERIVED"
 				"item_relic"		"ITEM_LUXURY"
 				"item_eagle"		"ITEM_LUXURY"
-				"item_quarterstaff"		"ITEM_LUXURY"
+				"item_claymore"		"ITEM_EXTENSION"
 				"item_talisman_of_evasion"		"ITEM_LUXURY"
 				"item_butterfly"		"ITEM_DERIVED"
 			}
@@ -1270,6 +1298,13 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_bloodseeker.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_bloodseeker.vpcf"
+
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_hand1"	"2"
+			"attach_hand2"	"3"
+		}
 	}
 
 	//=================================================================================================================
@@ -1337,7 +1372,7 @@
  
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
-		"ArmorPhysical"		"-1"
+		"ArmorPhysical"		"0"
 
 		// Attack
 		//-------------------------------------------------------------------------------------------------------------
@@ -1354,7 +1389,7 @@
 		"AttributePrimary"		"DOTA_ATTRIBUTE_INTELLECT"
 		"AttributeBaseStrength"		"17"
 		"AttributeStrengthGain"		"2.200000"
-		"AttributeBaseIntelligence"		"16"
+		"AttributeBaseIntelligence"		"18"
 		"AttributeIntelligenceGain"		"3.300000"
 		"AttributeBaseAgility"		"16"
 		"AttributeAgilityGain"		"1.600000"
@@ -1504,40 +1539,40 @@
 				"SlotIndex"		"11"
 				"SlotName"		"head_persona_1"
 				"SlotText"		"#LoadoutSlot_Head_Crystal_Maiden_Persona"
-				//"TextureWidth"		"256"
-				//"TextureHeight"		"256"
-				//"MaxPolygonsLOD0"		"1000"
-				//"MaxPolygonsLOD1"		"500"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"4000"
+				"MaxPolygonsLOD1"		"2000"
 			}
 			"12"
 			{
 				"SlotIndex"		"12"
 				"SlotName"		"tail_persona_1"
 				"SlotText"		"#LoadoutSlot_Tail_Crystal_Maiden_Persona"
-				//"TextureWidth"		"512"
-				//"TextureHeight"		"512"
-				//"MaxPolygonsLOD0"		"3000"
-				//"MaxPolygonsLOD1"		"1200"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"4000"
+				"MaxPolygonsLOD1"		"2000"
 			}
 			"13"
 			{
 				"SlotIndex"		"13"
 				"SlotName"		"armor_persona_1"
 				"SlotText"		"#LoadoutSlot_Armor_Crystal_Maiden_Persona"
-				//"TextureWidth"		"512"
-				//"TextureHeight"		"512"
-				//"MaxPolygonsLOD0"		"2500"
-				//"MaxPolygonsLOD1"		"1000"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"3000"
+				"MaxPolygonsLOD1"		"1500"
 			}
 			"14"
 			{
 				"SlotIndex"		"14"
 				"SlotName"		"misc_persona_1"
 				"SlotText"		"#LoadoutSlot_Misc_Crystal_Maiden_Persona"
-				//"TextureWidth"		"256"
-				//"TextureHeight"		"256"
-				//"MaxPolygonsLOD0"		"1500"
-				//"MaxPolygonsLOD1"		"600"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"1000"
+				"MaxPolygonsLOD1"		"500"
 			}
 			"15"
 			{
@@ -1646,6 +1681,14 @@
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_crystal_maiden.vpcf"
 		"party_hat_effect_persona"	"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_crystal_maiden_persona_1.vpcf"
+		"showcase_attachments"
+		{
+			"attach_mouth"		"1"
+			"attach_staff_base"	"2"
+			"attach_staff_tip"	"3"
+			"attach_attack2"	"4"
+			"attach_lookat"		"5"
+		}
 	}
 	"npc_dota_hero_drow_ranger"
 	{
@@ -1683,6 +1726,7 @@
 			"Icy"			"1"
 		}
 
+		"NameAliases"	"Traxex"
 		"Ability1"		"drow_ranger_frost_arrows"
 		"Ability2"		"drow_ranger_wave_of_silence"
 		"Ability3"		"drow_ranger_multishot"
@@ -1691,7 +1735,7 @@
 		"Ability6"		"drow_ranger_marksmanship"
 		"Ability10"		"special_bonus_unique_drow_ranger_gust_selfmovespeed"
 		"Ability11"		"special_bonus_unique_drow_ranger_2"
-		"Ability12"		"special_bonus_unique_drow_ranger_gust_invis"
+		"Ability12"		"special_bonus_lifesteal_20"
 		"Ability13"		"special_bonus_unique_drow_ranger_6"
 		"Ability14"		"special_bonus_unique_drow_ranger_1"
 		"Ability15"		"special_bonus_unique_drow_ranger_7"
@@ -1784,8 +1828,8 @@
 				"item_recipe_yasha"			"ITEM_EXTENSION"
 				"item_yasha"				"ITEM_DERIVED"
 
-				"item_ultimate_orb"			"ITEM_LUXURY"
-				"item_recipe_manta"			"ITEM_LUXURY"
+				"item_diadem"			"ITEM_EXTENSION"
+				"item_recipe_manta"			"ITEM_EXTENSION"
 				"item_manta"				"ITEM_LUXURY | ITEM_DERIVED"
 
 				"item_mithril_hammer"			"ITEM_LUXURY"
@@ -1793,7 +1837,7 @@
 				"item_recipe_black_king_bar"	"ITEM_LUXURY"
 				"item_black_king_bar"			"ITEM_LUXURY | ITEM_DERIVED"
 
-				"item_quarterstaff"			"ITEM_CORE"
+				"item_claymore"		"ITEM_EXTENSION"
 				"item_eagle"				"ITEM_EXTENSION"
 				"item_talisman_of_evasion"	"ITEM_EXTENSION"
 				"item_butterfly"			"ITEM_DERIVED"
@@ -1949,6 +1993,13 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_drow_ranger.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_drow_ranger.vpcf"
+		"showcase_attachments"
+		{
+			"attach_mom_l"		"1"
+			"attach_mom_r"		"2"
+			"bow_mid"			"3"
+			"attach_head"		"4"
+		}
 	}
 	"npc_dota_hero_earthshaker"
 	{
@@ -1966,7 +2017,7 @@
 		"Team"		"Good"
 		"HeroID"		"7"
 		"HeroOrderID"	"6"
-		"NameAliases"		"es"
+		"NameAliases"		"es;Raigor"
 		"ModelScale"		"0.930000"
 		"VersusScale"		"0.93"
 		"HeroGlowColor"		"255 160 0"
@@ -1989,12 +2040,12 @@
 		"Ability4"		"generic_hidden"
 		"Ability5"		"generic_hidden"
 		"Ability6"		"earthshaker_echo_slam"
-		"Ability10"		"special_bonus_attack_base_damage_40"
+		"Ability10"		"special_bonus_attack_base_damage_30"
 		"Ability11"		"special_bonus_unique_earthshaker_4"
-		"Ability12"		"special_bonus_unique_earthshaker_totem_damage"
+		"Ability12"		"special_bonus_unique_earthshaker_3"
 		"Ability13"		"special_bonus_unique_earthshaker_6"
 		"Ability14"		"special_bonus_unique_earthshaker_2"
-		"Ability15"		"special_bonus_unique_earthshaker_3"
+		"Ability15"		"special_bonus_unique_earthshaker_totem_damage"
 		"Ability16"		"special_bonus_unique_earthshaker_5"
 		"Ability17"		"special_bonus_unique_earthshaker"
 		"ArmorPhysical"		"2"
@@ -2133,7 +2184,12 @@
 				"item_magic_wand"	"ITEM_DERIVED | ITEM_SELLABLE"
 
 				"item_boots"			"ITEM_CORE"
-				"item_energy_booster"	"ITEM_CORE"
+
+				"item_sobi_mask"				"ITEM_CORE"
+				"item_recipe_ring_of_basilius"  "ITEM_EXTENSION"
+				"item_ring_of_basilius"			"ITEM_DERIVED"
+
+				"item_recipe_arcane_boots"		"ITEM_EXTENSION"			
 				"item_arcane_boots"		"ITEM_DERIVED"
 
 				"item_blink"			"ITEM_CORE"
@@ -2155,10 +2211,10 @@
 				"item_recipe_black_king_bar"	"ITEM_EXTENSION"
 				"item_black_king_bar"		"ITEM_DERIVED"
 
-				"item_void_stone"		"ITEM_LUXURY"
-				"item_ultimate_orb"		"ITEM_LUXURY"
-				"item_mystic_staff"		"ITEM_LUXURY"
-				"item_sheepstick"		"ITEM_DERIVED"
+				"item_tiara_of_selemene"	"ITEM_EXTENSION"
+				"item_mystic_staff"			"ITEM_LUXURY"
+				"item_recipe_sheepstick"	"ITEM_EXTENSION"
+				"item_sheepstick"			"ITEM_DERIVED"
 			}
 			"Build"
 			{
@@ -2205,6 +2261,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_earthshaker.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_earthshaker.vpcf"
+		"showcase_attachments"
+		{
+			"attach_attack1"	"1"
+			"attach_attack2"	"2"
+			"attach_head"		"3"
+		}
 	}
 	"npc_dota_hero_juggernaut"
 	{
@@ -2243,16 +2305,17 @@
 		"LastHitChallengeRival"		"npc_dota_hero_skeleton_king"
 		"HeroSelectSoundEffect"		"Hero_Juggernaut.Pick"
 		"GibType"		"default"
+		"NameAliases"	"Yurnero"
 		"Ability1"		"juggernaut_blade_fury"
 		"Ability2"		"juggernaut_healing_ward"
 		"Ability3"		"juggernaut_blade_dance"
 		"Ability4"		"juggernaut_swift_slash"
 		"Ability5"		"generic_hidden"
 		"Ability6"		"juggernaut_omni_slash"
-		"Ability10"		"special_bonus_all_stats_5"
-		"Ability11"		"special_bonus_unique_juggernaut"
+		"Ability10"		"special_bonus_unique_juggernaut_4"
+		"Ability11"		"special_bonus_unique_juggernaut_3"
 		"Ability12"		"special_bonus_unique_juggernaut_5"
-		"Ability13"		"special_bonus_unique_juggernaut_3"
+		"Ability13"		"special_bonus_unique_juggernaut_blade_fury_movespeed"
 		"Ability14"		"special_bonus_unique_juggernaut_blade_dance_lifesteal"
 		"Ability15"		"special_bonus_unique_juggernaut_blade_fury_cooldown"
 		"Ability16"		"special_bonus_unique_juggernaut_omnislash_duration"
@@ -2424,6 +2487,7 @@
 				"item_blades_of_attack"	"ITEM_EXTENSION"
 				"item_phase_boots"		"ITEM_DERIVED"
 
+				"item_gloves"   		"ITEM_EXTENSION"
 				"item_mithril_hammer"	"ITEM_CORE"
 				"item_javelin"		"ITEM_CORE"
 				"item_maelstrom"			 "ITEM_DERIVED"
@@ -2435,12 +2499,12 @@
 				"item_boots_of_elves"		"ITEM_EXTENSION"
 				"item_recipe_yasha"			"ITEM_EXTENSION"
 				"item_yasha"				"ITEM_DERIVED"
-				"item_ultimate_orb"			"ITEM_EXTENSION"
+				"item_diadem"			"ITEM_EXTENSION"
 				"item_recipe_manta"			"ITEM_EXTENSION"
-				"item_manta"				"ITEM_DERIVED"
+				"item_manta"				"ITEM_LUXURY | ITEM_DERIVED"
 
 
-				"item_quarterstaff"			"ITEM_LUXURY"
+				"item_claymore"		"ITEM_EXTENSION"
 				"item_eagle"				"ITEM_LUXURY"
 				"item_talisman_of_evasion"	"ITEM_LUXURY"
 				"item_butterfly"			"ITEM_DERIVED"
@@ -2462,7 +2526,7 @@
 				"7"		"juggernaut_blade_fury"
 				"8"		"juggernaut_blade_dance"
 				"9"		"juggernaut_blade_dance"
-				"10"		"special_bonus_unique_juggernaut"
+				"10"		"special_bonus_unique_juggernaut_4"
 				"11"		"juggernaut_healing_ward"
 				"12"		"juggernaut_omni_slash"
 				"13"		"juggernaut_healing_ward"
@@ -2497,6 +2561,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_juggernaut.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_juggernaut.vpcf"
+		"showcase_attachments"
+		{
+			"attach_hand1"		"1"
+			"attach_hand2"		"2"
+			"attach_head"		"3"
+		}
 	}
 	"npc_dota_hero_mirana"
 	{
@@ -2518,7 +2588,6 @@
 		"SpectatorLoadoutScale" "0.9"
 		"HeroGlowColor"		"220 194 248"
 		"CMEnabled"		"1"
-		"NameAliases"		"dragon's blood"
 		"workshop_guide_name"		"Mirana"
 		"LastHitChallengeRival"		"npc_dota_hero_luna"
 		"HeroSelectSoundEffect"		"Hero_Mirana.Pick"
@@ -2531,6 +2600,7 @@
 			"Steed"			"1"
 			"Female"		"1"
 		}
+		"NameAliases"	"Princess;Moon;potm"
 		"Ability1"		"mirana_starfall"
 		"Ability2"		"mirana_arrow"
 		"Ability3"		"mirana_leap"
@@ -2542,7 +2612,7 @@
 		"Ability12"		"special_bonus_unique_mirana_5"
 		"Ability13"		"special_bonus_unique_mirana_1"
 		"Ability14"		"special_bonus_unique_mirana_4"
-		"Ability15"		"special_bonus_attack_damage_45"
+		"Ability15"		"special_bonus_20_crit_2"
 		"Ability16"		"special_bonus_unique_mirana_2"
 		"Ability17"		"special_bonus_unique_mirana_7"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -2559,11 +2629,11 @@
 		"AttributeBaseStrength"		"20"
 		"AttributeStrengthGain"		"1.7"
 		"AttributeBaseIntelligence"		"22"
-		"AttributeIntelligenceGain"		"1.2"
+		"AttributeIntelligenceGain"		"1.4"
 		"AttributeBaseAgility"		"24"
 		"AttributeAgilityGain"		"2.5"
 		"StatusManaRegen"	"0.4"
-		"MovementSpeed"		"290"
+		"MovementSpeed"		"285"
 		"HasAggressiveStance"		"1"
 		"BoundsHullName"		"DOTA_HULL_SIZE_HERO"
 		"particle_folder"		"particles/units/heroes/hero_mirana"
@@ -2784,9 +2854,9 @@
 				"item_mithril_hammer"		"ITEM_EXTENSION"
 				"item_mithril_hammer"		"ITEM_EXTENSION"
 				"item_desolator"		"ITEM_DERIVED"
-				"item_ultimate_orb"		"ITEM_EXTENSION"
-				"item_recipe_manta"		"ITEM_EXTENSION"
-				"item_manta"		"ITEM_DERIVED"
+				"item_diadem"			"ITEM_EXTENSION"
+				"item_recipe_manta"			"ITEM_EXTENSION"
+				"item_manta"				"ITEM_LUXURY | ITEM_DERIVED"
 			}
 			"Build"
 			{
@@ -2809,7 +2879,7 @@
 				"17"		""
 				"18"		"mirana_invis"
 				"19"		""
-				"20"		"special_bonus_attack_damage_35"
+				"20"		"special_bonus_20_crit_2"
 				"21"		""
 				"22"		""
 				"23"		""
@@ -2861,6 +2931,12 @@
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_mirana.vpcf"
 		"party_hat_effect_persona"	"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_mirana_persona_1.vpcf"
+		"showcase_attachments"
+		{
+			"attach_hand1"		"1"
+			"attach_hand2"		"2"
+			"attach_head"		"3"
+		}
 	}
 	"npc_dota_hero_nevermore"
 	{
@@ -2925,8 +3001,8 @@
 		}		
 		"ArmorPhysical"		"1"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"		"21"
-		"AttackDamageMax"		"27"
+		"AttackDamageMin"		"16"
+		"AttackDamageMax"		"22"
 		"AttackRate"		"1.6"
 		"AttackAnimationPoint"		"0.500000"
 		"AttackSpeedActivityModifiers"
@@ -2936,7 +3012,7 @@
 			"fastest"	"360"
 		}
 		"AttackAcquisitionRange"		"800"
-		"AttackRange"		"525"
+		"AttackRange"		"525"		
 		"ProjectileModel"		"particles/units/heroes/hero_nevermore/nevermore_base_attack.vpcf"
 		"ProjectileSpeed"		"1200"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
@@ -2944,7 +3020,7 @@
 		"AttributeStrengthGain"		"2.700000"
 		"AttributeBaseIntelligence"		"18"
 		"AttributeIntelligenceGain"		"2.200000"
-		"AttributeBaseAgility"		"20"
+		"AttributeBaseAgility"		"25"
 		"AttributeAgilityGain"		"3.500000"
 		"StatusHealthRegen"		"0.25"
 		"StatusManaRegen"	"0.3"
@@ -3057,18 +3133,18 @@
 				"item_mithril_hammer"		"ITEM_EXTENSION"
 				"item_mithril_hammer"		"ITEM_EXTENSION"
 				"item_desolator"		"ITEM_DERIVED"
-				"item_broadsword"		"ITEM_LUXURY"
-				"item_blades_of_attack"		"ITEM_LUXURY"
-				"item_recipe_lesser_crit"		"ITEM_LUXURY"
+				"item_claymore"			"ITEM_EXTENSION"
+				"item_blades_of_attack"		"ITEM_EXTENSION"
+				"item_recipe_lesser_crit"		"ITEM_EXTENSION"
 				"item_lesser_crit"		"ITEM_DERIVED"
 				"item_demon_edge"		"ITEM_LUXURY"
 				"item_recipe_greater_crit"		"ITEM_LUXURY"
 				"item_greater_crit"		"ITEM_DERIVED"
-				"item_ultimate_orb"		"ITEM_LUXURY"
-				"item_recipe_manta"		"ITEM_LUXURY"
-				"item_manta"		"ITEM_DERIVED"
+				"item_diadem"			"ITEM_EXTENSION"
+				"item_recipe_manta"			"ITEM_EXTENSION"
+				"item_manta"				"ITEM_LUXURY | ITEM_DERIVED"
 				"item_talisman_of_evasion"		"ITEM_LUXURY"
-				"item_quarterstaff"		"ITEM_LUXURY"
+				"item_claymore"		"ITEM_EXTENSION"
 				"item_eagle"		"ITEM_LUXURY"
 				"item_butterfly"		"ITEM_DERIVED"
 			}
@@ -3117,6 +3193,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_nevermore.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_nevermore.vpcf"
+		"showcase_attachments"
+		{
+			"attach_attack1"	"1"
+			"attach_attack2"	"2"
+			"attach_head"		"3"
+		}
 	}
 	"npc_dota_hero_morphling"
 	{
@@ -3307,6 +3389,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_morphling.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_morphling.vpcf"
+		"showcase_attachments"
+		{
+			"attach_attack1"	"1"
+			"attach_attack2"	"2"
+			"attach_head"		"3"
+		}
 	}
 	"npc_dota_hero_phantom_lancer"
 	{
@@ -3320,7 +3408,7 @@
 		"Team"		"Good"
 		"HeroID"		"12"
 		"HeroOrderID"	"75"
-		"NameAliases"		"pl"
+		"NameAliases"		"pl;Azwraith"
 		"PickSound"		"phantom_lancer_plance_spawn_01"
 		"BanSound"		"phantom_lancer_plance_anger_06"
 		"CMEnabled"		"1"
@@ -3345,7 +3433,7 @@
 		"Ability5"		"generic_hidden"
 		"Ability6"		"phantom_lancer_juxtapose"
 		"Ability10"		"special_bonus_unique_phantom_lancer_lance_damage"
-		"Ability11"		"special_bonus_strength_8"
+		"Ability11"		"special_bonus_unique_phantom_lancer_phantom_rush_agility"
 		"Ability12"		"special_bonus_unique_phantom_lancer_2"
 		"Ability13"		"special_bonus_unique_phantom_lancer_5"
 		"Ability14"		"special_bonus_unique_phantom_lancer"
@@ -3364,7 +3452,7 @@
 		"AttributeBaseStrength"		"19"
 		"AttributeStrengthGain"		"2.200000"
 		"AttributeBaseIntelligence"		"21"
-		"AttributeIntelligenceGain"		"2.000000"
+		"AttributeIntelligenceGain"		"1.800000"
 		"AttributeBaseAgility"		"26"
 		"AttributeAgilityGain"		"2.8"
 		"StatusHealthRegen"		"2.0"
@@ -3494,6 +3582,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_phantom_lancer.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_phantom_lancer.vpcf"
+		"showcase_attachments"
+		{
+			"attach_hand1"		"1"
+			"attach_hand2"		"2"
+			"attach_head"		"3"
+		}
 	}
 	"npc_dota_hero_puck"
 	{
@@ -3531,6 +3625,7 @@
 			"Cute"			"1"
 			"Blue"			"1"
 		}
+		"NameAliases"	"Faerie Dragon;fd"
 		"Ability1"		"puck_illusory_orb"
 		"Ability2"		"puck_waning_rift"
 		"Ability3"		"puck_phase_shift"
@@ -3673,6 +3768,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_puck.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_puck.vpcf"
+		"showcase_attachments"
+		{
+			"attach_hand1"		"1"
+			"attach_hand2"		"2"
+			"attach_head"		"3"
+		}
 	}
 	"npc_dota_hero_pudge"
 	{
@@ -3730,7 +3831,7 @@
 		"Ability4"		"pudge_eject"
 		"Ability5"		"generic_hidden"
 		"Ability6"		"pudge_dismember"
-		"Ability10"		"special_bonus_armor_4"
+		"Ability10"		"special_bonus_armor_5"
 		"Ability11"		"special_bonus_unique_pudge_4"
 		"Ability12"		"special_bonus_spell_lifesteal_8"
 		"Ability13"		"special_bonus_unique_pudge_7"
@@ -3993,19 +4094,29 @@
 				"item_tranquil_boots"		"ITEM_DERIVED"
 				"item_cloak"		"ITEM_EXTENSION"
 				"item_ogre_axe"		"ITEM_EXTENSION"
-				"item_ring_of_health"		"ITEM_EXTENSION"
+				"item_vitality_booster"		"ITEM_EXTENSION"
 				"item_recipe_eternal_shroud"		"ITEM_EXTENSION"
 				"item_eternal_shroud"		"ITEM_DERIVED"
 				"item_blink"		"ITEM_EXTENSION"
-				//"item_ring_of_tarrasque"		"ITEM_LUXURY"
+				"item_ring_of_tarrasque"		"ITEM_LUXURY"
 				"item_reaver"		"ITEM_LUXURY"
-				"item_vitality_booster"		"ITEM_LUXURY"
+				//"item_vitality_booster"		"ITEM_LUXURY"
 				"item_recipe_heart" "ITEM_LUXURY"
 				"item_heart"		"ITEM_DERIVED"
+
+
+
+				"item_helm_of_iron_will"	"ITEM_EXTENSION"
+				"item_crown"					"ITEM_EXTENSION"
+				"item_recipe_veil_of_discord"	"ITEM_EXTENSION"
+				"item_veil_of_discord"		"ITEM_DERIVED"
 				"item_platemail"		"ITEM_LUXURY"
-				"item_mystic_staff"		"ITEM_LUXURY"
+				//"item_mystic_staff"		"ITEM_LUXURY"
 				"item_recipe_shivas_guard"		"ITEM_LUXURY"
-				"item_shivas_guard"		"ITEM_DERIVED"
+				"item_shivas_guard"				"ITEM_DERIVED"
+
+
+
 				"item_point_booster"		"ITEM_LUXURY"
 				"item_ogre_axe"		"ITEM_LUXURY"
 				"item_blade_of_alacrity"		"ITEM_LUXURY"
@@ -4059,6 +4170,12 @@
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_pudge.vpcf"
 		"party_hat_effect_persona"	"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_pudge_persona_1.vpcf"
+		"showcase_attachments"
+		{
+			"attach_hook"		"1"
+			"attach_attack2"		"2"
+			"attach_head"		"3"
+		}
 	}
 	"npc_dota_hero_razor"
 	{
@@ -4097,6 +4214,7 @@
 		"GibType"		"electric"
 		"ArmorPhysical"		"0"
 		"HealthBarOffset"		"255"
+		"NameAliases"	"Lightning Revenant"
 		"Ability1"		"razor_plasma_field"
 		"Ability2"		"razor_static_link"
 		"Ability3"		"razor_unstable_current"
@@ -4104,9 +4222,9 @@
 		"Ability5"		"generic_hidden"
 		"Ability6"		"razor_eye_of_the_storm"
 		"Ability10"		"special_bonus_unique_razor_4"
-		"Ability11"		"special_bonus_agility_14"
+		"Ability11"		"special_bonus_spell_lifesteal_10"
 		"Ability12"		"special_bonus_unique_razor"
-		"Ability13"		"special_bonus_strength_14"
+		"Ability13"		"special_bonus_unique_razor_3"
 		"Ability14"		"special_bonus_unique_razor_storm_surge_damage_and_slow"
 		"Ability15"		"special_bonus_unique_razor_2"
 		"Ability16"		"special_bonus_unique_razor_plasmafield_second_ring"
@@ -4291,19 +4409,23 @@
 				"item_recipe_black_king_bar"	"ITEM_LUXURY"
 				"item_black_king_bar"			"ITEM_LUXURY | ITEM_DERIVED"
 
-				"item_platemail"			"ITEM_LUXURY"
-				"item_mystic_staff"			"ITEM_LUXURY"
-				"item_recipe_shivas_guard"	"ITEM_LUXURY"
-				"item_shivas_guard"			"ITEM_LUXURY | ITEM_DERIVED"
+				"item_helm_of_iron_will"	"ITEM_EXTENSION"
+				"item_crown"					"ITEM_EXTENSION"
+				"item_recipe_veil_of_discord"	"ITEM_EXTENSION"
+				"item_veil_of_discord"		"ITEM_DERIVED"
+				"item_platemail"		"ITEM_LUXURY"
+				//"item_mystic_staff"		"ITEM_LUXURY"
+				"item_recipe_shivas_guard"		"ITEM_LUXURY"
+				"item_shivas_guard"				"ITEM_DERIVED"
 
-				"item_quarterstaff"			"ITEM_LUXURY"
+				"item_claymore"		"ITEM_EXTENSION"
 				"item_eagle"				"ITEM_LUXURY"
 				"item_talisman_of_evasion"	"ITEM_LUXURY"
 				"item_butterfly"			"ITEM_DERIVED"
 
-				//"item_ring_of_tarrasque"		"ITEM_LUXURY"
+				"item_ring_of_tarrasque"		"ITEM_LUXURY"
 				"item_reaver"			"ITEM_LUXURY"
-				"item_vitality_booster"		"ITEM_LUXURY"
+				//"item_vitality_booster"		"ITEM_LUXURY"
 				"item_recipe_heart"	 "ITEM_LUXURY"
 				"item_heart"			"ITEM_DERIVED"
 			}
@@ -4318,7 +4440,7 @@
 				"7"		"razor_plasma_field"
 				"8"		"razor_eye_of_the_storm"
 				"9"		"razor_static_link"
-				"10"		"special_bonus_agility_14"
+				"10"		"special_bonus_spell_lifesteal_10"
 				"11"		"razor_static_link"
 				"12"		"razor_eye_of_the_storm"
 				"13"		"razor_unstable_current"
@@ -4352,6 +4474,13 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_razor.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_razor.vpcf"
+		"showcase_attachments"
+		{
+			"attach_weapon_top"		"1"
+			"attach_hand1"			"2"
+			"attach_hand2"			"3"
+			"attach_head"			"4"
+		}
 	}
 	"npc_dota_hero_sand_king"
 	{
@@ -4373,7 +4502,7 @@
 		"SpectatorLoadoutScale" "0.94"
 		"HeroGlowColor"		"216 174 46"
 		"CMEnabled"		"1"
-		"NameAliases"		"sk"
+		"NameAliases"		"sk;Crixalis"
 		"workshop_guide_name"		"Sand King"
 		"new_player_enable"		"1"
 		"SimilarHeroes"	"7,2,96"
@@ -4399,10 +4528,10 @@
 		"Ability15"		"special_bonus_unique_sand_king_5"
 		"Ability16"		"special_bonus_unique_sand_king"
 		"Ability17"		"special_bonus_unique_sand_king_4"
-		"ArmorPhysical"		"0"
+		"ArmorPhysical"		"1"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"		"1"
-		"AttackDamageMax"		"9"
+		"AttackDamageMin"		"7"
+		"AttackDamageMax"		"15"
 		"AttackRate"		"1.700000"
 		"BaseAttackSpeed"		"110"
 		"AttackAnimationPoint"		"0.530000"
@@ -4410,8 +4539,8 @@
 		"AttackRange"		"150"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_ALL"
 		"AttributeBaseStrength"		"22"
-		"AttributeStrengthGain"		"2.700000"
-		"AttributeBaseIntelligence"		"19"
+		"AttributeStrengthGain"		"2.300000"
+		"AttributeBaseIntelligence"		"17"
 		"AttributeIntelligenceGain"		"1.800000"
 		"AttributeBaseAgility"		"19"
 		"AttributeAgilityGain"		"1.800000"
@@ -4523,23 +4652,28 @@
 
 				"item_boots"					"ITEM_CORE"
 				"item_blink"					"ITEM_CORE"
-				"item_energy_booster"			"ITEM_CORE"
-				"item_arcane_boots"				"ITEM_DERIVED"
 
-				"item_sobi_mask"				"ITEM_EXTENSION"
+								"item_sobi_mask"				"ITEM_CORE"
 				"item_recipe_ring_of_basilius"  "ITEM_EXTENSION"
 				"item_ring_of_basilius"			"ITEM_DERIVED"
+
+				"item_recipe_arcane_boots"		"ITEM_EXTENSION"
+				"item_arcane_boots"				"ITEM_DERIVED"
+
+				"item_helm_of_iron_will"	"ITEM_EXTENSION"
 				"item_crown"					"ITEM_EXTENSION"
 				"item_recipe_veil_of_discord"	"ITEM_EXTENSION"
 				"item_veil_of_discord"		"ITEM_DERIVED"
+
 				"item_ogre_axe"		"ITEM_LUXURY"
 				"item_mithril_hammer"		"ITEM_LUXURY"
 				"item_recipe_black_king_bar"		"ITEM_LUXURY"
 				"item_black_king_bar"		"ITEM_DERIVED"
+
 				"item_platemail"		"ITEM_LUXURY"
-				"item_mystic_staff"		"ITEM_LUXURY"
+				//"item_mystic_staff"		"ITEM_LUXURY"
 				"item_recipe_shivas_guard"		"ITEM_LUXURY"
-				"item_shivas_guard"		"ITEM_DERIVED"
+				"item_shivas_guard"				"ITEM_DERIVED"
 			}
 			"Build"
 			{
@@ -4586,6 +4720,13 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_sand_king.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_sand_king.vpcf"
+		"showcase_attachments"
+		{
+			"attach_tail"			"1"
+			"attach_attack1"		"2"
+			"attach_hand2"			"3"
+			"attach_head"			"4"
+		}
 	}
 	"npc_dota_hero_storm_spirit"
 	{
@@ -4613,7 +4754,7 @@
 			"Spirit"		"1"
 			"Blue"			"1"
 		}
-		"NameAliases"		"ss;raijin"
+		"NameAliases"		"ss;raijin;thunderkeg"
 		"workshop_guide_name"		"Storm Spirit"
 		"LastHitChallengeRival"		"npc_dota_hero_kunkka"
 		"HeroSelectSoundEffect"		"Hero_StormSpirit.Pick"
@@ -4624,7 +4765,7 @@
 		"Ability4"		"generic_hidden"
 		"Ability5"		"generic_hidden"
 		"Ability6"		"storm_spirit_ball_lightning"
-		"Ability10"		"special_bonus_attack_speed_20"
+		"Ability10"		"special_bonus_unique_storm_spirit_overload_aspd"
 		"Ability11"		"special_bonus_mp_regen_150"
 		"Ability12"		"special_bonus_hp_250"
 		"Ability13"		"special_bonus_unique_storm_spirit_5"
@@ -4755,6 +4896,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_storm_spirit.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_storm_spirit.vpcf"
+		"showcase_attachments"
+		{
+			"attach_attack1"		"2"
+			"attach_hand2"			"3"
+			"attach_head"			"4"
+		}
 	}
 	"npc_dota_hero_sven"
 	{
@@ -4787,6 +4934,7 @@
 		"LastHitChallengeRival"		"npc_dota_hero_omniknight"
 		"HeroSelectSoundEffect"		"Hero_Sven.Pick"
 		"GibType"		"default"
+		"NameAliases"	"Rogue Knight"
 		"Ability1"		"sven_storm_bolt"
 		"Ability2"		"sven_great_cleave"
 		"Ability3"		"sven_warcry"
@@ -4797,14 +4945,14 @@
 		"Ability11"		"special_bonus_attack_speed_15"
 		"Ability12"		"special_bonus_unique_sven_3"
 		"Ability13"		"special_bonus_unique_sven_8"
-		"Ability14"		"special_bonus_unique_sven_6"
+		"Ability14"		"special_bonus_unique_sven_gods_strength_slow_resist"
 		"Ability15"		"special_bonus_unique_sven_7"
 		"Ability16"		"special_bonus_unique_sven_2"
 		"Ability17"		"special_bonus_unique_sven_4"
-		"ArmorPhysical"		"0"
+		"ArmorPhysical"		"-1"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"		"41"
-		"AttackDamageMax"		"43"
+		"AttackDamageMin"		"37"
+		"AttackDamageMax"		"39"
 		"AttackRate"		"1.900000"
 		"BaseAttackSpeed"		"110"
 		"AttackAnimationPoint"		"0.400000"
@@ -4815,7 +4963,7 @@
 		"AttributeBaseStrength"		"22"
 		"AttributeStrengthGain"		"3.200000"
 		"AttributeBaseIntelligence"		"16"
-		"AttributeIntelligenceGain"		"1.300000"
+		"AttributeIntelligenceGain"		"1.500000"
 		"AttributeBaseAgility"		"21"
 		"AttributeAgilityGain"		"2.20000"
 		"StatusHealthRegen"		"0.75"
@@ -4954,10 +5102,8 @@
 				"item_power_treads"		"ITEM_DERIVED"
 				
 				"item_ogre_axe"			"ITEM_CORE"
-				"item_quarterstaff"		"ITEM_CORE"
-				"item_sobi_mask"		"ITEM_CORE"
-				"item_robe"				"ITEM_CORE"
-				"item_oblivion_staff"	"ITEM_CORE | ITEM_DERIVED"
+				"item_broadsword"		"ITEM_CORE"
+				"item_void_stone"		"ITEM_CORE"
 				"item_echo_sabre"		"ITEM_DERIVED"
 
 				"item_blink"		"ITEM_CORE"
@@ -5018,6 +5164,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_sven.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_sven.vpcf"
+		"showcase_attachments"
+		{
+			"attach_attack1"		"1"
+			"attach_head"			"2"
+			"attach_sword"			"3"
+		}
 	}
 	"npc_dota_hero_tiny"
 	{
@@ -5053,6 +5205,7 @@
 			"Nose"			"0"
 		}
 		"GibType"		"stone"
+		"NameAliases"	"Stone Giant"
 		"Ability1"		"tiny_avalanche"
 		"Ability2"		"tiny_toss"
 		"Ability3"		"tiny_tree_grab"
@@ -5215,23 +5368,27 @@
 				"item_recipe_magic_wand"		"ITEM_CORE"
 				"item_magic_wand"		"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_bottle"		"ITEM_CORE | ITEM_SELLABLE"
-				"item_energy_booster"		"ITEM_CORE"
+				"item_sobi_mask"				"ITEM_CORE"
+				"item_recipe_ring_of_basilius"  "ITEM_EXTENSION"
+				"item_ring_of_basilius"			"ITEM_DERIVED"
+				"item_recipe_arcane_boots"		"ITEM_EXTENSION"	
 				"item_arcane_boots"		"ITEM_DERIVED"
-				"item_blink"			"ITEM_CORE"
-				"item_ogre_axe"			"ITEM_EXTENSION"
-				"item_quarterstaff"		"ITEM_EXTENSION"
-				"item_sobi_mask"		"ITEM_EXTENSION"
-				"item_robe"				"ITEM_EXTENSION"
-				"item_oblivion_staff"	"ITEM_EXTENSION | ITEM_DERIVED"
-				"item_echo_sabre"		"ITEM_DERIVED"
-				"item_mystic_staff"		"ITEM_LUXURY"
-				"item_void_stone"		"ITEM_LUXURY"
-				"item_ultimate_orb"		"ITEM_LUXURY"
-				"item_sheepstick"		"ITEM_DERIVED"
 
-				//"item_ring_of_tarrasque"		"ITEM_LUXURY"
+				"item_blink"			"ITEM_CORE"
+
+				"item_ogre_axe"			"ITEM_CORE"
+				"item_broadsword"		"ITEM_CORE"
+				"item_void_stone"		"ITEM_CORE"
+				"item_echo_sabre"		"ITEM_DERIVED"
+
+				"item_tiara_of_selemene"	"ITEM_EXTENSION"
+				"item_mystic_staff"			"ITEM_LUXURY"
+				"item_recipe_sheepstick"	"ITEM_EXTENSION"
+				"item_sheepstick"			"ITEM_DERIVED"
+
+				"item_ring_of_tarrasque"		"ITEM_LUXURY"
 				"item_reaver"			"ITEM_LUXURY"
-				"item_vitality_booster"	"ITEM_LUXURY"
+				//"item_vitality_booster"	"ITEM_LUXURY"
 				"item_recipe_heart"	 "ITEM_LUXURY"
 				"item_heart"			"ITEM_DERIVED"
 			}
@@ -5280,6 +5437,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_tiny.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_tiny.vpcf"
+		"showcase_attachments"
+		{
+			"attach_attack1"		"1"
+			"attach_attack2"		"2"
+			"attach_head"			"3"
+		}
 	}
 	"npc_dota_hero_vengefulspirit"
 	{
@@ -5303,7 +5466,7 @@
 		"SpectatorLoadoutScale" "0.87"
 		"HeroGlowColor"		"133 113 164"
 		"CMEnabled"		"1"
-		"NameAliases"		"vs"
+		"NameAliases"		"vs;Shendelzare"
 		"workshop_guide_name"		"Vengeful Spirit"
 		"NoCombine"		"1"
 		"new_player_enable"		"1"
@@ -5330,9 +5493,9 @@
 		"Ability12"		"special_bonus_unique_vengeful_spirit_4"
 		"Ability13"		"special_bonus_unique_vengeful_spirit_5"
 		"Ability14"		"special_bonus_unique_vengeful_spirit_1"
-		"Ability15"		"special_bonus_unique_vengeful_spirit_9"
+		"Ability15"		"special_bonus_unique_vengeful_spirit_wave_of_terror_steal"
 		"Ability16"		"special_bonus_unique_vengeful_spirit_2"
-		"Ability17"		"special_bonus_unique_vengeful_spirit_swap_damage_reduction"
+		"Ability17"		"special_bonus_unique_vengeful_spirit_9"
 		"AbilityDraftIgnoreCount"		"6"
 
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -5343,6 +5506,27 @@
 		"AttackAnimationPoint"		"0.330000"
 		"AttackAcquisitionRange"		"800"
 		"AttackRange"		"400"
+		"HasAggressiveStance"		"1"	
+		"AttackSpeedActivityModifiers"
+		{
+			"fast"		"200"
+			//"faster"	"220"
+			//"fastest"	"280"
+			//"crazy_fast"	"340"			
+		}
+		"animation_transitions"
+		{
+			"ACT_DOTA_IDLE"
+			{
+				"regular"		"1.2"
+				"aggressive"		"1.2"
+			}
+			"ACT_DOTA_RUN"
+			{
+				"regular"		"1.2"
+				"aggressive"		"1.2"
+			}						
+		}		
 		"ProjectileModel"		"particles/units/heroes/hero_vengeful/vengeful_base_attack.vpcf"
 		"ProjectileSpeed"		"1500"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_ALL"
@@ -5454,19 +5638,24 @@
 				"item_gloves"			"ITEM_CORE"
 				"item_power_treads"		"ITEM_DERIVED"
 
-				"item_chainmail"	"ITEM_CORE"
-				"item_sobi_mask"	"ITEM_CORE"
-				"item_blight_stone"	"ITEM_CORE"
-				"item_medallion_of_courage" "ITEM_DERIVED"
-
 				"item_staff_of_wizardry"	"ITEM_EXTENSION"
 				"item_fluffy_hat"		"ITEM_EXTENSION"
 				"item_recipe_force_staff"	"ITEM_EXTENSION"
 				"item_force_staff"			"ITEM_DERIVED"
 
-				"item_circlet"				"ITEM_EXTENSION"
-				"item_sobi_mask"			"ITEM_EXTENSION"
+
+				"item_energy_booster"		"ITEM_EXTENSION"
 				"item_ring_of_protection"	"ITEM_EXTENSION"
+				"item_fluffy_hat"			"ITEM_EXTENSION"
+				"item_recipe_pavise"		"ITEM_EXTENSION"
+				"item_pavise"				"ITEM_DERIVED"
+
+				"item_crown"			"ITEM_EXTENSION"
+				"item_wind_lace"			"ITEM_EXTENSION"
+				"item_recipe_solar_crest"			"ITEM_EXTENSION"
+				"item_solar_crest"			"ITEM_DERIVED"
+
+
 			}
 			"Build"
 			{
@@ -5513,6 +5702,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_vengefulspirit.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_vengefulspirit.vpcf"
+		"showcase_attachments"
+		{
+			"attach_hand1"			"1"
+			"attach_attack2"		"2"
+			"attach_head"			"3"
+		}
 	}
 	"npc_dota_hero_windrunner"
 	{
@@ -5537,7 +5732,7 @@
 		"SpectatorLoadoutScale" "1.1"
 		"HeroGlowColor"		"185 220 20"
 		"CMEnabled"		"1"
-		"NameAliases"		"wr"
+		"NameAliases"		"wr;Lyralei"
 		"workshop_guide_name"		"Windranger"
 		"new_player_enable"		"1"
 		"SimilarHeroes"	"128,123,9"
@@ -5557,7 +5752,7 @@
 		"Ability4"		"windrunner_gale_force"
 		"Ability5"		"generic_hidden"
 		"Ability6"		"windrunner_focusfire"
-		"Ability10"		"special_bonus_unique_windranger"
+		"Ability10"		"special_bonus_unique_windranger_powershot_slow"
 		"Ability11"		"special_bonus_unique_windranger_9"
 		"Ability12"		"special_bonus_unique_windranger_4"
 		"Ability13"		"special_bonus_unique_windranger_3"
@@ -5567,8 +5762,8 @@
 		"Ability17"		"special_bonus_unique_windranger_2"
 		"ArmorPhysical"		"0"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"		"5"
-		"AttackDamageMax"		"11"
+		"AttackDamageMin"		"7"
+		"AttackDamageMax"		"13"
 		"AttackRate"		"1.500000"
 		"AttackAnimationPoint"		"0.400000"
 		"AttackAcquisitionRange"		"800"
@@ -5584,9 +5779,9 @@
 		"AttributePrimary"		"DOTA_ATTRIBUTE_ALL"
 		"AttributeBaseStrength"		"18"
 		"AttributeStrengthGain"		"2.0"
-		"AttributeBaseIntelligence"		"18"
+		"AttributeBaseIntelligence"		"21"
 		"AttributeIntelligenceGain"		"2.400000"
-		"AttributeBaseAgility"		"17"
+		"AttributeBaseAgility"		"19"
 		"AttributeAgilityGain"		"1.400000"
 		"StatusManaRegen"	"0.25"
 		"BoundsHullName"		"DOTA_HULL_SIZE_HERO"
@@ -5701,8 +5896,10 @@
 				"item_blades_of_attack"	"ITEM_EXTENSION"
 				"item_phase_boots"		"ITEM_DERIVED"
 
+				"item_gloves"   		"ITEM_EXTENSION"
 				"item_mithril_hammer"   "ITEM_EXTENSION"
 				"item_javelin"		  "ITEM_EXTENSION"
+				"item_gloves"   		"ITEM_EXTENSION"
 				"item_maelstrom"		"ITEM_DERIVED"
 
 				"item_ogre_axe"		 "ITEM_EXTENSION"
@@ -5742,17 +5939,17 @@
 				"12"		"windrunner_focusfire"
 				"13"		"windrunner_windrun"
 				"14"		"windrunner_windrun"
-				"15"		"special_bonus_unique_windranger"
+				"15"		"special_bonus_unique_windranger_4"
 				"16"		"windrunner_windrun"
 				"17"		""
 				"18"		"windrunner_focusfire"
 				"19"		""
-				"20"		"special_bonus_unique_windranger"
+				"20"		"special_bonus_unique_windranger_8"
 				"21"		""
 				"22"		""
 				"23"		""
 				"24"		""
-				"25"		"special_bonus_unique_windranger_8"
+				"25"		"special_bonus_unique_windranger_2"
 			}
 			"LaningInfo"
 			{
@@ -5771,6 +5968,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_windrunner.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_windrunner.vpcf"
+		"showcase_attachments"
+		{
+			"attach_attack1"		"1"
+			"bow_mid1"				"2"
+			"attach_head"			"3"
+		}
 	}
 	"npc_dota_hero_zuus"
 	{
@@ -5810,6 +6013,7 @@
 		"LastHitChallengeRival"		"npc_dota_hero_razor"
 		"HeroSelectSoundEffect"		"Hero_Zuus.Pick"
 		"GibType"		"electric"
+		"NameAliases"	"Lord of Heaven"
 		"Ability1"		"zuus_arc_lightning"
 		"Ability2"		"zuus_lightning_bolt"
 		"Ability3"		"zuus_heavenly_jump"
@@ -5955,8 +6159,11 @@
 				"item_clarity"		"ITEM_CONSUMABLE | ITEM_SELLABLE"
 
 				"item_boots"			"ITEM_CORE"
+				"item_sobi_mask"				"ITEM_CORE"
+				"item_recipe_ring_of_basilius"  "ITEM_EXTENSION"
+				"item_ring_of_basilius"			"ITEM_DERIVED"
 
-				"item_energy_booster" 	"ITEM_CORE"
+				"item_recipe_arcane_boots"		"ITEM_EXTENSION"
 				"item_arcane_boots"		"ITEM_DERIVED"
 
 				"item_blink"		"ITEM_CORE"
@@ -5980,7 +6187,8 @@
 				"item_aether_lens"			"ITEM_DERIVED"
 
 				"item_cornucopia"		"ITEM_EXTENSION"
-				"item_cornucopia"		"ITEM_EXTENSION"
+				"item_ring_of_tarrasque"		"ITEM_EXTENSION"
+				"item_tiara_of_selemene"		"ITEM_EXTENSION"
 				"item_recipe_refresher"	"ITEM_EXTENSION"
 				"item_refresher"		"ITEM_DERIVED"
 			}
@@ -6029,6 +6237,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_zuus.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_zuus.vpcf"
+		"showcase_attachments"
+		{
+			"attach_attack1"		"2"
+			"attach_attack2"		"3"
+			"attach_head"			"4"
+		}
 	}
 	"npc_dota_hero_kunkka"
 	{
@@ -6064,6 +6278,7 @@
 		"LastHitChallengeRival"		"npc_dota_hero_tidehunter"
 		"HeroSelectSoundEffect"		"Hero_Kunkka.Pick"
 		"GibType"		"default"
+		"NameAliases"	"Admiral"
 		"Ability1"		"kunkka_torrent"
 		"Ability2"		"kunkka_tidebringer"
 		"Ability3"		"kunkka_x_marks_the_spot"
@@ -6075,7 +6290,7 @@
 		"Ability11"		"special_bonus_unique_kunkka_6"
 		"Ability12"		"special_bonus_unique_kunkka_7"
 		"Ability13"		"special_bonus_attack_damage_45"
-		"Ability14"		"special_bonus_unique_kunkka"
+		"Ability14"		"special_bonus_unique_kunkka_torrent_cooldown"
 		"Ability15"		"special_bonus_unique_kunkka_4"
 		"Ability16"		"special_bonus_unique_kunkka_3"
 		"Ability17"		"special_bonus_unique_kunkka_5"
@@ -6250,10 +6465,10 @@
 				"item_blades_of_attack"	"ITEM_EXTENSION"
 				"item_phase_boots"		"ITEM_DERIVED"
 
-				"item_broadsword"			"ITEM_EXTENSION"
+				"item_claymore"			"ITEM_EXTENSION"
 				"item_blades_of_attack"		"ITEM_EXTENSION"
-				"item_recipe_lesser_crit"	"ITEM_EXTENSION"
-				"item_lesser_crit"			"ITEM_DERIVED"
+				"item_recipe_lesser_crit"		"ITEM_EXTENSION"
+				"item_lesser_crit"		"ITEM_DERIVED"
 				"item_demon_edge"			"ITEM_EXTENSION"
 				"item_recipe_greater_crit"	"ITEM_EXTENSION"
 				"item_greater_crit"			"ITEM_DERIVED"
@@ -6284,7 +6499,7 @@
 				"17"		""
 				"18"		"kunkka_ghostship"
 				"19"		""
-				"20"		"special_bonus_unique_kunkka"
+				"20"		"special_bonus_unique_kunkka_torrent_cooldown"
 				"21"		""
 				"22"		""
 				"23"		""
@@ -6308,6 +6523,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_kunkka.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_kunkka.vpcf"
+		"showcase_attachments"
+		{
+			"attach_sword"			"2"
+			"attach_hand2"			"3"
+			"attach_head"			"4"
+		}
 	}
 
 
@@ -6346,6 +6567,7 @@
 		"LastHitChallengeRival"		"npc_dota_hero_crystal_maiden"
 		"HeroSelectSoundEffect"		"Hero_Lina.Pick"
 		"GibType"		"fire"
+		"NameAliases"	"slayer"
 		"Ability1"		"lina_dragon_slave"
 		"Ability2"		"lina_light_strike_array"
 		"Ability3"		"lina_fiery_soul"
@@ -6356,10 +6578,10 @@
 		"Ability11"		"special_bonus_unique_lina_1"
 		"Ability12"		"special_bonus_hp_325"
 		"Ability13"		"special_bonus_unique_lina_3"
-		"Ability14"		"special_bonus_spell_amplify_11"
+		"Ability14"		"special_bonus_unique_lina_supercharge_stacks"
 		"Ability15"		"special_bonus_unique_lina_2"
 		"Ability16"		"special_bonus_unique_lina_6"
-		"Ability17"		"special_bonus_unique_lina_7"
+		"Ability17"		"special_bonus_unique_lina_dragon_slave_crits"
 		"ArmorPhysical"		"0"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"		"21"
@@ -6473,7 +6695,12 @@
 				"item_recipe_magic_wand"		"ITEM_CORE"
 				"item_magic_wand"		"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_boots"		"ITEM_CORE"
-				"item_energy_booster"		"ITEM_CORE"
+				"item_sobi_mask"				"ITEM_CORE"
+				"item_recipe_ring_of_basilius"  "ITEM_EXTENSION"
+				"item_ring_of_basilius"			"ITEM_DERIVED"
+
+				"item_recipe_arcane_boots"		"ITEM_EXTENSION"
+				
 				"item_arcane_boots"		"ITEM_DERIVED"
 				"item_staff_of_wizardry"		"ITEM_EXTENSION"
 				"item_fluffy_hat"		"ITEM_EXTENSION"
@@ -6485,10 +6712,12 @@
 				"item_blade_of_alacrity"		"ITEM_EXTENSION"
 				"item_recipe_ultimate_scepter"		"ITEM_EXTENSION"
 				"item_ultimate_scepter" "ITEM_DERIVED"
-				"item_mystic_staff"		"ITEM_LUXURY"
-				"item_ultimate_orb"		"ITEM_LUXURY"
-				"item_void_stone"		"ITEM_LUXURY"
-				"item_sheepstick"		"ITEM_DERIVED"
+
+				"item_tiara_of_selemene"	"ITEM_EXTENSION"
+				"item_mystic_staff"			"ITEM_LUXURY"
+				"item_recipe_sheepstick"	"ITEM_EXTENSION"
+				"item_sheepstick"			"ITEM_DERIVED"
+
 				"item_staff_of_wizardry"		"ITEM_LUXURY"
 				"item_wind_lace"		"ITEM_LUXURY"
 				"item_void_stone"		"ITEM_LUXURY"
@@ -6516,7 +6745,7 @@
 				"17"		""
 				"18"		"lina_laguna_blade"
 				"19"		""
-				"20"		"special_bonus_spell_amplify_11"
+				"20"		"special_bonus_unique_lina_supercharge_stacks"
 				"21"		""
 				"22"		""
 				"23"		""
@@ -6540,6 +6769,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_lina.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_lina.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_attack1"	"2"
+			"attach_attack2"	"3"
+		}
 	}
 	"npc_dota_hero_lich"
 	{
@@ -6578,6 +6813,7 @@
 		"HeroSelectSoundEffect"		"Hero_Lich.Pick"
 		"HealthBarOffset"		"255"
 		"GibType"		"ice"
+		"NameAliases"	"Ethreain"
 		"Ability1"		"lich_frost_nova"
 		"Ability2"		"lich_frost_shield"
 		"Ability3"		"lich_sinister_gaze"
@@ -6606,7 +6842,7 @@
 		"AttributePrimary"		"DOTA_ATTRIBUTE_INTELLECT"
 		"AttributeBaseStrength"		"20"
 		"AttributeStrengthGain"		"2.10000"
-		"AttributeBaseIntelligence"		"24"
+		"AttributeBaseIntelligence"		"26"
 		"AttributeIntelligenceGain"		"3.80000"
 		"AttributeBaseAgility"		"17"
 		"AttributeAgilityGain"		"2.0"
@@ -6730,13 +6966,13 @@
 				"item_recipe_aether_lens"	"ITEM_EXTENSION"
 				"item_aether_lens"			"ITEM_DERIVED"
 
-				"item_void_stone"		"ITEM_LUXURY"
-				"item_mystic_staff"		"ITEM_LUXURY"
-				"item_ultimate_orb"		"ITEM_LUXURY"
-				"item_sheepstick"		"ITEM_DERIVED"
+				"item_tiara_of_selemene"	"ITEM_EXTENSION"
+				"item_mystic_staff"			"ITEM_LUXURY"
+				"item_recipe_sheepstick"	"ITEM_EXTENSION"
+				"item_sheepstick"			"ITEM_DERIVED"
 
 				"item_cloak"		"ITEM_EXTENSION"
-				"item_ring_of_health"		"ITEM_EXTENSION"
+				"item_ring_of_tarrasque"		"ITEM_EXTENSION"
 				"item_ring_of_regen"		"ITEM_EXTENSION"
 				"item_recipe_headdress"		"ITEM_EXTENSION"
 				"item_headdress"		"ITEM_DERIVED"
@@ -6795,6 +7031,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_lich.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_lich.vpcf"
+		"showcase_attachments"
+		{
+			"attach_attack1"		"2"
+			"attach_attack4"		"3"
+			"attach_head"			"4"
+		}
 	}
 	"npc_dota_hero_lion"
 	{
@@ -6831,6 +7073,7 @@
 		"LastHitChallengeRival"		"npc_dota_hero_witch_doctor"
 		"HeroSelectSoundEffect"		"Hero_Lion.Pick"
 		"GibType"		"default"
+		"NameAliases"	"Demon Witch"
 		"Ability1"		"lion_impale"
 		"Ability2"		"lion_voodoo"
 		"Ability3"		"lion_mana_drain"
@@ -6845,6 +7088,7 @@
 		"Ability15"		"special_bonus_unique_lion_10"
 		"Ability16"		"special_bonus_unique_lion_manadrain_damage"
 		"Ability17"		"special_bonus_unique_lion_4"
+		"StatusHealthRegen"		"0.5"
 		"ArmorPhysical"		"0"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"		"29"
@@ -6993,10 +7237,10 @@
 				"item_recipe_aether_lens"	"ITEM_EXTENSION"
 				"item_aether_lens"			"ITEM_DERIVED"
 
-				"item_void_stone"		"ITEM_LUXURY"
-				"item_mystic_staff"		"ITEM_LUXURY"
-				"item_ultimate_orb"		"ITEM_LUXURY"
-				"item_sheepstick"		"ITEM_DERIVED"
+				"item_tiara_of_selemene"	"ITEM_EXTENSION"
+				"item_mystic_staff"			"ITEM_LUXURY"
+				"item_recipe_sheepstick"	"ITEM_EXTENSION"
+				"item_sheepstick"			"ITEM_DERIVED"
 
 				"item_voodoo_mask"		"ITEM_LUXURY"
 				"item_diadem"			"ITEM_LUXURY"
@@ -7057,6 +7301,13 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_lion.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_lion.vpcf"
+		"showcase_attachments"
+		{
+			"attach_weapon"		"2"
+			"attach_mouth"		"3"
+			"attach_attack1"	"4"
+			"attach_attack2"	"5"
+		}
 	}
 	"npc_dota_hero_shadow_shaman"
 	{
@@ -7083,7 +7334,7 @@
 		{
 			"BadTeeth"		"1"
 		}
-		"NameAliases"		"ss"
+		"NameAliases"		"ss;Rhasta"
 		"workshop_guide_name"		"Shadow Shaman"
 		"LastHitChallengeRival"		"npc_dota_hero_witch_doctor"
 		"HeroSelectSoundEffect"		"Hero_ShadowShaman.Pick"
@@ -7095,14 +7346,14 @@
 		"Ability5"		"generic_hidden"
 		"Ability6"		"shadow_shaman_mass_serpent_ward"
 		"Ability10"		"special_bonus_unique_shadow_shaman_6"
-		"Ability11"		"special_bonus_unique_shadow_shaman_5"
+		"Ability11"		"special_bonus_unique_shadow_shaman_hex_damage_amp"
 		"Ability12"		"special_bonus_unique_shadow_shaman_8"
 		"Ability13"		"special_bonus_unique_shadow_shaman_2"
 		"Ability14"		"special_bonus_unique_shadow_shaman_7"
 		"Ability15"		"special_bonus_unique_shadow_shaman_1"
 		"Ability16"		"special_bonus_unique_shadow_shaman_3"
 		"Ability17"		"special_bonus_unique_shadow_shaman_4"
-		"ArmorPhysical"		"2"
+		"ArmorPhysical"		"3"
 		"StatusHealthRegen"		"1"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"		"40"
@@ -7258,7 +7509,11 @@
 				"item_recipe_cyclone"		"ITEM_CORE"
 				"item_cyclone"		"ITEM_DERIVED"
 
-				"item_energy_booster"		"ITEM_EXTENSION"
+				"item_sobi_mask"				"ITEM_CORE"
+				"item_recipe_ring_of_basilius"  "ITEM_EXTENSION"
+				"item_ring_of_basilius"			"ITEM_DERIVED"
+
+				"item_recipe_arcane_boots"		"ITEM_EXTENSION"				
 				"item_arcane_boots"		"ITEM_DERIVED"
 
 				"item_point_booster"		"ITEM_LUXURY"
@@ -7314,6 +7569,14 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_shadow_shaman.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_shadow_shaman.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_hand1"		"2"
+			"attach_hand2"		"3"
+			"attach_attack1"	"4"
+			"attach_attack2"	"5"
+		}
 	}
 	"npc_dota_hero_slardar"
 	{
@@ -7346,6 +7609,7 @@
 		"LastHitChallengeRival"		"npc_dota_hero_tidehunter"
 		"HeroSelectSoundEffect"		"Hero_Slardar.Pick"
 		"GibType"		"default"
+		"NameAliases"	"Slithereen Guard"
 		"Ability1"		"slardar_sprint"
 		"Ability2"		"slardar_slithereen_crush"
 		"Ability3"		"slardar_bash"
@@ -7499,6 +7763,13 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_slardar.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_slardar.vpcf"
+		"showcase_attachments"
+		{
+			"attach_light"		"1"
+			"attach_hand1"		"2"
+			"attach_hand2"		"3"
+			"attach_attack1"	"4"
+		}
 	}
 	"npc_dota_hero_tidehunter"
 	{
@@ -7538,6 +7809,7 @@
 		"LastHitChallengeRival"		"npc_dota_hero_kunkka"
 		"HeroSelectSoundEffect"		"Hero_Tidehunter.Pick"
 		"GibType"		"default"
+		"NameAliases"	"th;Leviathan"
 		"Ability1"		"tidehunter_gush"
 		"Ability2"		"tidehunter_kraken_shell"
 		"Ability3"		"tidehunter_anchor_smash"
@@ -7679,8 +7951,13 @@
 				"item_clarity"		"ITEM_CONSUMABLE | ITEM_SELLABLE"
 
 				"item_boots"				"ITEM_CORE"
-				"item_energy_booster"		"ITEM_CORE"
-				"item_arcane_boots"			"ITEM_DERIVED"
+
+				"item_sobi_mask"				"ITEM_CORE"
+				"item_recipe_ring_of_basilius"  "ITEM_EXTENSION"
+				"item_ring_of_basilius"			"ITEM_DERIVED"
+
+				"item_recipe_arcane_boots"		"ITEM_EXTENSION"				
+				"item_arcane_boots"		"ITEM_DERIVED"
 
 				"item_ring_of_regen"		"ITEM_EXTENSION"
 				"item_recipe_headdress"		"ITEM_EXTENSION"
@@ -7691,13 +7968,13 @@
 
 				"item_blink"		"ITEM_CORE"
 			
-				"item_void_stone"		"ITEM_LUXURY"
-				"item_mystic_staff"		"ITEM_LUXURY"
-				"item_ultimate_orb"		"ITEM_LUXURY"
-				"item_sheepstick"		"ITEM_DERIVED"
+				"item_tiara_of_selemene"	"ITEM_EXTENSION"
+				"item_mystic_staff"			"ITEM_LUXURY"
+				"item_recipe_sheepstick"	"ITEM_EXTENSION"
+				"item_sheepstick"			"ITEM_DERIVED"
 
 				"item_cloak"				"ITEM_EXTENSION"
-				"item_ring_of_health"		"ITEM_EXTENSION"
+				"item_ring_of_tarrasque"		"ITEM_EXTENSION"
 				"item_ring_of_regen"		"ITEM_EXTENSION"
 				"item_recipe_headdress"		"ITEM_EXTENSION" 
 				"item_headdress"			"ITEM_DERIVED"
@@ -7710,10 +7987,16 @@
 				"item_recipe_guardian_greaves"	"ITEM_LUXURY"
 				"item_guardian_greaves" "ITEM_LUXURY | ITEM_DERIVED"
 
-				"item_platemail"		"ITEM_EXTENSION"
-				"item_mystic_staff"		"ITEM_EXTENSION"
-				"item_recipe_shivas_guard"		"ITEM_EXTENSION"
-				"item_shivas_guard"		"ITEM_DERIVED"
+
+				"item_helm_of_iron_will"	"ITEM_EXTENSION"
+				"item_crown"					"ITEM_EXTENSION"
+				"item_recipe_veil_of_discord"	"ITEM_EXTENSION"
+				"item_veil_of_discord"		"ITEM_DERIVED"
+
+				"item_platemail"		"ITEM_LUXURY"
+				//"item_mystic_staff"		"ITEM_LUXURY"
+				"item_recipe_shivas_guard"		"ITEM_LUXURY"
+				"item_shivas_guard"				"ITEM_DERIVED"
 			}
 			"Build"
 			{
@@ -7760,6 +8043,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_tidehunter.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_tidehunter.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_hand1"		"2"
+			"attach_hand2"		"3"
+		}
 	}
 	"npc_dota_hero_witch_doctor"
 	{
@@ -7784,7 +8073,7 @@
 		"PickSound"		"witchdoctor_wdoc_spawn_02"
 		"BanSound"		"witchdoctor_wdoc_anger_08"
 		"CMEnabled"		"1"
-		"NameAliases"		"wd"
+		"NameAliases"		"wd;Zharvakko"
 		"workshop_guide_name"		"Witch Doctor"
 		"new_player_enable"		"1"
 		"SimilarHeroes"	"31,112,110"
@@ -7821,7 +8110,7 @@
 		"ProjectileModel"		"particles/units/heroes/hero_witchdoctor/witchdoctor_base_attack.vpcf"
 		"ProjectileSpeed"		"1200"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_INTELLECT"
-		"AttributeBaseStrength"		"18"
+		"AttributeBaseStrength"		"20"
 		"AttributeStrengthGain"		"2.100000"
 		"AttributeBaseIntelligence"		"22"
 		"AttributeIntelligenceGain"		"3.100000"
@@ -7947,8 +8236,13 @@
 				"item_branches"		"ITEM_CORE"
 
 				"item_boots"				"ITEM_CORE"
-				"item_energy_booster"		"ITEM_CORE"
-				"item_arcane_boots"			"ITEM_DERIVED"
+
+				"item_sobi_mask"				"ITEM_CORE"
+				"item_recipe_ring_of_basilius"  "ITEM_EXTENSION"
+				"item_ring_of_basilius"			"ITEM_DERIVED"
+
+				"item_recipe_arcane_boots"		"ITEM_EXTENSION"				
+				"item_arcane_boots"		"ITEM_DERIVED"
 
 				"item_magic_stick"		"ITEM_CORE"
 				"item_recipe_magic_wand"			"ITEM_CORE"
@@ -7966,13 +8260,13 @@
 				"item_recipe_cyclone"		"ITEM_EXTENSION"
 				"item_cyclone"				"ITEM_DERIVED"
 		
-				"item_void_stone"		"ITEM_LUXURY"
-				"item_mystic_staff"		"ITEM_LUXURY"
-				"item_ultimate_orb"		"ITEM_LUXURY"
-				"item_sheepstick"		"ITEM_DERIVED"
+				"item_tiara_of_selemene"	"ITEM_EXTENSION"
+				"item_mystic_staff"			"ITEM_LUXURY"
+				"item_recipe_sheepstick"	"ITEM_EXTENSION"
+				"item_sheepstick"			"ITEM_DERIVED"
 
 				"item_cloak"				"ITEM_EXTENSION"
-				"item_ring_of_health"		"ITEM_EXTENSION"
+				"item_ring_of_tarrasque"		"ITEM_EXTENSION"
 				"item_ring_of_regen"		"ITEM_EXTENSION"
 				"item_recipe_headdress"		"ITEM_EXTENSION"
 				"item_headdress"			"ITEM_DERIVED"
@@ -8030,6 +8324,13 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_witch_doctor.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_witch_doctor.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_hand1"		"2"
+			"attach_hand2"		"3"
+			"attach_staff"		"4"
+		}
 	}
 	"npc_dota_hero_riki"
 	{
@@ -8064,6 +8365,7 @@
 		"LastHitChallengeRival"		"npc_dota_hero_bounty_hunter"
 		"HeroSelectSoundEffect"		"Hero_Riki.Pick"
 		"GibType"		"default"
+		"NameAliases"	"Stealth Assassin;sa"
 		"Ability1"		"riki_smoke_screen"
 		"Ability2"		"riki_blink_strike"
 		"Ability3"		"riki_tricks_of_the_trade"
@@ -8197,6 +8499,13 @@
 				"SlotText" "riki_blink_strike"
 				"DisplayInLoadout" "0"
 			}
+			"10"
+			{
+				"SlotIndex" "10"
+				"SlotName" "ability_effects_3"
+				"SlotText" "riki_tricks_of_the_trade"
+				"DisplayInLoadout" "0"
+			}
 		}
 		"particle_folder"		"particles/units/heroes/hero_riki"
 		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_riki.vsndevts"
@@ -8225,7 +8534,7 @@
 				"item_boots_of_elves"		"ITEM_EXTENSION"
 				"item_recipe_yasha"		"ITEM_EXTENSION"
 				"item_yasha"		"ITEM_DERIVED"
-				"item_quarterstaff"		"ITEM_LUXURY"
+				"item_claymore"		"ITEM_EXTENSION"
 				"item_eagle"		"ITEM_LUXURY"
 				"item_talisman_of_evasion"		"ITEM_LUXURY"
 				"item_butterfly"		"ITEM_DERIVED"
@@ -8238,10 +8547,15 @@
 				"item_belt_of_strength"		"ITEM_LUXURY"
 				"item_recipe_basher"		"ITEM_LUXURY"
 				"item_basher"		"ITEM_DERIVED"
-				"item_ring_of_health"		"ITEM_LUXURY"
-				"item_vitality_booster"		"ITEM_LUXURY"
-				"item_recipe_vanguard"	  "ITEM_LUXURY"
-				"item_vanguard"				"ITEM_DERIVED"
+				"item_blitz_knuckles"		"ITEM_EXTENSION"
+				"item_sobi_mask"		"ITEM_EXTENSION"
+				"item_robe"				"ITEM_EXTENSION"
+				"item_oblivion_staff"				"ITEM_EXTENSION | ITEM_DERIVED"
+
+				"item_cloak"				"ITEM_EXTENSION"
+				"item_recipe_mage_slayer"				"ITEM_EXTENSION"
+				"item_mage_slayer"				"ITEM_EXTENSION | ITEM_DERIVED"
+
 				"item_recipe_abyssal_blade"	"ITEM_LUXURY"
 				"item_abyssal_blade"		"ITEM_DERIVED"
 			}
@@ -8290,6 +8604,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_riki.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_riki.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_hand1"		"2"
+			"attach_hand2"		"3"
+		}
 	}
 	"npc_dota_hero_enigma"
 	{
@@ -8469,6 +8789,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_enigma.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_enigma.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_attack1"	"2"
+			"attach_attack2"	"3"
+		}
 	}
 	"npc_dota_hero_tinker"
 	{
@@ -8499,6 +8825,7 @@
 		"LastHitChallengeRival"		"npc_dota_hero_lina"
 		"HeroSelectSoundEffect"		"Hero_Tinker.Pick"
 		"GibType"		"motor"
+		"NameAliases"	"Boush"
 		"Ability1"		"tinker_laser"
 		"Ability2"		"tinker_heat_seeking_missile"
 		"Ability3"		"tinker_defense_matrix"
@@ -8520,7 +8847,7 @@
 			"Ability3"		"tinker_defense_matrix"
 			"Ability4"		"tinker_rearm"
 		}
-		"ArmorPhysical"		"2"
+		"ArmorPhysical"		"4"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"		"22"
 		"AttackDamageMax"		"28"
@@ -8664,6 +8991,15 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_tinker.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_tinker.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_attack1"	"2"
+			"attach_attack2"	"3"
+			"attach_attack3"	"4"
+			"attach_hand1"		"5"
+			"attach_hand2"		"6"
+		}
 	}
 	"npc_dota_hero_sniper"
 	{
@@ -8699,6 +9035,7 @@
 		"LastHitChallengeRival"		"npc_dota_hero_drow_ranger"
 		"HeroSelectSoundEffect"		"Hero_Sniper.Pick"
 		"GibType"		"default"
+		"NameAliases"	"Kardel Sharpeye"
 		"Ability1"		"sniper_shrapnel"
 		"Ability2"		"sniper_headshot"
 		"Ability3"		"sniper_take_aim"
@@ -8860,6 +9197,7 @@
 				"item_recipe_dragon_lance"		"ITEM_CORE"
 				"item_dragon_lance"		"ITEM_DERIVED"
 
+				"item_gloves"   		"ITEM_EXTENSION"
 				"item_javelin"				"ITEM_EXTENSION"
 				"item_mithril_hammer"		"ITEM_EXTENSION"
 				"item_recipe_maelstrom"		"ITEM_EXTENSION"
@@ -8869,9 +9207,9 @@
 				"item_boots_of_elves"		"ITEM_LUXURY"
 				"item_recipe_yasha"			"ITEM_LUXURY"
 				"item_yasha"				"ITEM_DERIVED"
-				"item_ultimate_orb"			"ITEM_LUXURY"
-				"item_recipe_manta"			"ITEM_LUXURY"
-				"item_manta"				"ITEM_DERIVED"
+				"item_diadem"			"ITEM_EXTENSION"
+				"item_recipe_manta"			"ITEM_EXTENSION"
+				"item_manta"				"ITEM_LUXURY | ITEM_DERIVED"
 
 				"item_mithril_hammer"			"ITEM_LUXURY"
 				"item_ogre_axe"					"ITEM_LUXURY"
@@ -8882,10 +9220,10 @@
 				"item_recipe_mjollnir"	"ITEM_LUXURY"
 				"item_mjollnir"			"ITEM_DERIVED"
 
-				"item_broadsword"			"ITEM_LUXURY"
-				"item_blades_of_attack"		"ITEM_LUXURY"
-				"item_recipe_lesser_crit"	"ITEM_LUXURY"
-				"item_lesser_crit"			"ITEM_DERIVED"
+				"item_claymore"			"ITEM_EXTENSION"
+				"item_blades_of_attack"		"ITEM_EXTENSION"
+				"item_recipe_lesser_crit"		"ITEM_EXTENSION"
+				"item_lesser_crit"		"ITEM_DERIVED"
 				"item_demon_edge"			"ITEM_LUXURY"
 				"item_recipe_greater_crit"	"ITEM_LUXURY"
 				"item_greater_crit"			"ITEM_DERIVED"
@@ -8935,6 +9273,11 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_sniper.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_sniper.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_attack1"	"2"
+		}
 	}
 	"npc_dota_hero_necrolyte"
 	{
@@ -8970,6 +9313,7 @@
 		"HeroSelectSoundEffect"		"Hero_Necrolyte.Pick"
 		"GibType"		"ethereal"
 		"GibTintColor"	"95 210 156 255"
+		"NameAliases"	"Rotundjere"
 		"Ability1"		"necrolyte_death_pulse"
 		"Ability2"		"necrolyte_sadist"
 		"Ability3"		"necrolyte_heartstopper_aura"
@@ -8984,7 +9328,7 @@
 		"Ability15"		"special_bonus_unique_necrophos_5"
 		"Ability16"		"special_bonus_unique_necrophos_2"
 		"Ability17"		"special_bonus_unique_necrophos"
-		"ArmorPhysical"		"1"
+		"ArmorPhysical"		"2"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"		"26"
 		"AttackDamageMax"		"30"
@@ -9120,8 +9464,13 @@
 				"item_null_talisman"	"ITEM_DERIVED | ITEM_SELLABLE"
 
 				"item_boots"				"ITEM_CORE"
-				"item_energy_booster"		"ITEM_CORE"
-				"item_arcane_boots"			"ITEM_DERIVED"
+
+				"item_sobi_mask"				"ITEM_CORE"
+				"item_recipe_ring_of_basilius"  "ITEM_EXTENSION"
+				"item_ring_of_basilius"			"ITEM_DERIVED"
+
+				"item_recipe_arcane_boots"		"ITEM_EXTENSION"				
+				"item_arcane_boots"		"ITEM_DERIVED"
 
 				"item_ring_of_regen"		"ITEM_EXTENSION"
 				"item_recipe_headdress"		"ITEM_EXTENSION"
@@ -9137,17 +9486,23 @@
 				"item_ultimate_scepter"		"ITEM_DERIVED"
 
 				"item_cloak"		"ITEM_EXTENSION"
-				"item_ring_of_health"		"ITEM_EXTENSION"
+				"item_ring_of_tarrasque"		"ITEM_EXTENSION"
 				"item_ring_of_regen"		"ITEM_EXTENSION"
 				"item_recipe_headdress"		"ITEM_EXTENSION"
 				"item_headdress"		"ITEM_DERIVED"
 				"item_recipe_pipe"		"ITEM_EXTENSION"
 				"item_pipe"		"ITEM_DERIVED"
 
-				"item_mystic_staff"		"ITEM_LUXURY"
+
+				"item_helm_of_iron_will"	"ITEM_EXTENSION"
+				"item_crown"					"ITEM_EXTENSION"
+				"item_recipe_veil_of_discord"	"ITEM_EXTENSION"
+				"item_veil_of_discord"		"ITEM_DERIVED"
+
 				"item_platemail"		"ITEM_LUXURY"
+				//"item_mystic_staff"		"ITEM_LUXURY"
 				"item_recipe_shivas_guard"		"ITEM_LUXURY"
-				"item_shivas_guard"	 "ITEM_DERIVED"
+				"item_shivas_guard"				"ITEM_DERIVED"
 
 				"item_ring_of_protection"   "ITEM_LUXURY"
 				"item_recipe_buckler"	"ITEM_LUXURY"
@@ -9155,10 +9510,10 @@
 				"item_recipe_guardian_greaves"	"ITEM_LUXURY"
 				"item_guardian_greaves" "ITEM_LUXURY | ITEM_DERIVED"
 
-				"item_ultimate_orb"		"ITEM_LUXURY"
-				"item_void_stone"		"ITEM_LUXURY"
-				"item_mystic_staff"		"ITEM_LUXURY"
-				"item_sheepstick"		"ITEM_DERIVED"
+				"item_tiara_of_selemene"	"ITEM_EXTENSION"
+				"item_mystic_staff"			"ITEM_LUXURY"
+				"item_recipe_sheepstick"	"ITEM_EXTENSION"
+				"item_sheepstick"			"ITEM_DERIVED"
 			}
 			"Build"
 			{
@@ -9205,6 +9560,11 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_necrolyte.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_necrolyte.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_hand2"		"2"
+		}
 	}
 	"npc_dota_hero_warlock"
 	{
@@ -9241,6 +9601,7 @@
 		"LastHitChallengeRival"		"npc_dota_hero_lion"
 		"HeroSelectSoundEffect"		"Hero_Warlock.Pick"
 		"GibType"		"default"
+		"NameAliases"	"wl;Demnok Lannik"
 		"Ability1"		"warlock_fatal_bonds"
 		"Ability2"		"warlock_shadow_word"
 		"Ability3"		"warlock_upheaval"
@@ -9267,8 +9628,8 @@
 		"ProjectileModel"		"particles/units/heroes/hero_warlock/warlock_base_attack.vpcf"
 		"ProjectileSpeed"		"1200"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_INTELLECT"
-		"AttributeBaseStrength"		"24"
-		"AttributeStrengthGain"		"3.000000"
+		"AttributeBaseStrength"		"22"
+		"AttributeStrengthGain"		"2.800000"
 		"AttributeBaseIntelligence"		"25"
 		"AttributeIntelligenceGain"		"3.100000"
 		"AttributeBaseAgility"		"10"
@@ -9410,13 +9771,17 @@
 				"item_crown"		"ITEM_CORE"
 
 				"item_boots"				"ITEM_CORE"
-				"item_energy_booster"		"ITEM_CORE"
-				"item_arcane_boots"			"ITEM_DERIVED"
 
-				"item_sobi_mask"			"ITEM_EXTENSION"
+				"item_sobi_mask"				"ITEM_CORE"
 				"item_recipe_ring_of_basilius"  "ITEM_EXTENSION"
-				"item_ring_of_basilius"	 "ITEM_DERIVED"
-				"item_recipe_veil_of_discord" "ITEM_EXTENSION"
+				"item_ring_of_basilius"			"ITEM_DERIVED"
+
+				"item_recipe_arcane_boots"		"ITEM_EXTENSION"				
+				"item_arcane_boots"		"ITEM_DERIVED"
+
+				"item_helm_of_iron_will"	"ITEM_EXTENSION"
+				"item_crown"					"ITEM_EXTENSION"
+				"item_recipe_veil_of_discord"	"ITEM_EXTENSION"
 				"item_veil_of_discord"		"ITEM_DERIVED"
 
 				"item_point_booster"		"ITEM_LUXURY"
@@ -9426,14 +9791,17 @@
 				"item_ultimate_scepter"		"ITEM_DERIVED"
 
 				"item_cornucopia"		"ITEM_EXTENSION"
-				"item_cornucopia"		"ITEM_EXTENSION"
+				"item_ring_of_tarrasque"		"ITEM_EXTENSION"
+				"item_tiara_of_selemene"		"ITEM_EXTENSION"
 				"item_recipe_refresher"	"ITEM_EXTENSION"
 				"item_refresher"		"ITEM_DERIVED"
 
-				"item_mystic_staff"		"ITEM_LUXURY"
+
+
 				"item_platemail"		"ITEM_LUXURY"
+				//"item_mystic_staff"		"ITEM_LUXURY"
 				"item_recipe_shivas_guard"		"ITEM_LUXURY"
-				"item_shivas_guard"	 "ITEM_DERIVED"
+				"item_shivas_guard"				"ITEM_DERIVED"
 			}
 
 			"Build"
@@ -9483,6 +9851,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_warlock.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_warlock.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		 "1"
+			"attach_staff_top"     "2"
+			"attach_lantern"     "3"
+		}
 	}
 	"npc_dota_hero_beastmaster"
 	{
@@ -9540,10 +9914,10 @@
 			"Ability4"		"beastmaster_primal_roar"
 		}
 		"AbilityDraftDisabled"		"0"
-		"ArmorPhysical"		"0"
+		"ArmorPhysical"		"-1"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"		"3"
-		"AttackDamageMax"		"7"
+		"AttackDamageMin"		"5"
+		"AttackDamageMax"		"9"
 		"AttackRate"		"1.700000"
 		"BaseAttackSpeed"		"100"
 		"AttackAnimationPoint"		"0.300000"
@@ -9556,7 +9930,7 @@
 		"AttributeBaseIntelligence"		"16"
 		"AttributeIntelligenceGain"		"1.200000"
 		"AttributeBaseAgility"		"18"
-		"AttributeAgilityGain"		"1.400000"
+		"AttributeAgilityGain"		"1.600000"
 		"MovementSpeed"		"305"
 		"BoundsHullName"		"DOTA_HULL_SIZE_HERO"
 		"ItemSlots"
@@ -9694,6 +10068,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_beastmaster.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_beastmaster.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_hand1"		"5"
+			"attach_hand2"		"6"
+		}
 	}
 	"npc_dota_hero_queenofpain"
 	{
@@ -9715,7 +10095,7 @@
 		"CMEnabled"		"1"
 		"PickSound"		"queenofpain_pain_spawn_04"
 		"BanSound"		"queenofpain_pain_anger_03"
-		"NameAliases"		"qop"
+		"NameAliases"		"qop;Akasha"
 		"workshop_guide_name"		"Queen of Pain"
 		"new_player_enable"		"1"
 		"SimilarHeroes"		"25,21,13"
@@ -9735,8 +10115,8 @@
 		"Ability4"		"generic_hidden"
 		"Ability5"		"generic_hidden"
 		"Ability6"		"queenofpain_sonic_wave"
-		"Ability10"		"special_bonus_attack_damage_15"
-		"Ability11"		"special_bonus_strength_8"
+		"Ability10"		"special_bonus_attack_damage_20"
+		"Ability11"		"special_bonus_unique_queen_of_pain_strike_heal"
 		"Ability12"		"special_bonus_unique_queen_of_pain_4"
 		"Ability13"		"special_bonus_attack_speed_30"
 		"Ability14"		"special_bonus_unique_queen_of_pain_2"
@@ -9899,6 +10279,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_queenofpain.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_queenofpain.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_hand1"		"5"
+			"attach_hand2"		"6"
+		}
 	}
 	"npc_dota_hero_venomancer"
 	{
@@ -9933,6 +10319,7 @@
 		"HeroSelectSoundEffect"		"Hero_Venomancer.Pick"
 		"GibType"		"goo"
 		"GibTintColor"	"180 227 54 255"
+		"NameAliases"	"Lesale"
 		"Ability1"		"venomancer_venomous_gale"
 		"Ability2"		"venomancer_poison_sting"
 		"Ability3"		"venomancer_plague_ward"
@@ -10103,6 +10490,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_venomancer.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_venomancer.vpcf"
+		"showcase_attachments"
+		{
+			"attach_mouth"		 "1"
+			"attach_attack1"     "2"
+			"attach_attack2"     "3"
+		}
 	}
 	"npc_dota_hero_faceless_void"
 	{
@@ -10151,7 +10544,7 @@
 		"Ability15"		"special_bonus_unique_faceless_void_5"
 		"Ability16"		"special_bonus_unique_faceless_void_4"
 		"Ability17"		"special_bonus_unique_faceless_void_2"
-		"ArmorPhysical"		"1"
+		"ArmorPhysical"		"0"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageMin"		"37"
 		"AttackDamageMax"		"43"
@@ -10161,7 +10554,7 @@
 		"AttackRange"		"150"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
 		"AttributeBaseStrength"		"20"
-		"AttributeStrengthGain"		"2.400000"
+		"AttributeStrengthGain"		"2.600000"
 		"AttributeBaseAgility"		"19"
 		"AttributeAgilityGain"		"3.0"
 		"AttributeBaseIntelligence"		"15"
@@ -10287,6 +10680,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_faceless_void.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_faceless_void.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"			"1"
+			"attach_weapon_glow"	"2"
+			"attach_hand2"			"6"
+		}
 	}
 	"npc_dota_hero_skeleton_king"
 	{
@@ -10311,7 +10710,7 @@
 		"BotImplemented"		"1"
 		"PickSound"		"skeleton_king_wraith_spawn_01"
 		"BanSound"		"skeleton_king_wraith_anger_04"
-		"NameAliases"		"sk;snk;wk;skeleton"
+		"NameAliases"		"sk;snk;wk;skeleton;one true king;Ostarion"
 		"workshop_guide_name"		"Wraith King"
 		"new_player_enable"		"1"
 		"SimilarHeroes"		"8,54,18"
@@ -10335,7 +10734,7 @@
 		"Ability11"		"special_bonus_unique_wraith_king_vampiric_skeleton_duration"
 		"Ability12"		"special_bonus_unique_wraith_king_11"
 		"Ability13"		"special_bonus_unique_wraith_king_6"
-		"Ability14"		"special_bonus_cleave_25"
+		"Ability14"		"special_bonus_cleave_35"
 		"Ability15"		"special_bonus_unique_wraith_king_5"
 		"Ability16"		"special_bonus_unique_wraith_king_10"
 		"Ability17"		"special_bonus_unique_wraith_king_4"
@@ -10526,11 +10925,9 @@
 				"item_broadsword"			"ITEM_LUXURY"
 				"item_blade_mail" 			"ITEM_DERIVED | ITEM_SELLABLE"
 
-				"item_ogre_axe"			"ITEM_LUXURY"
-				"item_quarterstaff"		"ITEM_LUXURY"
-				"item_sobi_mask"		"ITEM_LUXURY"
-				"item_robe"				"ITEM_LUXURY"
-				"item_oblivion_staff"	"ITEM_LUXURY | ITEM_DERIVED"
+				"item_ogre_axe"			"ITEM_CORE"
+				"item_broadsword"		"ITEM_CORE"
+				"item_void_stone"		"ITEM_CORE"
 				"item_echo_sabre"		"ITEM_DERIVED"
 
 				"item_demon_edge"		"ITEM_LUXURY"
@@ -10589,6 +10986,13 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_skeleton_king.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_skeleton_king.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_attack1"	"2"
+			"attach_attack2"	"3"
+			"attach_right_hand" "4"
+		}
 	}
 	"npc_dota_hero_death_prophet"
 	{
@@ -10608,7 +11012,7 @@
 		"VersusScale"		"0.93"
 		"HeroGlowColor"		"15 241 28"
 		"CMEnabled"		"1"
-		"NameAliases"		"dp"
+		"NameAliases"		"dp;Krobelus"
 		"PickSound"		"death_prophet_dpro_spawn_01"
 		"BanSound"		"death_prophet_dpro_anger_01"
 		"workshop_guide_name"		"Death Prophet"
@@ -10635,7 +11039,7 @@
 		"Ability11"		"special_bonus_magic_resistance_12"
 		"Ability12"		"special_bonus_hp_300"
 		"Ability13"		"special_bonus_unique_death_prophet_2"
-		"Ability14"		"special_bonus_unique_death_prophet_crypt_swarm_slow"
+		"Ability14"		"special_bonus_unique_death_prophet_silence_slow"
 		"Ability15"		"special_bonus_unique_death_prophet_3"
 		"Ability16"		"special_bonus_unique_death_prophet_5"
 		"Ability17"		"special_bonus_unique_death_prophet"
@@ -10795,12 +11199,10 @@
 				"item_blades_of_attack"	"ITEM_EXTENSION"
 				"item_phase_boots"		"ITEM_DERIVED"
 
-				"item_sobi_mask"		"ITEM_EXTENSION"
-				"item_recipe_ring_of_basilius"  "ITEM_EXTENSION"
-				"item_ring_of_basilius"	"ITEM_DERIVED"
-				"item_crown"			"ITEM_EXTENSION"
+				"item_helm_of_iron_will"	"ITEM_EXTENSION"
+				"item_crown"					"ITEM_EXTENSION"
 				"item_recipe_veil_of_discord"	"ITEM_EXTENSION"
-				"item_veil_of_discord"	"ITEM_DERIVED"
+				"item_veil_of_discord"		"ITEM_DERIVED"
 
 				"item_wind_lace"		"ITEM_EXTENSION"
 				"item_void_stone"		"ITEM_EXTENSION"
@@ -10814,7 +11216,7 @@
 				"item_black_king_bar"		"ITEM_DERIVED"
 
 				"item_platemail"		"ITEM_LUXURY"
-				"item_mystic_staff"		"ITEM_LUXURY"
+				//"item_mystic_staff"		"ITEM_LUXURY"
 				"item_recipe_shivas_guard"		"ITEM_LUXURY"
 				"item_shivas_guard"		"ITEM_DERIVED"
 			}
@@ -10839,7 +11241,7 @@
 				"17"		""
 				"18"		"death_prophet_exorcism"
 				"19"		""
-				"20"		"special_bonus_unique_death_prophet_crypt_swarm_slow"
+				"20"		"special_bonus_unique_death_prophet_silence_slow"
 				"21"		""
 				"22"		""
 				"23"		""
@@ -10864,6 +11266,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_death_prophet.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_death_prophet.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_hand_R"	"2"
+			"attach_hand_L"	"3"
+		}
 	}
 	"npc_dota_hero_phantom_assassin"
 	{
@@ -10934,10 +11342,10 @@
 		"AttributeBaseStrength"		"19" 
 		"AttributeStrengthGain"		"2.0000"
 		"AttributeBaseAgility"		"21"
-		"AttributeAgilityGain"		"3.20000"
+		"AttributeAgilityGain"		"3.40000"
 		"AttributeBaseIntelligence"		"15"
-		"AttributeIntelligenceGain"		"1.400000"
-		"MovementSpeed"		"305"
+		"AttributeIntelligenceGain"		"1.700000"
+		"MovementSpeed"		"310"
 		"HasAggressiveStance"		"1"
 		"MovementTurnRate"		"0.800000"
 		"RenderablePortrait"
@@ -11053,40 +11461,40 @@
 				"SlotIndex"		"8"
 				"SlotName"		"head_persona_1"
 				"SlotText"		"#LoadoutSlot_Head_Phantom_Assassin_Persona"
-				//"TextureWidth"		"256"
-				//"TextureHeight"		"256"
-				//"MaxPolygonsLOD0"		"1000"
-				//"MaxPolygonsLOD1"		"500"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"2500"
+				"MaxPolygonsLOD1"		"1200"
 			}
 		   	"9"
 			{
 				"SlotIndex"		"9"
 				"SlotName"		"armor_persona_1"
 				"SlotText"		"#LoadoutSlot_Armor_Phantom_Assassin_Persona"
-				//"TextureWidth"		"256"
-				//"TextureHeight"		"256"
-				//"MaxPolygonsLOD0"		"1000"
-				//"MaxPolygonsLOD1"		"500"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"2800"
+				"MaxPolygonsLOD1"		"1400"
 			}
 		   	"10"
 			{
 				"SlotIndex"		"10"
 				"SlotName"		"legs_persona_1"
 				"SlotText"		"#LoadoutSlot_Legs_Phantom_Assassin_Persona"
-				//"TextureWidth"		"256"
-				//"TextureHeight"		"256"
-				//"MaxPolygonsLOD0"		"1000"
-				//"MaxPolygonsLOD1"		"500"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"2800"
+				"MaxPolygonsLOD1"		"1400"
 			}
 		"11"
 			{
 				"SlotIndex"		"11"
 				"SlotName"		"weapon_persona_1"
 				"SlotText"		"#LoadoutSlot_Weapon_Phantom_Assassin_Persona"
-				//"TextureWidth"		"256"
-				//"TextureHeight"		"256"
-				//"MaxPolygonsLOD0"		"1000"
-				//"MaxPolygonsLOD1"		"500"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"2000"
+				"MaxPolygonsLOD1"		"1000"
 			}
 		"12"
 			{
@@ -11139,10 +11547,14 @@
 				"item_recipe_basher"		"ITEM_LUXURY"
 				"item_basher"				"ITEM_DERIVED"
 
-				"item_ring_of_health"		"ITEM_LUXURY"
-				"item_vitality_booster"		"ITEM_LUXURY"
-				"item_recipe_vanguard"	  "ITEM_LUXURY"
-				"item_vanguard"				"ITEM_DERIVED"
+				"item_blitz_knuckles"		"ITEM_EXTENSION"
+				"item_sobi_mask"		"ITEM_EXTENSION"
+				"item_robe"				"ITEM_EXTENSION"
+				"item_oblivion_staff"				"ITEM_EXTENSION | ITEM_DERIVED"
+
+				"item_cloak"				"ITEM_EXTENSION"
+				"item_recipe_mage_slayer"				"ITEM_EXTENSION"
+				"item_mage_slayer"				"ITEM_EXTENSION | ITEM_DERIVED"
 
 				"item_recipe_abyssal_blade"	"ITEM_LUXURY"
 				"item_abyssal_blade"		"ITEM_DERIVED"
@@ -11214,6 +11626,12 @@
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_phantom_assassin.vpcf"
 		"party_hat_effect_persona"	"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_phantom_assassin_persona_1.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"			   "1"
+			"attach_attack1"		   "2"
+			"attach_attack2"		   "3"
+		}
 	}
 	"npc_dota_hero_pugna"
 	{
@@ -11254,7 +11672,7 @@
 		"Ability4"		"generic_hidden"
 		"Ability5"		"generic_hidden"
 		"Ability6"		"pugna_life_drain"
-		"Ability10"		"special_bonus_movement_speed_20"
+		"Ability10"		"special_bonus_unique_pugna_decrepify_ally_movespeed"
 		"Ability11"		"special_bonus_hp_200"
 		"Ability12"		"special_bonus_unique_pugna_4"
 		"Ability13"		"special_bonus_unique_pugna_6"
@@ -11275,9 +11693,9 @@
 		"AttributePrimary"		"DOTA_ATTRIBUTE_INTELLECT"
 		"AttributeBaseStrength"		"19"
 		"AttributeStrengthGain"		"2.00000"
-		"AttributeBaseAgility"		"24"
+		"AttributeBaseAgility"		"21"
 		"AttributeAgilityGain"		"1.300000"
-		"AttributeBaseIntelligence"		"24"
+		"AttributeBaseIntelligence"		"26"
 		"AttributeIntelligenceGain"		"5.20000"
 		"StatusManaRegen"	"0.5"
 		"MovementSpeed"		"330"
@@ -11417,12 +11835,18 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_pugna.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_pugna.vpcf"
+		"showcase_attachments"
+		{
+			"attach_mouth"			   "1"
+			"attach_attack1"		   "2"
+			"attach_hand1"			"3"
+		}
 	}
 	"npc_dota_hero_templar_assassin"
 	{
 		"Model"		"models/heroes/lanaya/lanaya.vmdl"
 		"IdleExpression"		"scenes/templar_assassin/templar_assassin_exp_idle_01.vcd"
-		"NameAliases"		"ta"
+		"NameAliases"		"ta;Lanaya"
 		"SoundSet"		"Hero_TemplarAssassin"
 		"Enabled"		"1"
 		"HeroUnlockOrder"		"3"
@@ -11606,6 +12030,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_templar_assassin.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_templar_assassin.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"			   "1"
+			"attach_attack1"		   "2"
+			"attach_attack2"		   "3"
+		}
 	}
 	"npc_dota_hero_viper"
 	{
@@ -11646,6 +12076,7 @@
 		"HeroSelectSoundEffect"		"Hero_Viper.Pick"
 		"GibType"		"goo"
 		"GibTintColor"	"188 255 57 255"
+		"NameAliases"	"Netherdrake"
 		"Ability1"		"viper_poison_attack"
 		"Ability2"		"viper_nethertoxin"
 		"Ability3"		"viper_corrosive_skin"
@@ -11858,6 +12289,11 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_viper.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_viper.vpcf"
+		"showcase_attachments"
+		{
+			"attach_wing_barb_1"	"1"
+			"attach_wing_barb_2"	"2"
+		}
 	}
 	"npc_dota_hero_luna"
 	{
@@ -11891,6 +12327,7 @@
 		}
 		"LastHitChallengeRival"		"npc_dota_hero_lina"
 		"HeroSelectSoundEffect"		"Hero_Luna.Pick"
+		"NameAliases"	"Moon Rider"
 		"GibType"		"default"
 		"Ability1"		"luna_lucent_beam"
 		"Ability2"		"luna_moon_glaive"
@@ -12051,15 +12488,15 @@
 				"item_boots_of_elves"		"ITEM_CORE"
 				"item_recipe_yasha"		"ITEM_CORE"
 				"item_yasha"		"ITEM_DERIVED"
-				"item_ultimate_orb"		"ITEM_EXTENSION"
-				"item_recipe_manta"		"ITEM_EXTENSION"
-				"item_manta"		"ITEM_DERIVED"
+				"item_diadem"			"ITEM_EXTENSION"
+				"item_recipe_manta"			"ITEM_EXTENSION"
+				"item_manta"				"ITEM_LUXURY | ITEM_DERIVED"
 				"item_ogre_axe"		"ITEM_EXTENSION"
 				"item_mithril_hammer"		"ITEM_EXTENSION"
 				"item_recipe_black_king_bar"		"ITEM_EXTENSION"
 				"item_black_king_bar"		"ITEM_DERIVED"
 				"item_eagle"		"ITEM_EXTENSION"
-				"item_quarterstaff"		"ITEM_EXTENSION"
+				"item_claymore"		"ITEM_EXTENSION"
 				"item_talisman_of_evasion"		"ITEM_EXTENSION"
 				"item_butterfly"		"ITEM_DERIVED"
 				"item_ring_of_protection"   "ITEM_LUXURY"
@@ -12115,6 +12552,13 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_luna.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_luna.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_shield"		"2"
+			"attach_attack1"	"3"
+			"attach_head_mount"	"4"
+		}
 	}
 	"npc_dota_hero_dragon_knight"
 	{
@@ -12170,7 +12614,7 @@
 		"Ability10"		"special_bonus_attack_damage_15"
 		"Ability11"		"special_bonus_unique_dragon_knight_3"
 		"Ability12"		"special_bonus_unique_dragon_knight_2"
-		"Ability13"		"special_bonus_hp_400"
+		"Ability13"		"special_bonus_hp_300"
 		"Ability14"		"special_bonus_unique_dragon_knight_7"
 		"Ability15"		"special_bonus_unique_dragon_knight_9"
 		"Ability16"		"special_bonus_unique_dragon_knight"
@@ -12464,6 +12908,12 @@
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_dragon_knight.vpcf"
 		"party_hat_effect_persona"	"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_dragon_knight_persona1.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_attack2"	"2"
+			"attach_attack1"	"3"
+		}
 	}
 	"npc_dota_hero_dazzle"
 	{
@@ -12504,7 +12954,7 @@
 		"Ability10"		"special_bonus_unique_dazzle_poison_touch_attack_range_bonus"
 		"Ability11"		"special_bonus_mp_regen_175"
 		"Ability12"		"special_bonus_unique_dazzle_2"
-		"Ability13"		"special_bonus_attack_speed_60"
+		"Ability13"		"special_bonus_attack_speed_80"
 		"Ability14"		"special_bonus_unique_dazzle_5"
 		"Ability15"		"special_bonus_unique_dazzle_3"
 		"Ability16"		"special_bonus_unique_dazzle_1"
@@ -12531,7 +12981,7 @@
 		"AttributeBaseStrength"		"18"
 		"AttributeStrengthGain"		"2.0"
 		"AttributeBaseIntelligence"		"25"
-		"AttributeIntelligenceGain"		"2.5"
+		"AttributeIntelligenceGain"		"2.8"
 		"AttributeBaseAgility"		"20"
 		"AttributeAgilityGain"		"1.4"
 		"MovementSpeed"		"305"
@@ -12650,22 +13100,18 @@
 
 				"item_boots"		"ITEM_CORE"
 
-				"item_circlet"			"ITEM_CORE"
-				"item_sobi_mask"		"ITEM_CORE"
-				"item_ring_of_protection"		"ITEM_CORE"
 
-				"item_energy_booster"		"ITEM_EXTENSION"
+				"item_sobi_mask"				"ITEM_CORE"
+				"item_recipe_ring_of_basilius"  "ITEM_EXTENSION"
+				"item_ring_of_basilius"			"ITEM_DERIVED"
+
+				"item_recipe_arcane_boots"		"ITEM_EXTENSION"				
 				"item_arcane_boots"		"ITEM_DERIVED"
 
-				"item_ultimate_orb"		"ITEM_LUXURY"
-				"item_void_stone"		"ITEM_LUXURY"
-				"item_mystic_staff"		"ITEM_LUXURY"
-				"item_sheepstick"		"ITEM_DERIVED"
-
-				"item_quarterstaff"		"ITEM_LUXURY"
-				"item_sobi_mask"		"ITEM_LUXURY"
-				"item_robe"		"ITEM_LUXURY"
-				"item_oblivion_staff"		"ITEM_DERIVED"
+				"item_tiara_of_selemene"	"ITEM_EXTENSION"
+				"item_mystic_staff"			"ITEM_LUXURY"
+				"item_recipe_sheepstick"	"ITEM_EXTENSION"
+				"item_sheepstick"			"ITEM_DERIVED"
 			}
 			"Build"
 			{
@@ -12683,7 +13129,7 @@
 				"12"		"dazzle_bad_juju"
 				"13"		"dazzle_poison_touch"
 				"14"		"dazzle_poison_touch"
-				"15"		"special_bonus_attack_speed_60"
+				"15"		"special_bonus_attack_speed_80"
 				"16"		"dazzle_poison_touch"
 				"17"		""
 				"18"		"dazzle_bad_juju"
@@ -12712,6 +13158,11 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_dazzle.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_dazzle.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_attack1"	"3"
+		}
 	}
 	"npc_dota_hero_rattletrap"
 	{
@@ -12744,6 +13195,7 @@
 		"LastHitChallengeRival"		"npc_dota_hero_sand_king"
 		"HeroSelectSoundEffect"		"Hero_Rattletrap.Pick"
 		"GibType"		"motor"
+		"NameAliases"	"Rattletrap;cw"
 		"Ability1"		"rattletrap_battery_assault"
 		"Ability2"		"rattletrap_power_cogs"
 		"Ability3"		"rattletrap_rocket_flare"
@@ -12770,7 +13222,7 @@
 		"AttackRange"		"150"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_ALL"
 		"AttributeBaseStrength"		"27"
-		"AttributeStrengthGain"		"2.8"
+		"AttributeStrengthGain"		"3.1"
 		"AttributeBaseAgility"		"13"
 		"AttributeAgilityGain"		"2.1"
 		"AttributeBaseIntelligence"		"18"
@@ -12891,6 +13343,13 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_rattletrap.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_rattletrap.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_rocket"		"2"
+			"attach_attack1"	"3"
+			"attach_hand2"		"4"
+		}
 	}
 	"npc_dota_hero_leshrac"
 	{
@@ -12924,6 +13383,7 @@
 		}
 		"LastHitChallengeRival"		"npc_dota_hero_lion"
 		"HeroSelectSoundEffect"		"Hero_Leshrac.Pick"
+		"NameAliases"	"ts"
 		"Ability1"		"leshrac_split_earth"
 		"Ability2"		"leshrac_diabolic_edict"
 		"Ability3"		"leshrac_lightning_storm"
@@ -13067,6 +13527,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_leshrac.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_leshrac.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_attack2"	"2"
+			"attach_attack1"	"3"
+		}
 	}
 	"npc_dota_hero_furion"
 	{
@@ -13118,10 +13584,9 @@
 		"Ability17"		"special_bonus_unique_furion"
 		"ArmorPhysical"		"0"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"		"27"
-		"AttackDamageMax"		"37"
+		"AttackDamageMin"		"24"
+		"AttackDamageMax"		"34"
 		"AttackRate"		"1.5" 
-		"StatusManaRegen"	"0.75"
 		"AttackAnimationPoint"		"0.400000"
 		"MovementTurnRate"		"0.900000"
 		"AttackAcquisitionRange"		"800"
@@ -13129,12 +13594,12 @@
 		"ProjectileModel"		"particles/units/heroes/hero_furion/furion_base_attack.vpcf"
 		"ProjectileSpeed"		"1125"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_INTELLECT"
-		"AttributeBaseStrength"		"21"
+		"AttributeBaseStrength"		"19"
 		"AttributeStrengthGain"		"2.600000"
 		"AttributeBaseIntelligence"		"22"
 		"AttributeIntelligenceGain"		"3.500000"
-		"AttributeBaseAgility"		"20"
-		"AttributeAgilityGain"		"3.400000"
+		"AttributeBaseAgility"		"14"
+		"AttributeAgilityGain"		"3.200000"
 		"MovementSpeed"		"295"
 		"BoundsHullName"		"DOTA_HULL_SIZE_HERO"
 		"VoiceFile"		"soundevents/voscripts/game_sounds_vo_furion.vsndevts"
@@ -13265,6 +13730,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_furion.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_furion.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"			   "1"
+			"attach_attack1"		   "2"
+			"attach_weapon"			"3"
+		}
 	}
 	"npc_dota_hero_life_stealer"
 	{
@@ -13286,7 +13757,7 @@
 		"CMEnabled"		"1"
 		"PickSound"		"life_stealer_lifest_spawn_01"
 		"BanSound"		"life_stealer_lifest_anger_05"
-		"NameAliases"				"ls"
+		"NameAliases"				"ls;Naix"
 		"workshop_guide_name"		"Lifestealer"
 		"new_player_enable"		"1"
 		"SimilarHeroes"		"104,28,93"
@@ -13461,6 +13932,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_life_stealer.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_life_stealer.vpcf"
+		"showcase_attachments"
+		{
+			"attach_jaw"		"1"
+			"attach_attack2"	"2"
+			"attach_attack1"	"3"
+		}
 	}
 	"npc_dota_hero_dark_seer"
 	{
@@ -13482,7 +13959,7 @@
 		"PickSound"		"dark_seer_dkseer_spawn_01"
 		"BanSound"		"dark_seer_dkseer_anger_01"
 		"CMEnabled"		"1"
-		"NameAliases"		"ds"
+		"NameAliases"		"ds;Ishkafel"
 		"workshop_guide_name"		"Dark Seer"
 		"new_player_enable"		"1"
 		"SimilarHeroes"		"2,98,108"
@@ -13642,6 +14119,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_dark_seer.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_dark_seer.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_attack2"	"2"
+			"attach_attack1"	"3"
+		}
 	}
 	"npc_dota_hero_clinkz"
 	{
@@ -13704,7 +14187,7 @@
 		"AttributeBaseStrength"		"17"
 		"AttributeStrengthGain"		"2.000000"
 		"AttributeBaseAgility"		"25"
-		"AttributeAgilityGain"		"2.5"
+		"AttributeAgilityGain"		"2.7"
 		"AttributeBaseIntelligence"		"21"
 		"AttributeIntelligenceGain"		"2.2"
 		"StatusHealthRegen"		"0.25"
@@ -13843,6 +14326,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_clinkz.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_clinkz.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_attack2"	"2"
+			"attach_attack1"	"3"
+		}
 	}
 	"npc_dota_hero_omniknight"
 	{
@@ -13876,6 +14365,7 @@
 		}
 		"LastHitChallengeRival"		"npc_dota_hero_dragon_knight"
 		"HeroSelectSoundEffect"		"Hero_Omniknight.Pick"
+		"NameAliases"	"Purist Thunderwrath"
 		"GibType"		"default"
 		"Ability1"		"omniknight_purification"
 		"Ability2"		"omniknight_martyr"
@@ -14041,7 +14531,7 @@
 				"item_soul_ring"		"ITEM_DERIVED | ITEM_SELLABLE"
 
 				"item_cloak"		"ITEM_EXTENSION"
-				"item_ring_of_health"		"ITEM_EXTENSION"
+				"item_ring_of_tarrasque"		"ITEM_EXTENSION"
 
 				"item_ring_of_regen"		"ITEM_EXTENSION"
 				"item_recipe_headdress"		"ITEM_EXTENSION"
@@ -14050,14 +14540,14 @@
 				"item_recipe_pipe"		"ITEM_EXTENSION"
 				"item_pipe"		"ITEM_DERIVED"
 
-				"item_ultimate_orb"		"ITEM_LUXURY"
-				"item_void_stone"		"ITEM_LUXURY"
-				"item_mystic_staff"		"ITEM_LUXURY"
-				"item_sheepstick"		"ITEM_DERIVED"
+				"item_tiara_of_selemene"	"ITEM_EXTENSION"
+				"item_mystic_staff"			"ITEM_LUXURY"
+				"item_recipe_sheepstick"	"ITEM_EXTENSION"
+				"item_sheepstick"			"ITEM_DERIVED"
 
-				//"item_ring_of_tarrasque"		"ITEM_LUXURY"
+				"item_ring_of_tarrasque"		"ITEM_LUXURY"
 				"item_reaver"		"ITEM_LUXURY"
-				"item_vitality_booster"		"ITEM_LUXURY"
+				//"item_vitality_booster"		"ITEM_LUXURY"
 				"item_recipe_heart" "ITEM_LUXURY"
 				"item_heart"		"ITEM_DERIVED"
 			}
@@ -14106,6 +14596,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_omniknight.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_omniknight.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"			   "1"
+			"attach_attack1"		   "2"
+			"attach_attack2"		   "3"
+		}
 	}
 	"npc_dota_hero_enchantress"
 	{
@@ -14143,13 +14639,14 @@
 		"LastHitChallengeRival"		"npc_dota_hero_drow_ranger"
 		"HeroSelectSoundEffect"		"Hero_Enchantress.Pick"
 		"GibType"		"default"
+		"NameAliases"	"Aiushtha"
 		"Ability1"		"enchantress_impetus"
 		"Ability2"		"enchantress_enchant"
 		"Ability3"		"enchantress_natures_attendants"
 		"Ability4"		"enchantress_bunny_hop"
 		"Ability5"		"enchantress_little_friends"
 		"Ability6"		"enchantress_untouchable"
-		"Ability10"		"special_bonus_magic_resistance_8"
+		"Ability10"		"special_bonus_unique_enchantress_enchant_armor"
 		"Ability11"		"special_bonus_unique_enchantress_6"
 		"Ability12"		"special_bonus_attack_damage_45"
 		"Ability13"		"special_bonus_unique_enchantress_2"
@@ -14293,6 +14790,13 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_enchantress.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_enchantress.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_attack2"	"2"
+			"attach_attack1"	"3"
+			"attach_attack3"	"4"
+		}
 	}
 	"npc_dota_hero_huskar"
 	{
@@ -14495,9 +14999,9 @@
 				"item_recipe_black_king_bar"		"ITEM_EXTENSION"
 				"item_black_king_bar"	"ITEM_DERIVED"
 
-				//"item_ring_of_tarrasque"		"ITEM_LUXURY"
+				"item_ring_of_tarrasque"		"ITEM_LUXURY"
 				"item_reaver"			"ITEM_LUXURY"
-				"item_vitality_booster"		"ITEM_LUXURY"
+				//"item_vitality_booster"		"ITEM_LUXURY"
 				"item_recipe_heart"	 "ITEM_LUXURY"
 				"item_heart"			"ITEM_DERIVED"
 			}
@@ -14518,6 +15022,11 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_huskar.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_huskar.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"	"1"
+			"attach_hand1"	"3"
+		}
 	}
 	"npc_dota_hero_night_stalker"
 	{
@@ -14540,7 +15049,7 @@
 		"PickSound"		"night_stalker_nstalk_spawn_01"
 		"BanSound"		"night_stalker_nstalk_anger_07"
 		"CMEnabled"		"1"
-		"NameAliases"		"ns"
+		"NameAliases"		"ns;Balanar"
 		"workshop_guide_name"		"Night Stalker"
 		"new_player_enable"		"1"
 		"SimilarHeroes"		"104,59,4"
@@ -14586,6 +15095,7 @@
 		"AttributeBaseAgility"		"18"
 		"AttributeAgilityGain"		"2.20000"
 		"StatusHealthRegen"		"2.0"
+		"StatusManaRegen"	"0.25"
 		"MovementSpeed"		"295"
 		"VisionDaytimeRange"		"800"
 		"VisionNighttimeRange"		"1800"
@@ -14704,6 +15214,14 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_night_stalker.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_night_stalker.vpcf"
+		"showcase_attachments"
+		{
+			"attach_wing_R"				"1"
+			"attach_wing_L"				"2"
+			"attach_attack1"			"3"
+			"attach_attack2"			"4"
+			"attach_head"				"5"
+		}
 	}
 	"npc_dota_hero_broodmother"
 	{
@@ -14725,7 +15243,7 @@
 		"CMEnabled"		"1"
 		"PickSound"		"broodmother_broo_spawn_01"
 		"BanSound"		"broodmother_broo_anger_01"
-		"NameAliases"		"bm"
+		"NameAliases"		"bm;Arachnia"
 		"workshop_guide_name"		"Broodmother"
 		"new_player_enable"		"1"
 		"SimilarHeroes"		"92,38,82"
@@ -14882,6 +15400,10 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_broodmother.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_broodmother.vpcf"
+		"showcase_attachments"
+		{
+			"attach_attack1"		"1"
+		}
 	}
 	"npc_dota_hero_bounty_hunter"
 	{
@@ -14924,16 +15446,16 @@
 		"Ability10"		"special_bonus_unique_bounty_hunter_5"
 		"Ability11"		"special_bonus_unique_bounty_hunter_4"
 		"Ability12"		"special_bonus_unique_bounty_hunter_9"
-		"Ability13"		"special_bonus_unique_bounty_hunter_6"
+		"Ability13"		"special_bonus_unique_bounty_hunter_3"
 		"Ability14"		"special_bonus_unique_bounty_hunter_8"
 		"Ability15"		"special_bonus_unique_bounty_hunter"
 		"Ability16"		"special_bonus_unique_bounty_hunter_7"
-		"Ability17"		"special_bonus_unique_bounty_hunter_3"
+		"Ability17"		"special_bonus_unique_bounty_hunter_jinada_no_cooldown"
 		"ArmorPhysical"		"5"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageMin"		"33"
 		"AttackDamageMax"		"41"
-		"AttackRate"		"1.700000"
+		"AttackRate"		"1.500000"
 		"AttackAnimationPoint"		"0.590000"
 		"AttackAcquisitionRange"		"600"
 		"AttackRange"		"150"
@@ -15077,10 +15599,17 @@
 				"item_blades_of_attack"	"ITEM_EXTENSION"
 				"item_phase_boots"		"ITEM_DERIVED"
 
-				"item_chainmail"		"ITEM_CORE"
-				"item_sobi_mask"		"ITEM_CORE"
-				"item_blight_stone"		"ITEM_CORE"
-				"item_medallion_of_courage"		"ITEM_DERIVED"
+				"item_energy_booster"		"ITEM_EXTENSION"
+				"item_ring_of_protection"	"ITEM_EXTENSION"
+				"item_fluffy_hat"			"ITEM_EXTENSION"
+				"item_recipe_pavise"		"ITEM_EXTENSION"
+				"item_pavise"				"ITEM_DERIVED"
+
+				"item_crown"			"ITEM_EXTENSION"
+				"item_wind_lace"			"ITEM_EXTENSION"
+				"item_recipe_solar_crest"			"ITEM_EXTENSION"
+				"item_solar_crest"			"ITEM_DERIVED"
+
 				"item_wind_lace"					"ITEM_EXTENSION"
 				"item_robe"						"ITEM_EXTENSION"
 				"item_belt_of_strength"			"ITEM_EXTENSION"
@@ -15090,14 +15619,6 @@
 				"item_mithril_hammer"		"ITEM_EXTENSION"
 				"item_mithril_hammer"		"ITEM_EXTENSION"
 				"item_desolator"		"ITEM_DERIVED"
-				"item_quarterstaff"		"ITEM_LUXURY"
-				"item_sobi_mask"		"ITEM_LUXURY"
-				"item_robe"		"ITEM_LUXURY"
-				"item_oblivion_staff"		"ITEM_DERIVED"
-				"item_quarterstaff"		"ITEM_LUXURY"
-				"item_sobi_mask"		"ITEM_LUXURY"
-				"item_robe"		"ITEM_LUXURY"
-				"item_oblivion_staff"		"ITEM_DERIVED"
 				"item_ogre_axe"		"ITEM_LUXURY"
 				"item_mithril_hammer"		"ITEM_LUXURY"
 				"item_recipe_black_king_bar"		"ITEM_LUXURY"
@@ -15119,7 +15640,7 @@
 				"12"		"bounty_hunter_track"
 				"13"		"bounty_hunter_jinada"
 				"14"		"bounty_hunter_jinada"
-				"15"		"special_bonus_unique_bounty_hunter_6"
+				"15"		"special_bonus_unique_bounty_hunter_3"
 				"16"		"bounty_hunter_jinada"
 				"17"		""
 				"18"		"bounty_hunter_track"
@@ -15129,7 +15650,7 @@
 				"22"		""
 				"23"		""
 				"24"		""
-				"25"		"special_bonus_unique_bounty_hunter_3"
+				"25"		"special_bonus_unique_bounty_hunter_jinada_no_cooldown"
 			}
 			"HeroType"		"DOTA_BOT_SEMI_CARRY | DOTA_BOT_GANKER"
 			"LaningInfo"
@@ -15148,6 +15669,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_bounty_hunter.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_bounty_hunter.vpcf"
+		"showcase_attachments"
+		{
+			"attach_weapon1"		"1"
+			"attach_weapon2"		"2"
+			"attach_head"			"3"
+		}
 	}
 	"npc_dota_hero_weaver"
 	{
@@ -15181,6 +15708,7 @@
 		"HeroSelectSoundEffect"		"Hero_Weaver.Pick"
 		"GibType"		"goo"
 		"GibTintColor"	"98 124 97 255"
+		"NameAliases"	"nw;Skitskurr"
 		"Ability1"		"weaver_the_swarm"
 		"Ability2"		"weaver_shukuchi"
 		"Ability3"		"weaver_geminate_attack"
@@ -15188,7 +15716,7 @@
 		"Ability5"		"generic_hidden"
 		"Ability6"		"weaver_time_lapse"
 		"Ability10"		"special_bonus_unique_weaver_1"
-		"Ability11"		"special_bonus_strength_9"
+		"Ability11"		"special_bonus_strength_8"
 		"Ability12"		"special_bonus_mana_break_20"
 		"Ability13"		"special_bonus_unique_weaver_4"
 		"Ability14"		"special_bonus_unique_weaver_2"
@@ -15323,6 +15851,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_weaver.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_weaver.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		 "1"
+			"attach_attack1"     "2"
+			"attach_attack2"     "3"
+		}
 	}
 	"npc_dota_hero_jakiro"
 	{
@@ -15364,13 +15898,14 @@
 		"LastHitChallengeRival"		"npc_dota_hero_crystal_maiden"
 		"HeroSelectSoundEffect"		"Hero_Jakiro.Pick"
 		"GibType"		"default"
+		"NameAliases"	"thd;twin headed dragon"
 		"Ability1"		"jakiro_dual_breath"
 		"Ability2"		"jakiro_ice_path"
 		"Ability3"		"jakiro_liquid_fire"
 		"Ability4"		"jakiro_liquid_ice"
 		"Ability5"		"generic_hidden"
 		"Ability6"		"jakiro_macropyre"
-		"Ability10"		"special_bonus_attack_range_250"
+		"Ability10"		"special_bonus_attack_range_200"
 		"Ability11"		"special_bonus_unique_jakiro_dualbreath_slow"
 		"Ability12"		"special_bonus_unique_jakiro_4"
 		"Ability13"		"special_bonus_hp_325"
@@ -15501,12 +16036,15 @@
 				"item_recipe_magic_wand"		"ITEM_CORE"
 				"item_magic_wand"		"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_boots"		"ITEM_CORE"
-				"item_energy_booster"		"ITEM_CORE"
+
+				"item_recipe_arcane_boots"		"ITEM_EXTENSION"
 				"item_arcane_boots"		"ITEM_DERIVED"
-				"item_mystic_staff"		"ITEM_EXTENSION"
-				"item_ultimate_orb"		"ITEM_EXTENSION"
-				"item_void_stone"		"ITEM_EXTENSION"
-				"item_sheepstick"		"ITEM_DERIVED"
+				
+				"item_tiara_of_selemene"	"ITEM_EXTENSION"
+				"item_mystic_staff"			"ITEM_LUXURY"
+				"item_recipe_sheepstick"	"ITEM_EXTENSION"
+				"item_sheepstick"			"ITEM_DERIVED"
+
 				"item_point_booster"		"ITEM_EXTENSION"
 				"item_staff_of_wizardry"		"ITEM_EXTENSION"
 				"item_ogre_axe"		"ITEM_EXTENSION"
@@ -15558,6 +16096,11 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_jakiro.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_jakiro.vpcf"
+		"showcase_attachments"
+		{
+			"attach_attack2"	"2"
+			"attach_attack1"	"3"
+		}
 	}
 	"npc_dota_hero_batrider"
 	{
@@ -15722,6 +16265,11 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_batrider.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_batrider.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head_bat"		"2"
+			"attach_head"			"3"
+		}
 	}
 	"npc_dota_hero_chen"
 	{
@@ -15752,6 +16300,7 @@
 		"LastHitChallengeRival"		"npc_dota_hero_sven"
 		"HeroSelectSoundEffect"		"Hero_Chen.Pick"
 		"GibType"		"default"
+		"NameAliases"	"Holy Knight"
 		"Ability1"		"chen_penitence"
 		"Ability2"		"chen_holy_persuasion"
 		"Ability3"		"chen_divine_favor"
@@ -15901,6 +16450,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_chen.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_chen.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"			"1"
+			"attach_head_mount"		"2"
+			"attach_hand2"			"3"
+		}
 	}
 	"npc_dota_hero_spectre"
 	{
@@ -15939,6 +16494,7 @@
 		"HeroSelectSoundEffect"		"Hero_Spectre.Pick"
 		"GibType"		"ethereal"
 		"GibTintColor"	"115 47 94 255"
+		"NameAliases"	"Mercurial"
 		"Ability1"		"spectre_spectral_dagger"
 		"Ability2"		"spectre_desolate"
 		"Ability3"		"spectre_dispersion"
@@ -15946,7 +16502,7 @@
 		"Ability5"		"spectre_haunt"
 		"Ability6"		"spectre_haunt_single"
 		"Ability10"		"special_bonus_unique_spectre"
-		"Ability11"		"special_bonus_all_stats_5"
+		"Ability11"		"special_bonus_unique_spectre_desolate_radius"
 		"Ability12"		"special_bonus_unique_spectre_2"
 		"Ability13"		"special_bonus_unique_spectre_6"
 		"Ability14"		"special_bonus_hp_350"
@@ -15959,10 +16515,10 @@
 			"Ability1"		"spectre_spectral_dagger"
 			"Ability2"		"spectre_desolate"
 			"Ability3"		"spectre_dispersion"
-			"Ability4"		"spectre_haunt"
+			"Ability4"		"spectre_haunt_single"
 		}
 
-		"ArmorPhysical"		"1"
+		"ArmorPhysical"		"0"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"BaseAttackSpeed"		"90"
 		"AttackDamageMin"		"23"
@@ -15983,7 +16539,7 @@
 		"AttributeAgilityGain"		"2.100000"
 		"AttributeBaseIntelligence"		"16"
 		"AttributeIntelligenceGain"		"1.7"
-		"StatusHealthRegen"		"2"
+		"StatusHealthRegen"		"1.0"
 		"MovementSpeed"		"290"
 		"particle_folder"		"particles/units/heroes/hero_spectre"
 		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_spectre.vsndevts"
@@ -16089,6 +16645,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_spectre.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_spectre.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		   "1"
+			"attach_attack1"	   "2"
+			"attach_hand_l"		   "3"
+		}
 	}
 	"npc_dota_hero_doom_bringer"
 	{
@@ -16166,7 +16728,7 @@
 		"AttributeAgilityGain"		"1.5"
 		"AttributeBaseIntelligence"		"15"
 		"AttributeIntelligenceGain"		"1.7"
-		"MovementSpeed"		"285"
+		"MovementSpeed"		"290"
 		"particle_folder"		"particles/units/heroes/hero_doom_bringer"
 		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_doombringer.vsndevts"
 		"VoiceFile"		"soundevents/voscripts/game_sounds_vo_doom_bringer.vsndevts"
@@ -16289,6 +16851,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_doom_bringer.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_doom_bringer.vpcf"
+		"showcase_attachments"
+		{
+			"attach_mouth"		"1"
+			"attach_hand2"		"2"
+			"attach_attack1"	"3"
+		}
 	}
 	"npc_dota_hero_ancient_apparition"
 	{
@@ -16476,6 +17044,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_ancient_apparition.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_ancient_apparition.vpcf"
+		"showcase_attachments"
+		{
+			"attach_hand_left"		"1"
+			"attach_hand_right"		"2"
+			"attach_head"			"3"
+		}
 	}
 	"npc_dota_hero_ursa"
 	{
@@ -16508,6 +17082,7 @@
 		"LastHitChallengeRival"		"npc_dota_hero_tiny"
 		"HeroSelectSoundEffect"		"Hero_Ursa.Pick"
 		"GibType"		"default"
+		"NameAliases"	"Ulfsaar"
 		"Ability1"		"ursa_earthshock"
 		"Ability2"		"ursa_overpower"
 		"Ability3"		"ursa_fury_swipes"
@@ -16546,7 +17121,7 @@
 		"AttributeBaseIntelligence"		"16"
 		"AttributeIntelligenceGain"		"1.500000"
 		"MovementSpeed"		"310"
-		"StatusHealthRegen"		"0.5"
+		"StatusHealthRegen"		"1.0"
 		"particle_folder"		"particles/units/heroes/hero_ursa"
 		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_ursa.vsndevts"
 		"VoiceFile"		"soundevents/voscripts/game_sounds_vo_ursa.vsndevts"
@@ -16642,6 +17217,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_ursa.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_ursa.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		 "1"
+			"attach_hand_l"     "2"
+			"attach_hand_r"     "3"
+		}
 	}
 	"npc_dota_hero_spirit_breaker"
 	{
@@ -16655,7 +17236,7 @@
 		"Complexity"	"1"
 		"Team"		"Bad"
 		"CMEnabled"		"1"
-		"NameAliases"		"sb"
+		"NameAliases"		"sb;Barathrum"
 		"workshop_guide_name"		"Spirit Breaker"
 		"new_player_enable"		"1"
 		"SimilarHeroes"		"106,126,107"
@@ -16685,11 +17266,11 @@
 		"Ability10"		"special_bonus_night_vision_500"
 		"Ability11"		"special_bonus_armor_4"
 		"Ability12"		"special_bonus_unique_spirit_breaker_2"
-		"Ability13"		"special_bonus_attack_damage_40"
-		"Ability14"		"special_bonus_unique_spirit_breaker_3"
-		"Ability15"		"special_bonus_unique_spirit_breaker_4"
-		"Ability16"		"special_bonus_unique_spirit_breaker_1"
-		"Ability17"		"special_bonus_unique_spirit_breaker_shield"
+		"Ability13"		"special_bonus_attack_damage_45"
+		"Ability14"		"special_bonus_unique_spirit_breaker_1"
+		"Ability15"		"special_bonus_unique_spirit_breaker_shield"
+		"Ability16"		"special_bonus_unique_spirit_breaker_3"
+		"Ability17"		"special_bonus_unique_spirit_breaker_4"
 		"ArmorPhysical"		"1.000000"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageMin"		"31"
@@ -16827,6 +17408,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_spirit_breaker.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_spirit_breaker.vpcf"
+		"showcase_attachments"
+		{
+			"attach_face"				"1"
+			"attach_attack1"		   "2"
+			"attach_attack2"		   "3"
+		}
 	}
 	"npc_dota_hero_gyrocopter"
 	{
@@ -16858,6 +17445,7 @@
 		"LastHitChallengeRival"		"npc_dota_hero_sniper"
 		"HeroSelectSoundEffect"		"Hero_Gyrocopter.Pick"
 		"GibType"		"motor"
+		"NameAliases"	"Aurel"
 		"Ability1"		"gyrocopter_rocket_barrage"
 		"Ability2"		"gyrocopter_homing_missile"
 		"Ability3"		"gyrocopter_flak_cannon"
@@ -16865,10 +17453,10 @@
 		"Ability5"		"generic_hidden"
 		"Ability6"		"gyrocopter_call_down"
 		"Ability10"		"special_bonus_unique_gyrocopter_4"
-		"Ability11"		"special_bonus_hp_200"
+		"Ability11"		"special_bonus_hp_175"
 		"Ability12"		"special_bonus_unique_gyrocopter_6"
-		"Ability13"		"special_bonus_unique_gyrocopter_2"
-		"Ability14"		"special_bonus_unique_gyrocopter_flak_cannon_bonus_damage"
+		"Ability13"		"special_bonus_unique_gyrocopter_flak_cannon_bonus_damage"
+		"Ability14"		"special_bonus_unique_gyrocopter_2"
 		"Ability15"		"special_bonus_unique_gyrocopter_3"
 		"Ability16"		"special_bonus_unique_gyrocopter_1"
 		"Ability17"		"special_bonus_unique_gyrocopter_5"
@@ -16896,7 +17484,7 @@
 		"AttributeBaseStrength"		"22"
 		"AttributeStrengthGain"		"2.500000"
 		"AttributeBaseAgility"		"26"
-		"AttributeAgilityGain"		"3.300000"
+		"AttributeAgilityGain"		"3.1"
 		"AttributeBaseIntelligence"		"21"
 		"AttributeIntelligenceGain"		"2.400000"
 		"MovementSpeed"		"320"
@@ -17044,6 +17632,14 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_gyrocopter.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_gyrocopter.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_attack2"	"2"
+			"attach_attack1"	"3"
+			"attach_homing_missile"	"4"
+			"attach_prop1" "5"
+		}
 	}
 	"npc_dota_hero_alchemist"
 	{
@@ -17077,6 +17673,7 @@
 		"LastHitChallengeRival"		"npc_dota_hero_earthshaker"
 		"HeroSelectSoundEffect"		"Hero_Alchemist.Pick"
 		"GibType"		"default"
+		"NameAliases"	"Razzil"
 		"Ability1"		"alchemist_acid_spray"
 		"Ability2"		"alchemist_unstable_concoction"
 		"Ability3"		"alchemist_corrosive_weaponry"
@@ -17092,6 +17689,13 @@
 		"Ability15"		"special_bonus_unique_alchemist_2"
 		"Ability16"		"special_bonus_unique_alchemist_6"
 		"Ability17"		"special_bonus_unique_alchemist_4"
+		"AbilityDraftAbilities"
+		{
+			"Ability1"	"alchemist_acid_spray"
+			"Ability2"	"alchemist_unstable_concoction"
+			"Ability3"	"alchemist_corrosive_weaponry"
+			"Ability4"	"alchemist_chemical_rage"
+		}
 		"AbilityDraftIgnoreCount"		"7"
 		"ArmorPhysical"		"0"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -17259,6 +17863,13 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_alchemist.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_alchemist.vpcf"
+		"showcase_attachments"
+		{
+			"attach_hand1"		"1"
+			"attach_hand2"		"2"
+			"attach_head"		"3"
+			"attach_ogerhead"	"4"
+		}
 	}
 	"npc_dota_hero_invoker"
 	{
@@ -17348,10 +17959,10 @@
 		"Ability24"		"special_bonus_unique_invoker_13"
 		"AbilityDraftDisabled"		"0"
 		"ArmorPhysical"		"-1"
-		"StatusHealthRegen"		"1.5"
+		"StatusHealthRegen"		"0.5"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"		"2"
-		"AttackDamageMax"		"10"
+		"AttackDamageMin"		"1"
+		"AttackDamageMax"		"9"
 		"AttackRate"		"1.700000"
 		"AttackAnimationPoint"		"0.400000"
 		"AttackAcquisitionRange"		"800"
@@ -17360,7 +17971,7 @@
 		"ProjectileSpeed"		"900"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_ALL"
 		"AttributeBaseStrength"		"19"
-		"AttributeStrengthGain"		"2.4"
+		"AttributeStrengthGain"		"2.6"
 		"AttributeBaseAgility"		"14"
 		"AttributeAgilityGain"		"1.8"
 		"AttributeBaseIntelligence"		"19"
@@ -17656,6 +18267,11 @@
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_invoker.vpcf"
 		"party_hat_effect_persona"	"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_invoker_persona_1.vpcf"
+		"showcase_attachments"
+		{
+			"attach_attack1"	"1"
+			"attach_attack2"	"2"
+		}
 	}
 	"npc_dota_hero_silencer"
 	{
@@ -17685,6 +18301,7 @@
 		"LastHitChallengeRival"		"npc_dota_hero_zuus"
 		"HeroSelectSoundEffect"		"Hero_Silencer.Pick"
 		"GibType"		"default"
+		"NameAliases"	"Nortrom"
 		"Ability1"		"silencer_curse_of_the_silent"
 		"Ability2"		"silencer_glaives_of_wisdom"
 		"Ability3"		"silencer_last_word"
@@ -17837,6 +18454,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_silencer.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_silencer.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"			"1"
+			"attach_hand_l"			"2"
+			"attach_attack2"		"3"
+		}
 	}
 	"npc_dota_hero_obsidian_destroyer"
 	{
@@ -17855,7 +18478,7 @@
 		"ModelScale"		"0.700000"
 		"VersusScale"		"0.70"
 		"CMEnabled"		"1"
-		"NameAliases"		"od"
+		"NameAliases"		"od;Harbinger"
 		"PickSound"		"outworld_destroyer_odest_spawn_02"
 		"BanSound"		"outworld_destroyer_odest_anger_02"
 		"workshop_guide_name"		"Outworld Devourer"
@@ -17884,7 +18507,7 @@
 		"Ability11"		"special_bonus_attack_speed_20"
 		"Ability12"		"special_bonus_unique_outworld_devourer_astral_castrange"
 		"Ability13"		"special_bonus_movement_speed_30"
-		"Ability14"		"special_bonus_strength_20"
+		"Ability14"		"special_bonus_spell_lifesteal_20"
 		"Ability15"		"special_bonus_unique_outworld_devourer_4"
 		"Ability16"		"special_bonus_unique_outworld_devourer"
 		"Ability17"		"special_bonus_unique_outworld_devourer_5"
@@ -18014,6 +18637,13 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_obsidian_destroyer.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_obsidian_destroyer.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"			   "1"
+			"attach_attack1"		   "2"
+			"attach_foot_l"			   "3"
+			"attach_foot_r"			   "4"
+		}
 	}
 	"npc_dota_hero_lycan"
 	{
@@ -18046,6 +18676,7 @@
 		"LastHitChallengeRival"		"npc_dota_hero_skeleton_king"
 		"HeroSelectSoundEffect"		"Hero_Lycan.Pick"
 		"GibType"		"default"
+		"NameAliases"	"Banehallow;wolf"
 		"Ability1"		"lycan_summon_wolves"
 		"Ability2"		"lycan_howl"
 		"Ability3"		"lycan_feral_impulse"
@@ -18086,8 +18717,8 @@
 		"AttributePrimary"		"DOTA_ATTRIBUTE_ALL"
 		"AttributeBaseStrength"		"26"
 		"AttributeStrengthGain"		"3.000"
-		"AttributeBaseAgility"		"16"
-		"AttributeAgilityGain"		"1.4"
+		"AttributeBaseAgility"		"18"
+		"AttributeAgilityGain"		"1.8"
 		"AttributeBaseIntelligence"		"23"
 		"AttributeIntelligenceGain"		"1.20000"
 		"MovementSpeed"		"305"
@@ -18223,6 +18854,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_lycan_wolf.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_lycan.vpcf"
+		"showcase_attachments"
+		{
+			"attach_mouth"			   "1"
+			"attach_attack1"		   "2"
+			"attach_attack2"			"3"
+		}
 	}
 	"npc_dota_hero_brewmaster"
 	{
@@ -18241,7 +18878,7 @@
 		"VersusScale"		"0.79"
 		"LoadoutScale"		"0.79"
 		"HeroGlowColor"		"139 1 1"
-		"NameAliases"		"bm"
+		"NameAliases"		"bm;Mangix"
 		"CMEnabled"		"1"
 		"SimilarHeroes"		"113,33,38"
 		"Adjectives"
@@ -18268,7 +18905,7 @@
 		"Ability12"		"special_bonus_unique_brewmaster_5"
 		"Ability13"		"special_bonus_unique_brewmaster_8"
 		"Ability14"		"special_bonus_unique_brewmaster"
-		"Ability15"		"special_bonus_attack_speed_80"
+		"Ability15"		"special_bonus_attack_speed_90"
 		"Ability16"		"special_bonus_unique_brewmaster_6"
 		"Ability17"		"special_bonus_unique_brewmaster_4"
 		"ArmorPhysical"		"0.000000"
@@ -18394,6 +19031,11 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_brewmaster.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_brewmaster.vpcf"
+		"showcase_attachments"
+		{
+			"attach_mouth"		"1"
+			"attach_keg"		"2"
+		}
 	}
 	"npc_dota_hero_shadow_demon"
 	{
@@ -18572,6 +19214,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_shadow_demon.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_shadow_demon.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"			   "1"
+			"attach_attack1"		   "2"
+			"attach_attack2"		   "3"
+		}
 	}
 	"npc_dota_hero_lone_druid"
 	{
@@ -18590,7 +19238,7 @@
 		"VersusScale"		"0.79"
 		"LoadoutScale"		"0.79"
 		"AlternateLoadoutScale"	"0.770000"  //True Form scale
-		"NameAliases"		"ld"
+		"NameAliases"		"ld;bear;Sylla"
 		"CMEnabled"		"1"
 		"SimilarHeroes"		"92,77,38"
 		"Adjectives"
@@ -18630,7 +19278,7 @@
 			"Ability4"		"lone_druid_true_form"
 		}	
 
-		"ArmorPhysical"		"-2"
+		"ArmorPhysical"		"0"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"		"1"
 		"AttackDamageMax"		"5"
@@ -18642,7 +19290,7 @@
 		"ProjectileSpeed"		"900"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_ALL"
 		"AttributeBaseStrength"		"20"
-		"AttributeStrengthGain"		"2.000000"
+		"AttributeStrengthGain"		"1.800000"
 		"AttributeBaseAgility"		"20"
 		"AttributeAgilityGain"		"2.000000"
 		"AttributeBaseIntelligence"		"13"
@@ -18779,6 +19427,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_lone_druid.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_lone_druid.vpcf"
+		"showcase_attachments"
+		{
+			"attach_mouth"		"1"
+			"attach_attack2"	"2"
+			"attach_attack1"	"3"
+		}
 	}
 	"npc_dota_hero_chaos_knight"
 	{
@@ -18829,8 +19483,8 @@
 		"Ability17"		"special_bonus_unique_chaos_knight_4"
 		"ArmorPhysical"		"2"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"		"29"
-		"AttackDamageMax"		"59"
+		"AttackDamageMin"		"24"
+		"AttackDamageMax"		"54"
 		"AttackRate"		"1.700000"
 		"AttackAnimationPoint"		"0.500000"
 		"AttackAcquisitionRange"		"600"
@@ -18953,15 +19607,16 @@
 				"item_boots_of_elves"		"ITEM_EXTENSION"
 				"item_recipe_yasha"		"ITEM_EXTENSION"
 				"item_yasha"		"ITEM_DERIVED"
-				"item_ultimate_orb"		"ITEM_EXTENSION"
-				"item_recipe_manta"		"ITEM_EXTENSION"
-				"item_manta"		"ITEM_DERIVED"
+				"item_diadem"			"ITEM_EXTENSION"
+				"item_recipe_manta"			"ITEM_EXTENSION"
+				"item_manta"				"ITEM_LUXURY | ITEM_DERIVED"
 				
-				//"item_ring_of_tarrasque"		"ITEM_LUXURY"
+				"item_ring_of_tarrasque"		"ITEM_LUXURY"
 				"item_reaver"		"ITEM_LUXURY"
-				"item_vitality_booster"		"ITEM_LUXURY"
+				//"item_vitality_booster"		"ITEM_LUXURY"
 				"item_recipe_heart" "ITEM_LUXURY"
 				"item_heart"		"ITEM_DERIVED"
+
 				"item_ring_of_protection"   "ITEM_LUXURY"
 				"item_recipe_buckler"	"ITEM_LUXURY"
 				"item_buckler"			"ITEM_DERIVED"
@@ -19015,6 +19670,14 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_chaos_knight.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_chaos_knight.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_weapon"		"2"
+			"attach_attack1"	"3"
+			"attach_tail"		"4"
+			"attach_head_horse"	"5"
+		}
 	}
 	"npc_dota_hero_meepo"
 	{
@@ -19086,9 +19749,10 @@
 		"AttributeIntelligenceGain"		"1.900000"
 		"BoundsHullName"		"DOTA_HULL_SIZE_SMALL"
 		"StatusHealthRegen"		"0.25"
+		"StatusManaRegen"	"0.25"
 		"VisionDaytimeRange"		"1800"
 		"MovementSpeed"		"330"
-		"MovementTurnRate"		"0.70000"
+		"MovementTurnRate"		"0.90000"
 		"particle_folder"		"particles/units/heroes/hero_meepo"
 		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_meepo.vsndevts"
 		"VoiceFile"		"soundevents/voscripts/game_sounds_vo_meepo.vsndevts"
@@ -19207,6 +19871,13 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_meepo.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_meepo.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"			   "1"
+			"attach_attack1"		   "2"
+			"attach_attack2"			"3"
+			"attach_shovel"				"4"
+		}
 	}
 	"npc_dota_hero_treant"
 	{
@@ -19261,8 +19932,8 @@
 
 		"ArmorPhysical"		"-1"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"		"62"
-		"AttackDamageMax"		"70"
+		"AttackDamageMin"		"60"
+		"AttackDamageMax"		"68"
 		"AttackRate"		"1.900000"
 		"AttackAnimationPoint"		"0.600000"
 		"AttackAcquisitionRange"		"600"
@@ -19274,9 +19945,9 @@
 		"AttributeAgilityGain"		"1.8000000"
 		"AttributeBaseIntelligence"		"20"
 		"AttributeIntelligenceGain"		"1.800000"
-		"StatusManaRegen"	"0.5"
+		"StatusManaRegen"	"0.25"
 		"VisionDaytimeRange"		"1800"
-		"MovementSpeed"		"285"
+		"MovementSpeed"		"280"
 		"particle_folder"		"particles/units/heroes/hero_treant"
 		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_treant.vsndevts"
 		"VoiceFile"		"soundevents/voscripts/game_sounds_vo_treant.vsndevts"
@@ -19382,6 +20053,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_treant.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_treant.vpcf"
+		"showcase_attachments"
+		{
+			"attach_face"		   "1"
+			"attach_hand_l"		   "2"
+			"attach_hand_r"		   "3"
+		}
 	}
 	"npc_dota_hero_ogre_magi"
 	{
@@ -19426,12 +20103,13 @@
 		"Ability10"		"special_bonus_unique_ogre_magi_4"
 		"Ability11"		"special_bonus_unique_ogre_magi_5"
 		"Ability12"		"special_bonus_attack_damage_80"
-		"Ability13"		"special_bonus_hp_250"
+		"Ability13"		"special_bonus_unique_ogre_magi_dumb_luck_mana"
 		"Ability14"		"special_bonus_strength_30"
 		"Ability15"		"special_bonus_unique_ogre_magi"
 		"Ability16"		"special_bonus_unique_ogre_magi_3"
 		"Ability17"		"special_bonus_unique_ogre_magi_2"
-
+		
+		"AbilityDraftIgnoreCount" "7"
 		"AbilityDraftAbilities"
 		{
 			"Ability1"		"ogre_magi_fireblast"
@@ -19459,7 +20137,7 @@
 		"AttributeAgilityGain"		"1.5"
 		"AttributeBaseIntelligence"		"0"
 		"AttributeIntelligenceGain"		"0"
-		"StatusHealthRegen"		"0.75"
+		"StatusHealthRegen"		"1.5"
 		"StatusMana"			"120"
 		"MovementSpeed"		"290"
 		"particle_folder"		"particles/units/heroes/hero_ogre_magi"
@@ -19577,6 +20255,13 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_ogre_magi.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_ogre_magi.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head1"		   "1"
+			"attach_head2"		   "2"
+			"attach_attack1"	   "3"
+			"attach_toss"		   "4"
+		}
 	}
 	"npc_dota_hero_undying"
 	{
@@ -19596,7 +20281,6 @@
 		"LoadoutScale"		"0.93"
 		"SpectatorLoadoutScale" "0.88"
 		"TransformedLoadoutScale" "0.73"  //Golem scale
-		"NameAliases"		"dirge"
 		"workshop_guide_name"		"Undying"
 		"PickSound"		"undying_undying_spawn_01"
 		"BanSound"		"undying_undying_anger_02"
@@ -19613,6 +20297,7 @@
 		"HeroSelectSoundEffect"		"Hero_Undying.Pick"
 		"GibType"		"goo"
 		"GibTintColor"	"73 82 68 255"
+		"NameAliases"	"Dirge"
 		"Ability1"		"undying_decay"
 		"Ability2"		"undying_soul_rip"
 		"Ability3"		"undying_tombstone"
@@ -19767,6 +20452,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_undying.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_undying.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"			   "1"
+			"attach_attack1"		   "2"
+			"attach_attack2"			"3"
+		}
 	}
 	"npc_dota_hero_rubick"
 	{
@@ -19814,8 +20505,8 @@
 		"Ability14"		"special_bonus_unique_rubick_6"
 		"Ability15"		"special_bonus_unique_rubick_7"
 		"Ability16"		"special_bonus_unique_rubick_3"
-		"Ability17"		"special_bonus_unique_rubick"
-		"Ability18"		"special_bonus_unique_rubick_4"
+		"Ability17"		"special_bonus_unique_rubick_4"
+		"Ability18"		"special_bonus_unique_rubick"
 		"Ability19"		"special_bonus_unique_rubick_5"
 		"AbilityDraftDisabled"		"0"
 		"AbilityDraftIgnoreCount" "11"
@@ -19849,7 +20540,7 @@
 		"AttributeBaseAgility"		"23"
 		"AttributeAgilityGain"		"2.500000"
 		"AttributeBaseIntelligence"		"25"
-		"AttributeIntelligenceGain"		"3.100000"
+		"AttributeIntelligenceGain"		"3.700000"
 		"MovementSpeed"		"290"
 		"MovementTurnRate"		"0.700000"
 		"particle_folder"		"particles/units/heroes/hero_rubick"
@@ -19958,6 +20649,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_rubick.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_rubick.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"			   "1"
+			"attach_attack1"		   "2"
+			"attach_attack2"		   "3"
+		}
 	}
 	"npc_dota_hero_disruptor"
 	{
@@ -20148,6 +20845,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_disruptor.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_disruptor.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_head_mount"	"2"
+			"attach_attack1"	"3"
+		}
 	}
 	"npc_dota_hero_nyx_assassin"
 	{
@@ -20186,7 +20889,7 @@
 		"Ability5"		"generic_hidden"
 		"Ability6"		"nyx_assassin_vendetta"
 		"Ability7"		"nyx_assassin_unburrow"
-		"Ability10"		"special_bonus_spell_amplify_6"
+		"Ability10"		"special_bonus_unique_nyx_vendetta_damage"
 		"Ability11"		"special_bonus_unique_nyx_4"
 		"Ability12"		"special_bonus_unique_nyx_carapace_reflect_duration"
 		"Ability13"		"special_bonus_unique_nyx_5"
@@ -20314,6 +21017,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_nyx_assassin.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_nyx_assassin.vpcf"
+		"showcase_attachments"
+		{
+			"attach_mouth"			   "1"
+			"attach_attack1"		   "2"
+			"attach_attack2"			"3"
+		}
 	}
 	"npc_dota_hero_naga_siren"
 	{
@@ -20331,7 +21040,7 @@
 		"ModelScale"		"0.770000"
 		"VersusScale"		"0.77"
 		"HeroGlowColor"		"154 97 133"
-		"NameAliases"		"naga"
+		"NameAliases"		"naga;Slithice"
 		"workshop_guide_name"		"Naga Siren"
 		"PickSound"		"naga_siren_naga_spawn_02"
 		"BanSound"		"naga_siren_naga_anger_12"
@@ -20375,13 +21084,13 @@
 		"AttackRange"		"150"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
 		"AttributeBaseStrength"		"21"
-		"AttributeStrengthGain"		"2.600000"
+		"AttributeStrengthGain"		"2.400000"
 		"AttributeBaseAgility"		"21"
 		"AttributeAgilityGain"		"3.3"
 		"AttributeBaseIntelligence"		"21"
 		"AttributeIntelligenceGain"		"2.0000"
 		"MovementSpeed"		"330"
-		"StatusHealthRegen"		"1.25"
+		"StatusHealthRegen"		"1.0"
 		"BoundsHullName"		"DOTA_HULL_SIZE_SMALL"
 		"particle_folder"		"particles/units/heroes/hero_siren"
 		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_naga_siren.vsndevts"
@@ -20498,6 +21207,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_naga_siren.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_naga_siren.vpcf"
+		"showcase_attachments"
+		{
+			"attach_mouth"			   "1"
+			"attach_attack1"		   "2"
+			"attach_attack2"			"3"
+		}
 	}
 	"npc_dota_hero_keeper_of_the_light"
 	{
@@ -20545,15 +21260,15 @@
 		"Ability13"		"special_bonus_unique_keeper_of_the_light_7"
 		"Ability14"		"special_bonus_unique_keeper_of_the_light_13"
 		"Ability15"		"special_bonus_unique_keeper_of_the_light_11"
-		"Ability16"		"special_bonus_unique_keeper_of_the_light_14"
-		"Ability17"		"special_bonus_unique_keeper_of_the_light_10"
+		"Ability16"		"special_bonus_unique_keeper_of_the_light_10"
+		"Ability17"		"special_bonus_unique_keeper_of_the_light_14"
 		"Ability18"		"special_bonus_unique_keeper_of_the_light"
 		"AbilityTalentStart" "11"
 		"AbilityDraftIgnoreCount" "10"
 		"AbilityDraftAbilities"
 		{
 			"Ability1"		"keeper_of_the_light_illuminate"
-			"Ability2"		"keeper_of_the_light_radiant_bind"
+			"Ability2"		"keeper_of_the_light_blinding_light"
 			"Ability3"		"keeper_of_the_light_chakra_magic"
 			"Ability4"		"keeper_of_the_light_spirit_form"
 		}
@@ -20676,6 +21391,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_keeper_of_the_light.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_keeper_of_the_light.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_head_mount"	"2"
+			"attach_attack1"	"3"
+		}
 	}
 	"npc_dota_hero_wisp"
 	{
@@ -20818,6 +21539,11 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_wisp.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_wisp.vpcf"
+		
+		"showcase_attachments"
+		{
+			"attach_hitloc"		"1"
+		}
 	}
 	"npc_dota_hero_visage"
 	{
@@ -20835,7 +21561,6 @@
 		"ModelScale"		"0.670000"
 		"VersusScale"		"0.67"
 		"LoadoutScale"		"0.67"
-		"NameAliases"		"visage"
 		"workshop_guide_name"		"Visage"
 		"PickSound"		"visage_visa_spawn_01"
 		"BanSound"		"visage_visa_anger_10"
@@ -20852,6 +21577,7 @@
 		"HeroSelectSoundEffect"		"Hero_Visage.Pick"
 		"GibType"		"ethereal"
 		"GibTintColor"	"117 210 173 255"
+		"NameAliases"	"visage,Necrolic"
 		"Ability1"		"visage_grave_chill"
 		"Ability2"		"visage_soul_assumption"
 		"Ability3"		"visage_gravekeepers_cloak"
@@ -20977,6 +21703,14 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_visage.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_visage.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		   "1"
+			"attach_chain_rt0"     "2"
+			"attach_chain_lf0"     "3"
+			"attach_wingtipL"      "4"
+			"attach_wingtipR"      "5"
+		}
 	}
 	"npc_dota_hero_slark"
 	{
@@ -21035,9 +21769,9 @@
 		"ProjectileSpeed"		"0"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
 		"AttributeBaseStrength"		"20"
-		"AttributeStrengthGain"		"1.900000"
+		"AttributeStrengthGain"		"2.100000"
 		"AttributeBaseIntelligence"		"16"
-		"AttributeIntelligenceGain"		"1.700000"
+		"AttributeIntelligenceGain"		"1.900000"
 		"AttributeBaseAgility"		"21"
 		"AttributeAgilityGain"		"1.500000"
 		"VisionDaytimeRange"		"1800"
@@ -21173,6 +21907,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_slark.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_slark.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"				"1"
+			"attach_weapon"		   "2"
+			"attach_hand_l"		   "3"
+		}
 	}
 	"npc_dota_hero_medusa"
 	{
@@ -21237,7 +21977,7 @@
 		"AttributeBaseIntelligence"		"25"
 		"AttributeIntelligenceGain"		"3.4"
 		"AttributeBaseAgility"		"22"
-		"AttributeAgilityGain"		"3.400000"
+		"AttributeAgilityGain"		"3.6"
 		"StatusHealthRegen"		"0.25"
 		"VisionDaytimeRange"		"1800"
 		"MovementSpeed"		"275"
@@ -21352,6 +22092,11 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_medusa.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_medusa.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"			   "1"
+			"attach_attack1"		   "2"
+		}
 	}
 	"npc_dota_hero_troll_warlord"
 	{
@@ -21531,6 +22276,14 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_troll_warlord.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_troll_warlord.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		 "1"
+			"attach_attack1"     "2"
+			"attach_attack2"     "3"
+			"attach_weapon1"     "4"
+			"attach_weapon2"     "5"
+		}
 	}
 	"npc_dota_hero_centaur"
 	{
@@ -21571,7 +22324,7 @@
 		"Ability4"		"centaur_mount"
 		"Ability5"		"centaur_work_horse"
 		"Ability6"		"centaur_stampede"
-		"Ability10"		"special_bonus_hp_regen_5"
+		"Ability10"		"special_bonus_hp_regen_4"
 		"Ability11"		"special_bonus_movement_speed_20"
 		"Ability12"		"special_bonus_strength_15"
 		"Ability13"		"special_bonus_unique_centaur_4"
@@ -21597,7 +22350,7 @@
 		"AttributeBaseAgility"		"15"
 		"AttributeAgilityGain"		"1.0000"
 		"VisionDaytimeRange"		"1800"
-		"MovementSpeed"		"300"
+		"MovementSpeed"		"310"
 		"BoundsHullName"		"DOTA_HULL_SIZE_HERO"
 		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_centaur.vsndevts"
 		"particle_folder"		"particles/units/heroes/hero_centaur"
@@ -21746,6 +22499,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_centaur.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_centaur.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_weapon"		"2"
+			"attach_hand1"		"3"
+		}
 	}
 	"npc_dota_hero_magnataur"
 	{
@@ -21799,7 +22558,7 @@
 		"AttackRate"		"1.800000"
 		"AttackAnimationPoint"		"0.500000"
 		"AttackAcquisitionRange"		"600"
-		"AttackRange"		"150"
+		"AttackRange"		"200"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_ALL"
 		"AttributeBaseStrength"		"25"
 		"AttributeStrengthGain"		"3.10000"
@@ -21922,6 +22681,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_magnataur.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_magnataur.vpcf"
+		"showcase_attachments"
+		{
+			"attach_horn"		"1"
+			"attach_attack1"	"2"
+			"attach_head"		"3"
+		}
 	}
 	"npc_dota_hero_shredder"
 	{
@@ -21961,7 +22726,7 @@
 		"Ability6"		"shredder_chakram"
 		"Ability7"		"shredder_return_chakram"
 		"Ability8"		"shredder_return_chakram_2"
-		"Ability10"		"special_bonus_hp_200"
+		"Ability10"		"special_bonus_unique_timbersaw_reactive_armor_regen_per_stack"
 		"Ability11"		"special_bonus_mp_regen_150"
 		"Ability12"		"special_bonus_unique_timbersaw_5"
 		"Ability13"		"special_bonus_unique_timbersaw_2"
@@ -21987,8 +22752,8 @@
 		"AttackAcquisitionRange"		"600"
 		"AttackRange"		"150"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_ALL"
-		"AttributeBaseStrength"		"25"
-		"AttributeStrengthGain"		"3.20000"
+		"AttributeBaseStrength"		"27"
+		"AttributeStrengthGain"		"3.50000"
 		"AttributeBaseAgility"		"16"
 		"AttributeAgilityGain"		"1.300000"
 		"AttributeBaseIntelligence"		"23"
@@ -22120,6 +22885,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_shredder.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_shredder.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"				"1"
+			"attach_attack1"		   "2"
+			"attach_attack2"		   "3"
+		}
 	}
 	"npc_dota_hero_bristleback"
 	{
@@ -22159,7 +22930,7 @@
 		"Ability4"		"bristleback_hairball"
 		"Ability5"		"generic_hidden"
 		"Ability6"		"bristleback_warpath"
-		"Ability10"		"special_bonus_attack_damage_20"
+		"Ability10"		"special_bonus_attack_speed_25"
 		"Ability11"		"special_bonus_mp_regen_150"
 		"Ability12"		"special_bonus_unique_bristleback_5"
 		"Ability13"		"special_bonus_unique_bristleback_6"
@@ -22169,8 +22940,8 @@
 		"Ability17"		"special_bonus_unique_bristleback_3"
 		"ArmorPhysical"		"1.000000"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"		"30"
-		"AttackDamageMax"		"36"
+		"AttackDamageMin"		"33"
+		"AttackDamageMax"		"39"
 		"AttackRate"		"1.800000"
 		"AttackAnimationPoint"		"0.300000"
 		"AttackAcquisitionRange"		"600"
@@ -22327,11 +23098,12 @@
 				"item_chainmail"			"ITEM_EXTENSION"
 				"item_recipe_blade_mail"					"ITEM_EXTENSION"
 				"item_blade_mail"			"ITEM_DERIVED | ITEM_SELLABLE"
-				//"item_ring_of_tarrasque"		"ITEM_LUXURY"
-				"item_reaver"				"ITEM_EXTENSION"
-				"item_vitality_booster"		"ITEM_EXTENSION"
-				"item_recipe_heart"		 "ITEM_EXTENSION"
-				"item_heart"				"ITEM_DERIVED"
+
+				"item_ring_of_tarrasque"		"ITEM_LUXURY"
+				"item_reaver"		"ITEM_LUXURY"
+				//"item_vitality_booster"		"ITEM_LUXURY"
+				"item_recipe_heart" "ITEM_LUXURY"
+				"item_heart"		"ITEM_DERIVED"
 				"item_ring_of_protection"   "ITEM_LUXURY"
 				"item_recipe_buckler"	"ITEM_LUXURY"
 				"item_buckler"			"ITEM_DERIVED"
@@ -22339,11 +23111,14 @@
 				"item_hyperstone"		"ITEM_LUXURY"
 				"item_recipe_assault"	"ITEM_LUXURY"
 				"item_assault"			"ITEM_DERIVED"
+				"item_helm_of_iron_will"	"ITEM_EXTENSION"
+				"item_crown"					"ITEM_EXTENSION"
+				"item_recipe_veil_of_discord"	"ITEM_EXTENSION"
+				"item_veil_of_discord"		"ITEM_DERIVED"
 				"item_platemail"		"ITEM_LUXURY"
-				"item_mystic_staff"		"ITEM_LUXURY"
+				//"item_mystic_staff"		"ITEM_LUXURY"
 				"item_recipe_shivas_guard"		"ITEM_LUXURY"
-				"item_shivas_guard"		"ITEM_DERIVED"
-				"item_relic"		"ITEM_EXTENSION"
+				"item_shivas_guard"		"ITEM_LUXURY | ITEM_DERIVED"
 			}
 			"Build"
 			{
@@ -22390,6 +23165,13 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_bristleback.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_bristleback.vpcf"
+		"showcase_attachments"
+		{
+			"attach_attack1"		"1"
+			"attach_attack2"		"2"
+			"attach_attack3"		"3"
+			"attach_weapon"			"4"
+		}
 	}
 	"npc_dota_hero_tusk"
 	{
@@ -22422,6 +23204,7 @@
 		"LastHitChallengeRival"		"npc_dota_hero_earthshaker"
 		"HeroSelectSoundEffect"		"Hero_Tusk.Pick"
 		"GibType"		"default"
+		"NameAliases"	"Ymir"
 		"Ability1"		"tusk_ice_shards"
 		"Ability2"		"tusk_snowball"
 		"Ability3"		"tusk_tag_team"
@@ -22599,7 +23382,13 @@
 		{
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_tusk.vpcf"
 		}
-		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_tusk.vpcf"
+		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_tusk.vpcf"		
+		"showcase_attachments"
+		{
+			"attach_mouth"       "1"
+			"attach_axe"		 "2"
+			"attach_left_fist"   "3"
+		}
 	}
 	"npc_dota_hero_skywrath_mage"
 	{
@@ -22636,6 +23425,7 @@
 		"LastHitChallengeRival"		"npc_dota_hero_vengefulspirit"
 		"HeroSelectSoundEffect"		"Hero_SkywrathMage.Pick"
 		"GibType"		"default"
+		"NameAliases"	"sm;Dragonus"
 		"Ability1"		"skywrath_mage_arcane_bolt"
 		"Ability2"		"skywrath_mage_concussive_shot"
 		"Ability3"		"skywrath_mage_ancient_seal"
@@ -22658,6 +23448,16 @@
 		"AttackAnimationPoint"		"0.400000"
 		"AttackAcquisitionRange"		"800"
 		"AttackRange"		"625"
+		"AttackSpeedActivityModifiers"
+		{
+			"fast"		"200"		
+		}
+		"AttackRangeActivityModifiers"
+		{
+			"attack_normal_range"	"0"
+			"attack_long_range"		"300"
+		}
+		"BaseAttackSpeed"		"90"
 		"ProjectileModel"		"particles/units/heroes/hero_skywrath_mage/skywrath_mage_base_attack.vpcf"
 		"ProjectileSpeed"		"1000"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_INTELLECT"
@@ -22789,7 +23589,13 @@
 				"item_circlet"		"ITEM_CORE"
 				"item_recipe_null_talisman"		"ITEM_CORE"
 				"item_null_talisman"		"ITEM_DERIVED | ITEM_SELLABLE"
-				"item_energy_booster"		"ITEM_CORE"
+				
+				"item_sobi_mask"				"ITEM_CORE"
+				"item_recipe_ring_of_basilius"  "ITEM_EXTENSION"
+				"item_ring_of_basilius"			"ITEM_DERIVED"
+
+				"item_recipe_arcane_boots"		"ITEM_EXTENSION"
+				
 				"item_arcane_boots"		"ITEM_DERIVED"
 				"item_staff_of_wizardry"		"ITEM_EXTENSION"
 				"item_fluffy_hat"		"ITEM_EXTENSION"
@@ -22809,10 +23615,11 @@
 				"item_ogre_axe"		"ITEM_LUXURY"
 				"item_blade_of_alacrity"		"ITEM_LUXURY"
 				"item_ultimate_scepter"		"ITEM_DERIVED"
-				"item_ultimate_orb"		"ITEM_LUXURY"
-				"item_void_stone"		"ITEM_LUXURY"
-				"item_mystic_staff"		"ITEM_LUXURY"
-				"item_sheepstick"		"ITEM_DERIVED"
+
+				"item_tiara_of_selemene"	"ITEM_EXTENSION"
+				"item_mystic_staff"			"ITEM_LUXURY"
+				"item_recipe_sheepstick"	"ITEM_EXTENSION"
+				"item_sheepstick"			"ITEM_DERIVED"
 			}
 			"Build"
 			{
@@ -22859,6 +23666,14 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_skywrath_mage.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_skywrath_mage.vpcf"
+		"showcase_attachments"
+		{
+			"attach_attack1"		   "1"
+			"attach_attack2"		   "2"
+			"attach_head"			   "3"
+			"attach_wing_l"			   "4"
+			"attach_wing_r"			   "5"
+		}
 	}
 	"npc_dota_hero_abaddon"
 	{
@@ -22900,14 +23715,14 @@
 		"Ability5"		"generic_hidden"
 		"Ability6"		"abaddon_borrowed_time"
 		"Ability10"		"special_bonus_unique_abaddon_6"
-		"Ability11"		"special_bonus_strength_7"
-		"Ability12"		"special_bonus_attack_damage_55"
+		"Ability11"		"special_bonus_unique_abaddon_7"
+		"Ability12"		"special_bonus_unique_abaddon_5"
 		"Ability13"		"special_bonus_unique_abaddon_2"
 		"Ability14"		"special_bonus_unique_abaddon"
 		"Ability15"		"special_bonus_unique_abaddon_immolation"
 		"Ability16"		"special_bonus_unique_abaddon_3"
 		"Ability17"		"special_bonus_unique_abaddon_4"
-		"ArmorPhysical"		"-1.000000"
+		"ArmorPhysical"		"0"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageMin"		"2"
 		"AttackDamageMax"		"12"
@@ -22921,8 +23736,8 @@
 		"AttributeStrengthGain"		"2.2"
 		"AttributeBaseAgility"		"23"
 		"AttributeAgilityGain"		"1.3"
-		"AttributeBaseIntelligence"		"18"
-		"AttributeIntelligenceGain"		"1.2"
+		"AttributeBaseIntelligence"		"19"
+		"AttributeIntelligenceGain"		"1.6"
 		"StatusManaRegen"	"0.25"
 		"StatusHealthRegen"		"1"
 		"MovementSpeed"		"325"
@@ -23052,6 +23867,13 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_abaddon.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_abaddon.vpcf"
+		"showcase_attachments"
+		{
+			"attach_hand1"		"1"
+			"attach_hand2"		"2"
+			"attach_head"		"3"
+			"attach_head_horse"	"4"
+		}
 	}
 	"npc_dota_hero_elder_titan"
 	{
@@ -23236,6 +24058,11 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_elder_titan.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_elder_titan.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_attack2"	"2"
+		}
 	}
 	"npc_dota_hero_legion_commander"
 	{
@@ -23273,7 +24100,7 @@
 		"Ability5"		"generic_hidden"
 		"Ability6"		"legion_commander_duel"
 		"Ability10"		"special_bonus_unique_legion_commander_9"
-		"Ability11"		"special_bonus_unique_legion_commander"
+		"Ability11"		"special_bonus_unique_legion_commander_pta_movespeed"
 		"Ability12"		"special_bonus_unique_legion_commander_6"
 		"Ability13"		"special_bonus_unique_legion_commander_4"
 		"Ability14"		"special_bonus_unique_legion_commander_5"
@@ -23425,6 +24252,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_legion_commander.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_legion_commander.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_attack2"	"2"
+			"attach_attack1"	"3"
+		}
 	}
 	"npc_dota_hero_ember_spirit"
 	{
@@ -23441,7 +24274,7 @@
 		"ModelScale"		"1.200000"
 		"VersusScale"		"1.200000"
 		"LoadoutScale"		"1.2"
-		"NameAliases"		"Xin,Ember"
+		"NameAliases"		"Xin,Ember,es"
 		"workshop_guide_name"		"Ember Spirit"
 		"PickSound"		"ember_spirit_embr_spawn_01"
 		"BanSound"		"ember_spirit_embr_anger_04"
@@ -23452,6 +24285,7 @@
 		"Adjectives"
 		{
 			"Spirit"		"1"
+			"Fiery"			"1"
 			"Red"			"1"
 		}
 		"HeroSelectSoundEffect"		"Hero_EmberSpirit.Pick"
@@ -23518,7 +24352,7 @@
 				"aggressive"		"0.250000"
 			}
 		}
-		"StatusHealthRegen"		"1.25"
+		"StatusHealthRegen"		"0.5"
 		"VisionDaytimeRange"		"1800"
 		"ItemSlots"
 		{
@@ -23615,6 +24449,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_ember_spirit.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_ember_spirit.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_weapon_r"	"2"
+			"attach_weapon_l"	"3"
+		}
 	}
 	"npc_dota_hero_earth_spirit"
 	{
@@ -23632,7 +24472,6 @@
 		"ModelScale"		"0.950000"
 		"VersusScale"		"0.950000"
 		"VoiceFile"		"soundevents/voscripts/game_sounds_vo_earth_spirit.vsndevts"
-		"NameAliases"		"Kaolin,Earth"
 		"workshop_guide_name"		"Earth Spirit"
 		"NoCombine"		"0"
 		"AbilityDraftDisabled"		"0"
@@ -23648,6 +24487,7 @@
 		}
 		"PickSound"		"earth_spirit_earthspi_spawn_02"
 		"BanSound"		"earth_spirit_earthspi_anger_08"
+		"NameAliases"	"es;Kaolin;Earth"
 		"Ability1"		"earth_spirit_boulder_smash"
 		"Ability2"		"earth_spirit_rolling_boulder"
 		"Ability3"		"earth_spirit_geomagnetic_grip"
@@ -23684,7 +24524,7 @@
 		"AttributeStrengthGain"		"3.800000"
 		"AttributeBaseAgility"		"17"
 		"AttributeAgilityGain"		"2.400000"
-		"AttributeBaseIntelligence"		"20"
+		"AttributeBaseIntelligence"		"18"
 		"AttributeIntelligenceGain"		"2.100000"
 		"StatusHealthRegen"		"1"
 		"MovementSpeed"		"290"
@@ -23816,6 +24656,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_earth_spirit.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_earth_spirit.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_hand2"		"2"
+			"attach_attack1"	"3"
+		}
 	}
 	"npc_dota_hero_terrorblade"
 	{
@@ -23858,7 +24704,7 @@
 		"Ability6"		"terrorblade_sunder"
 		"Ability10"		"special_bonus_unique_terrorblade_2"
 		"Ability11"		"special_bonus_unique_terrorblade_4"
-		"Ability12"		"special_bonus_hp_300"
+		"Ability12"		"special_bonus_unique_terrorblade_metamorphosis_cooldown"
 		"Ability13"		"special_bonus_unique_terrorblade_6"
 		"Ability14"		"special_bonus_all_stats_10"
 		"Ability15"		"special_bonus_unique_terrorblade_5"
@@ -23875,8 +24721,8 @@
 
 		"ArmorPhysical"		"5"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"		"30"
-		"AttackDamageMax"		"36"
+		"AttackDamageMin"		"28"
+		"AttackDamageMax"		"34"
 		"AttackRate"		"1.500000"
 		"BaseAttackSpeed"		"110"
 		"AttackAnimationPoint"		"0.300000"
@@ -23885,7 +24731,7 @@
 		"MovementTurnRate"		"0.800000"
 		"ProjectileSpeed"		"900"
 		"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
-		"AttributeBaseStrength"		"16"
+		"AttributeBaseStrength"		"18"
 		"AttributeStrengthGain"		"2.0"
 		"AttributeBaseIntelligence"		"19"
 		"AttributeIntelligenceGain"		"1.60000"
@@ -24000,6 +24846,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_terrorblade.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_terrorblade.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"			   "1"
+			"attach_weapon_l"		   "2"
+			"attach_weapon_r"		   "3"
+		}
 	}
 	"npc_dota_hero_phoenix"
 	{
@@ -24029,6 +24881,7 @@
 			"Nose"			"0"
 			"Flying"		"1"
 			"Red"			"1"
+			"Fiery"			"1"
 		}
 		"PickSound"		"phoenix_phoenix_bird_respawn"
 		"BanSound"		"phoenix_phoenix_bird_moving01"
@@ -24044,7 +24897,7 @@
 		"Ability8"		"phoenix_icarus_dive_stop"
 		"Ability9"		"phoenix_sun_ray_stop"
 		"Ability10"		"special_bonus_unique_phoenix_6"
-		"Ability11"		"special_bonus_spell_amplify_6"
+		"Ability11"		"special_bonus_unique_phoenix_dive_damage"
 		"Ability12"		"special_bonus_unique_phoenix_3"
 		"Ability13"		"special_bonus_hp_500"
 		"Ability14"		"special_bonus_unique_phoenix_5"
@@ -24191,6 +25044,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_phoenix.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_phoenix.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"			   "1"
+			"attach_wingtipR"		   "2"
+			"attach_wingtipL"		   "3"
+		}
 	}
 	"npc_dota_hero_oracle"
 	{
@@ -24219,7 +25078,7 @@
 			"Flying"		"1"
 			"Blue"			"1"
 		}
-		"NameAliases"		"ora"
+		"NameAliases"		"ora,Nerif"
 		"Legs"	"0"
 		"workshop_guide_name"		"Oracle"
 		"NoCombine"		"0"
@@ -24235,7 +25094,7 @@
 		"Ability6"		"oracle_false_promise"
 		"Ability10"		"special_bonus_unique_oracle_2"
 		"Ability11"		"special_bonus_unique_oracle_9"
-		"Ability12"		"special_bonus_unique_oracle_fortunes_end_damage"
+		"Ability12"		"special_bonus_unique_oracle_damage_per_purge"
 		"Ability13"		"special_bonus_unique_oracle_5"
 		"Ability14"		"special_bonus_unique_oracle_6"
 		"Ability15"		"special_bonus_unique_oracle_8"
@@ -24362,7 +25221,12 @@
 				"item_recipe_magic_wand"		"ITEM_CORE"
 				"item_magic_wand"		"ITEM_DERIVED | ITEM_SELLABLE"
 
-				"item_energy_booster"		"ITEM_CORE"
+				"item_sobi_mask"				"ITEM_CORE"
+				"item_recipe_ring_of_basilius"  "ITEM_EXTENSION"
+				"item_ring_of_basilius"			"ITEM_DERIVED"
+
+				"item_recipe_arcane_boots"		"ITEM_EXTENSION"
+				
 				"item_arcane_boots"		"ITEM_DERIVED"
 
 				"item_wind_lace"		"ITEM_EXTENSION"
@@ -24371,20 +25235,10 @@
 				"item_recipe_cyclone"		"ITEM_EXTENSION"
 				"item_cyclone"		"ITEM_DERIVED"
 
-				"item_ultimate_orb"		"ITEM_LUXURY"
-				"item_void_stone"		"ITEM_LUXURY"
-				"item_mystic_staff"		"ITEM_LUXURY"
-				"item_sheepstick"		"ITEM_DERIVED"
-
-				"item_quarterstaff"		"ITEM_LUXURY"
-				"item_sobi_mask"		"ITEM_LUXURY"
-				"item_robe"		"ITEM_LUXURY"
-				"item_oblivion_staff"		"ITEM_DERIVED"
-
-				"item_quarterstaff"		"ITEM_LUXURY"
-				"item_sobi_mask"		"ITEM_LUXURY"
-				"item_robe"		"ITEM_LUXURY"
-				"item_oblivion_staff"		"ITEM_DERIVED"
+				"item_tiara_of_selemene"	"ITEM_EXTENSION"
+				"item_mystic_staff"			"ITEM_LUXURY"
+				"item_recipe_sheepstick"	"ITEM_EXTENSION"
+				"item_sheepstick"			"ITEM_DERIVED"
 			}
 			"Build"
 			{
@@ -24431,6 +25285,11 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_oracle.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_oracle.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"			   "1"
+			"attach_attack1"		   "2"
+		}
 	}
 	"npc_dota_hero_techies"
 	{
@@ -24467,6 +25326,7 @@
 		"IdleSoundLoop"		"Hero_Techies.IdleLoop"
 		"HeroSelectSoundEffect"		"Hero_Techies.Pick"
 		"GibType"		"default"
+		"NameAliases"	"Squee;Spleen;Spoon"
 		"AbilityDraftDisabled"		"0"
 		"Ability1"		"techies_sticky_bomb"
 		"Ability2"		"techies_reactive_tazer"
@@ -24667,6 +25527,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_techies.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_techies.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head_1"		   "1"
+			"attach_head_2"		   "2"
+			"attach_weapon_tip"	   "3"
+		}
 	}
 
 	//=================================================================================
@@ -24767,6 +25633,7 @@
 		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_winter_wyvern.vsndevts"
 		"HeroSelectSoundEffect"		"Hero_Winter_Wyvern.Pick"
 		"GibType"		"ice"
+		"NameAliases"	"ww;Auroth"
 		"Ability1"		"winter_wyvern_arctic_burn"
 		"Ability2"		"winter_wyvern_splinter_blast"
 		"Ability3"		"winter_wyvern_cold_embrace"
@@ -24781,7 +25648,7 @@
 		"Ability15"		"special_bonus_unique_winter_wyvern_7"
 		"Ability16"		"special_bonus_unique_winter_wyvern_3"
 		"Ability17"		"special_bonus_unique_winter_wyvern_4"
-		"ArmorPhysical"		"0"
+		"ArmorPhysical"		"1"
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"		"-4"
 		"AttackDamageMax"		"1"
@@ -24806,6 +25673,7 @@
 		"AttributeBaseAgility"		"16"
 		"AttributeAgilityGain"		"1.5"
 		"BaseAttackSpeed"		"90"
+		"StatusManaRegen"	"0.5"
 		"BoundsHullName"		"DOTA_HULL_SIZE_HERO"
 		"particle_folder"		"particles/units/heroes/hero_winter_wyvern"
 		"RenderablePortrait"
@@ -24895,6 +25763,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_winter_wyvern.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_winter_wyvern.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		 "1"
+			"attach_wing_barb_l" "2"
+			"attach_wing_barb_r" "3"
+		}
 	}
 
 	//=================================================================================================================
@@ -24921,7 +25795,7 @@
 		"PickSound"		"arc_warden_arcwar_spawn_01"
 		"BanSound"		"arc_warden_arcwar_anger_10"
 		"CMEnabled"		"1"
-		"NameAliases"		"zet"
+		"NameAliases"		"zet,aw"
 		"workshop_guide_name"		"Arc Warden"
 		"HeroSelectSoundEffect"		"Hero_ArcWarden.Pick"
 		"GibType"		"ethereal"
@@ -24934,7 +25808,6 @@
 			"Arachnophobic"	"1"
 			"Blue"			"1"
 		}
-
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
 		"Ability1"		"arc_warden_flux"
@@ -24944,7 +25817,7 @@
 		"Ability5"		"generic_hidden"
 		"Ability6"		"arc_warden_tempest_double"
 		"Ability10"		"special_bonus_unique_arc_warden_5"
-		"Ability11"		"special_bonus_hp_250"
+		"Ability11"		"special_bonus_hp_200"
 		"Ability12"		"special_bonus_unique_arc_warden_4"
 		"Ability13"		"special_bonus_unique_arc_warden_3"
 		"Ability14"		"special_bonus_unique_arc_warden"
@@ -24987,8 +25860,8 @@
 		// Attributes
 		//-------------------------------------------------------------------------------------------------------------
 		"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
-		"AttributeBaseStrength"		"22"
-		"AttributeStrengthGain"		"2.6"
+		"AttributeBaseStrength"		"20"
+		"AttributeStrengthGain"		"2.4"
 		"AttributeBaseIntelligence"		"24"
 		"AttributeIntelligenceGain"		"2.6"
 		"AttributeBaseAgility"		"20"
@@ -25098,6 +25971,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_arc_warden.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_arc_warden.vpcf"
+		"showcase_attachments"
+		{
+			"attach_attack1"		"1"
+			"attach_attack2"		"2"
+			"attach_head"			"3"
+		}
 	}
 
 	//=================================================================================================================
@@ -25284,6 +26163,13 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_abyssal_underlord.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_abyssal_underlord.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		 "1"
+			"attach_hand_l"     "2"
+			"attach_weapon"     "3"
+			"attach_face"      "4"
+		}
 	}
 
 	"npc_dota_hero_monkey_king"
@@ -25303,7 +26189,7 @@
 		"Team"		"Good"
 		"HeroID"		"114"
 		"HeroOrderID"	"113"
-		"NameAliases"		"mk"
+		"NameAliases"		"mk;Sun Wukong"
 		"CMEnabled"		"1"
 		"new_player_enable"		"1"
 		"SimilarHeroes"		"95,44,70"
@@ -25326,7 +26212,7 @@
 		"Ability6"		"monkey_king_wukongs_command"
 		"Ability7"		"monkey_king_primal_spring_early"
 		"Ability8"		"monkey_king_untransform"
-		"Ability10"		"special_bonus_unique_monkey_king_12"
+		"Ability10"		"special_bonus_unique_monkey_king_3"
 		"Ability11"		"special_bonus_unique_monkey_king_9"
 		"Ability12"		"special_bonus_unique_monkey_king_7"
 		"Ability13"		"special_bonus_unique_monkey_king_2"
@@ -25366,7 +26252,7 @@
 		"AttributeStrengthGain"		"2.8"
 		"AttributeBaseIntelligence"		"20"
 		"AttributeIntelligenceGain"		"1.8"
-		"AttributeBaseAgility"	"23"
+		"AttributeBaseAgility"	"24"
 		"AttributeAgilityGain"	"3.700000"
 		"StatusHealthRegen"		"1.0"
 		"MovementSpeed"			"300"
@@ -25466,6 +26352,13 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_monkey_king.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_monkey_king.vpcf"
+		"showcase_attachments"
+		{
+			"attach_hand_l"				"1"
+			"attach_weapon_bot"			"2"
+			"attach_weapon_top"			"3"
+			"attach_head"				"4"
+		}
 	}
 
 	//=================================================================================================================
@@ -25509,10 +26402,10 @@
 		"Ability7"					"pangolier_gyroshell_stop"
 		"Ability10"					"special_bonus_unique_pangolier_luckyshot_armor"
 		"Ability11"					"special_bonus_unique_pangolier"
-		"Ability12"					"special_bonus_unique_pangolier_2"
-		"Ability13"					"special_bonus_unique_pangolier_6"
+		"Ability12"					"special_bonus_unique_pangolier_6"
+		"Ability13"					"special_bonus_unique_pangolier_shield_crash_herostacks"
 		"Ability14"					"special_bonus_unique_pangolier_3"
-		"Ability15"					"special_bonus_unique_pangolier_shield_crash_herostacks"
+		"Ability15"					"special_bonus_unique_pangolier_shield_crash_radius"
 		"Ability16"					"special_bonus_unique_pangolier_4"
 		"Ability17"					"special_bonus_unique_pangolier_5"
 		"AbilityDraftIgnoreCount"	"7"
@@ -25537,7 +26430,7 @@
 		"AttributeIntelligenceGain"	"1.900000"		
 		"AttributeBaseAgility"		"18"
 		"AttributeAgilityGain"		"2.50000"
-		"StatusHealthRegen"		"0.25"
+		"StatusHealthRegen"		"0.75"
 		"MovementSpeed"				"295"
 		"MovementTurnRate"			"0.900000"
 		"MovementSpeedActivityModifiers"
@@ -25653,6 +26546,13 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_pangolier.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_pangolier.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"			   "1"
+			"attach_attack1"		   "2"
+			"attach_attack2"		   "3"
+			"attach_weapon_tip"		   "4"
+		}
 	}
 
 	//=================================================================================================================
@@ -25689,7 +26589,8 @@
 		}
 		"workshop_guide_name"				"Dark Willow"
 		"LastHitChallengeRival"		"npc_dota_hero_jakiro"
-		"ArmorPhysical"		"-1"
+		
+		"NameAliases"	"dw;Mireska"
 		"Ability1"		"dark_willow_bramble_maze"
 		"Ability2"		"dark_willow_shadow_realm"
 		"Ability3"		"dark_willow_cursed_crown"
@@ -25721,6 +26622,7 @@
 			"fast"		"200"
 			"faster"	"300"
 		}
+		"ArmorPhysical"		"0"
 		"AttackAnimationPoint"		"0.30000"
 		"AttackAcquisitionRange"		"800"
 		"AttackRange"		"475"
@@ -25879,6 +26781,12 @@
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_dark_willow.vpcf"
 		}
 		"party_hat_effect"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_dark_willow.vpcf"
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_lantern"	"2"
+			"attach_attack1"	"3"
+		}
 	}
 
 	//=================================================================================================================
@@ -25910,6 +26818,7 @@
 			"Legs"			"0"
 			"Flying"		"1"
 			"Undead"		"1"
+			"Bearded"		"1"
 		}
 		"IdleSoundLoop"			"Hero_Grimstroke.IdleLoop"
 		"HeroSelectSoundEffect"	"Hero_Grimstroke.Pick"
@@ -26065,6 +26974,13 @@
 				"ProvidesSetup"		"2"
 				"RequiresSetup"		"0"
 			}
+		}
+		"showcase_attachments"
+		{
+			"attach_attack1"		"1"
+			"attach_attack2"		"2"
+			"attach_eye_l"			"3"
+			"attach_eye_r"			"4"
 		}
 		"precache"
 		{
@@ -26249,6 +27165,11 @@
 				"RequiresSetup"		"0"
 			}
 		}
+		"showcase_attachments"
+		{
+			"attach_shield"		"1"
+			"attach_weapon"		"2"
+		}
 		"precache"
 		{
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_mars.vpcf"
@@ -26292,7 +27213,7 @@
 		"Ability4"					"generic_hidden"
 		"Ability5"					"generic_hidden"
 		"Ability6"					"void_spirit_astral_step"
-		"Ability10"					"special_bonus_mp_regen_150"
+		"Ability10"					"special_bonus_mp_regen_175"
 		"Ability11"					"special_bonus_unique_void_spirit_2"
 		"Ability12"					"special_bonus_unique_void_spirit_7"
 		"Ability13"					"special_bonus_unique_void_spirit_4"
@@ -26319,7 +27240,7 @@
 		"AttributeBaseAgility"		"19"
 		"AttributeAgilityGain"		"2.200000"
 		"AttributeBaseIntelligence"	"24"
-		"AttributeIntelligenceGain"	"2.300000"
+		"AttributeIntelligenceGain"	"2.500000"
 		"StatusManaRegen"			"0.6"
 		"MovementSpeed"				"290"
 		"MovementTurnRate"			"0.700000"
@@ -26432,6 +27353,15 @@
 				"RequiresSetup"		"0"
 			}
 		}	
+		"showcase_attachments"
+		{
+			"attach_weapon_bot"		"1"
+			"attach_weapon_top"		"2"
+			"attach_weapon"		"3"
+			"attach_attack1"		"4"
+			"attach_attack2"		"5"
+			"attach_hand_r"		"6"
+		}
 		"precache"
 		{
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_void_spirit.vpcf"
@@ -26602,6 +27532,13 @@
 				"SlotText" "snapfire_lil_shredder"
 				"DisplayInLoadout" "0"
 			}
+			"8"
+			{
+				"SlotIndex" "8"
+				"SlotName" "ability_effects_4"
+				"SlotText" "snapfire_mortimer_kisses"
+				"DisplayInLoadout" "0"
+			}
 		}
 		"Bot"
 		{
@@ -26616,6 +27553,19 @@
 				"ProvidesSetup"		"2"
 				"RequiresSetup"		"0"
 			}
+		}
+		"showcase_attachments"
+		{
+			"attach_hand_1"		"1"
+			"attach_hand_2"		"2"
+			"attach_mouth"		"3"
+			"attach_attack1"		"4"
+			"attach_attack2"		"5"
+			"attach_bolt_fx"		"6"
+			"attach_handr_fx"		"7"
+			"attach_handl_fx"		"8"
+			"attach_ankler_fx"		"9"
+			"attach_anklel_fx"		"10"
 		}
 		"precache"
 		{
@@ -26632,7 +27582,7 @@
 		"Enabled"		"1"
 		"HeroUnlockOrder"		"3"
 		"Role"			"Support,Nuker,Escape,Disabler"
-		"NameAliases"	"squirrel"
+		"NameAliases"	"squirrel;hw"
 		"Rolelevels"	"2,2,2,1"
 		"Complexity"	"2"
 		"Team"		"Good"
@@ -26801,7 +27751,14 @@
 				"DisplayInLoadout" "0"
 			}
 		}
-		
+		"showcase_attachments"
+		{
+			"attach_foot_r_fx"		"1"
+			"attach_foot_l_fx"		"2"
+			"attach_hand_r_fx"		"3"
+			"attach_attack1"		"4"
+			"attach_bolt_fx"		"5"
+		}
 		"precache"
 		{
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_hoodwink.vpcf"
@@ -26817,7 +27774,7 @@
 		"Enabled"			"1"
 		"CMEnabled"			"1"
 		"Role"				"Carry,Durable"
-		"Rolelevels"		"1,2,1,1,1"
+		"Rolelevels"		"1,2"
 		"Complexity"		"1"
 		"Team"				"Good"
 		"HeroID"			"135"
@@ -26870,14 +27827,14 @@
 			"attack_long_range"		"80"
 		}
 		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
-		"AttributeBaseStrength"		"27"
+		"AttributeBaseStrength"		"25"
 		"AttributeStrengthGain"		"3.40000"
 		"AttributeBaseAgility"		"14"
 		"AttributeAgilityGain"		"1.700000"
 		"AttributeBaseIntelligence"		"20"
-		"AttributeIntelligenceGain"		"2.200000"
+		"AttributeIntelligenceGain"		"2.000000"
 		"HasAggressiveStance"		"1"
-		"MovementSpeed"		"310"
+		"MovementSpeed"		"300"
 		"MovementTurnRate"		"0.600000"
 		"MovementSpeedActivityModifiers"
 		{
@@ -26981,6 +27938,13 @@
 				"ProvidesSetup"		"0"
 				"RequiresSetup"		"1"
 			}
+		}
+		"showcase_attachments"
+		{
+			"attach_weapon_core_fx"		"1"
+			"attach_attack1"	"2"
+			"attach_attack2"	"3"
+			"attach_head"		"4"
 		}
 		"precache"
 		{
@@ -27135,6 +28099,14 @@
 		"particle_folder"		"particles/units/heroes/hero_marci"
 		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_marci.vsndevts"
 		"VoiceFile"				"soundevents/voscripts/game_sounds_vo_marci.vsndevts"
+		"showcase_attachments"
+		{
+			"attach_foot"		"1"
+			"eye_l"	"2"
+			"eye_3"	"3"
+			"attach_attack1"	"4"
+			"attach_attack2"	"5"
+		}
 		"precache"
 		{
 			"particle"			"particles/econ/events/anniversary_10th/anniversary_10th_hat_ambient_npc_dota_hero_marci.vpcf"
@@ -27158,6 +28130,7 @@
 		"HeroOrderID"			"123"
 		"ModelScale"			"0.900000"
 		"MaxModelScaleMultiplier"	"1.25"
+                "HealthBarOffset"		"250"
 		"LoadoutScale"		"0.900000"
 		"VersusScale"		"0.9"
 		"SpectatorLoadoutScale" "0.7"
@@ -27302,6 +28275,15 @@
 				"SlotText" "primal_beast_onslaught"
 				"DisplayInLoadout" "0"
 			}
+		}
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_foot_L"	"2"
+			"attach_foot_R"	"3"
+			"attach_attack1"	"4"
+			"attach_attack2"	"5"
+			"attach_horn_fx"	"6"
 		}
 		"precache"
 		{
@@ -27475,6 +28457,12 @@
 				"SlotName"		"taunt"
 				"SlotText"		"#LoadoutSlot_Taunt"
 			}
+		}
+		"showcase_attachments"
+		{
+			"attach_head"		"1"
+			"attach_attack1"	"2"
+			"attach_attack2"	"3"
 		}
 		"particle_folder"		"particles/units/heroes/hero_muerta"
 		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_muerta.vsndevts"
